@@ -1,12 +1,14 @@
 package com.yb.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
+import com.yb.dao.DaoMark;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.core.io.support.ResourcePatternResolver;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
@@ -19,9 +21,9 @@ import java.io.IOException;
  * @author Jue-PC
  */
 @Configuration
-@PropertySource("classpath: mysql-cfg.properties")
+@PropertySource({"classpath:jdbc.properties"})
 @EnableTransactionManagement
-@MapperScan("classpath: com.yb.dao")
+@MapperScan(basePackageClasses = DaoMark.class)
 public class SpringMybatisConfig {
     @Value("${jdbc.url}")
     private String url;
@@ -65,18 +67,23 @@ public class SpringMybatisConfig {
     }
 
     @Bean
-    public SqlSessionFactoryBean sessionFactoryBean() throws IOException {
+    public SqlSessionFactoryBean sessionFactoryBean(DataSource dataSource) throws IOException {
         ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
         SqlSessionFactoryBean sessionFactoryBean = new SqlSessionFactoryBean();
-        sessionFactoryBean.setDataSource(dataSource());
-        sessionFactoryBean.setMapperLocations(resolver.getResources("mapper/*.xml"));
+        sessionFactoryBean.setDataSource(dataSource);
+        sessionFactoryBean.setMapperLocations(resolver.getResources("classpath:mapper/*Mapper.xml"));
         return sessionFactoryBean;
     }
 
     @Bean
-    public DataSourceTransactionManager transactionManager() {
+    public DataSourceTransactionManager transactionManager(DataSource dataSource) {
         DataSourceTransactionManager transactionManager = new DataSourceTransactionManager();
-        transactionManager.setDataSource(dataSource());
+        transactionManager.setDataSource(dataSource);
         return transactionManager;
+    }
+
+    @Bean
+    public static PropertySourcesPlaceholderConfigurer placeholderConfigurer() {
+        return new PropertySourcesPlaceholderConfigurer();
     }
 }
