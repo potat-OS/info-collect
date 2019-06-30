@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 /**
  * @author Jue-PC
  */
-@Service
+@Service("stuService")
 public class StuServiceImpl {
+    
 }
