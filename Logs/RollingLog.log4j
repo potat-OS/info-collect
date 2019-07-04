@@ -1503,3 +1503,7 @@ Caused by: java.lang.ClassNotFoundException: Cannot find class: stu_id
 	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
 	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
 	... 84 more
+[http-nio-8080-exec-1] WARN org.springframework.web.servlet.PageNotFound - No mapping for GET /infocollect/WEB-INF/templates/main.html
+[http-nio-8080-exec-2] WARN org.springframework.web.servlet.PageNotFound - No mapping for GET /infocollect/WEB-INF/templates/main.html
+[http-nio-8080-exec-1] WARN org.springframework.web.servlet.PageNotFound - No mapping for GET /infocollect/WEB-INF/templates/main.html
+[http-nio-8080-exec-3] WARN org.springframework.web.servlet.PageNotFound - No mapping for GET /infocollect/WEB-INF/templates/main.html

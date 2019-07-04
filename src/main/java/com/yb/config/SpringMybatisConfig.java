@@ -24,7 +24,7 @@ import javax.sql.DataSource;
 @Configuration
 @PropertySource({"classpath:jdbc.properties"})
 @EnableTransactionManagement
-@MapperScan(basePackageClasses = {com.yb.dao.DaoMark.class})
+@MapperScan(basePackageClasses = {DaoMark.class})
 public class SpringMybatisConfig {
 
     public static PropertySourcesPlaceholderConfigurer placeholderConfigurer() {

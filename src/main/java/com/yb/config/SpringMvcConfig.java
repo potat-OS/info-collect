@@ -32,54 +32,52 @@ import org.thymeleaf.templateresolver.ServletContextTemplateResolver;
         includeFilters = {@ComponentScan.Filter(type = FilterType.ANNOTATION, value = Controller.class)})
 public class SpringMvcConfig extends WebMvcConfigurationSupport {
 
+    @Bean
+    public static PlaceholderConfigurerSupport placeholderConfigurer() {
+        return new PropertySourcesPlaceholderConfigurer();
+    }
+
     @Override
     public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
         configurer.enable();
     }
 
+
     @Bean
-    public ViewResolver viewResolver() {
-        InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
-        viewResolver.setPrefix("/WEB-INF/templates/");
-        viewResolver.setSuffix(".html");
-        viewResolver.setExposeContextBeansAsAttributes(true);
+    public SpringResourceTemplateResolver templateResolver() {
+        SpringResourceTemplateResolver templateResolver = new SpringResourceTemplateResolver();
+        templateResolver.setCacheable(false);
+        templateResolver.setTemplateMode(TemplateMode.HTML);
+        templateResolver.setPrefix("/WEB-INF/templates/");
+        templateResolver.setSuffix(".html");
+        templateResolver.setCharacterEncoding("UTF-8");
+        return templateResolver;
+    }
+
+    @Bean
+    public SpringTemplateEngine templateEngine(SpringResourceTemplateResolver templateResolver) {
+        SpringTemplateEngine templateEngine = new SpringTemplateEngine();
+        templateEngine.setEnableSpringELCompiler(true);
+        templateEngine.setTemplateResolver(templateResolver);
+        return templateEngine;
+    }
+
+    @Bean
+    public ViewResolver viewResolver(SpringTemplateEngine templateEngine) {
+        ThymeleafViewResolver viewResolver = new ThymeleafViewResolver();
+        viewResolver.setContentType("text/html;charset:=utf-8");
+        viewResolver.setTemplateEngine(templateEngine);
+        viewResolver.setCharacterEncoding("UTF-8");
         return viewResolver;
     }
 
-//    @Bean
-//    public SpringResourceTemplateResolver templateResolver() {
-//        SpringResourceTemplateResolver templateResolver = new SpringResourceTemplateResolver();
-//        templateResolver.setCacheable(false);
-//        templateResolver.setTemplateMode(TemplateMode.HTML);
-//        templateResolver.setPrefix("/WEB-INF/templates/");
-//        templateResolver.setSuffix(".html");
-//        templateResolver.setCharacterEncoding("UTF-8");
-//        return templateResolver;
-//    }
 
 //    @Bean
-//    public static PlaceholderConfigurerSupport placeholderConfigurer() {
-//        return new PropertySourcesPlaceholderConfigurer();
-//    }
-
-//    public MultipartResolver multipartResolver() {
-//        return new StandardServletMultipartResolver();
-//    }
-
-//    @Bean
-//    public SpringTemplateEngine templateEngine(SpringResourceTemplateResolver templateResolver) {
-//        SpringTemplateEngine templateEngine = new SpringTemplateEngine();
-//        templateEngine.setEnableSpringELCompiler(true);
-//        templateEngine.setTemplateResolver(templateResolver);
-//        return templateEngine;
-//}
-
-//    @Bean
-//    public ViewResolver viewResolver(SpringTemplateEngine templateEngine) {
-//        ThymeleafViewResolver viewResolver = new ThymeleafViewResolver();
-//        viewResolver.setContentType("text/html;Charset:=utf-8");
-//        viewResolver.setTemplateEngine(templateEngine);
-//        viewResolver.setCharacterEncoding("UTF-8");
+//    public ViewResolver viewResolver() {
+//        InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
+//        viewResolver.setPrefix("/WEB-INF/templates/");
+//        viewResolver.setSuffix(".html");
+//        viewResolver.setExposeContextBeansAsAttributes(true);
 //        return viewResolver;
 //    }
 }

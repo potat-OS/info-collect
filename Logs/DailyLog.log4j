@@ -768,3 +768,35 @@ Caused by: java.lang.ClassNotFoundException: Cannot find class: stu_id
 	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
 	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
 	... 84 more
+INFO - Root WebApplicationContext: initialization started
+INFO - Root WebApplicationContext initialized in 1911 ms
+INFO - Initializing Servlet 'dispatcher'
+INFO - Completed initialization in 1114 ms
+INFO - Root WebApplicationContext: initialization started
+INFO - Root WebApplicationContext initialized in 1667 ms
+INFO - Initializing Servlet 'dispatcher'
+INFO - Completed initialization in 814 ms
+WARN - No mapping for GET /infocollect/WEB-INF/templates/main.html
+WARN - No mapping for GET /infocollect/WEB-INF/templates/main.html
+INFO - Root WebApplicationContext: initialization started
+INFO - Root WebApplicationContext initialized in 1784 ms
+INFO - Initializing Servlet 'dispatcher'
+INFO - Completed initialization in 836 ms
+WARN - No mapping for GET /infocollect/WEB-INF/templates/main.html
+WARN - No mapping for GET /infocollect/WEB-INF/templates/main.html
+INFO - Root WebApplicationContext: initialization started
+INFO - Root WebApplicationContext initialized in 1895 ms
+INFO - Initializing Servlet 'dispatcher'
+INFO - Completed initialization in 972 ms
+INFO - Root WebApplicationContext: initialization started
+INFO - Root WebApplicationContext initialized in 1761 ms
+INFO - Initializing Servlet 'dispatcher'
+INFO - Completed initialization in 905 ms
+INFO - Root WebApplicationContext: initialization started
+INFO - Root WebApplicationContext initialized in 2111 ms
+INFO - Initializing Servlet 'dispatcher'
+INFO - Completed initialization in 1061 ms
+INFO - Root WebApplicationContext: initialization started
+INFO - Root WebApplicationContext initialized in 2348 ms
+INFO - Initializing Servlet 'dispatcher'
+INFO - Completed initialization in 1173 ms
