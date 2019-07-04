@@ -2,6 +2,7 @@ package com.yb.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import com.yb.dao.DaoMark;
+import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Value;
@@ -12,10 +13,10 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.core.io.support.ResourcePatternResolver;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
+import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.sql.DataSource;
-import java.io.IOException;
 
 /**
  * @author Jue-PC
@@ -23,8 +24,13 @@ import java.io.IOException;
 @Configuration
 @PropertySource({"classpath:jdbc.properties"})
 @EnableTransactionManagement
-@MapperScan(basePackageClasses = DaoMark.class)
+@MapperScan(basePackageClasses = {com.yb.dao.DaoMark.class})
 public class SpringMybatisConfig {
+
+    public static PropertySourcesPlaceholderConfigurer placeholderConfigurer() {
+        return new PropertySourcesPlaceholderConfigurer();
+    }
+
     @Value("${jdbc.url}")
     private String url;
 
@@ -67,23 +73,18 @@ public class SpringMybatisConfig {
     }
 
     @Bean
-    public SqlSessionFactoryBean sessionFactoryBean(DataSource dataSource) throws IOException {
+    public SqlSessionFactory sessionFactory(DataSource dataSource) throws Exception {
         ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
-        SqlSessionFactoryBean sessionFactoryBean = new SqlSessionFactoryBean();
-        sessionFactoryBean.setDataSource(dataSource);
-        sessionFactoryBean.setMapperLocations(resolver.getResources("classpath:mapper/*Mapper.xml"));
-        return sessionFactoryBean;
+        SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();
+        sessionFactory.setDataSource(dataSource);
+        sessionFactory.setMapperLocations(resolver.getResources("mapper/*.xml"));
+        return sessionFactory.getObject();
     }
 
     @Bean
-    public DataSourceTransactionManager transactionManager(DataSource dataSource) {
-        DataSourceTransactionManager transactionManager = new DataSourceTransactionManager();
-        transactionManager.setDataSource(dataSource);
-        return transactionManager;
+    public PlatformTransactionManager transactionManager(DataSource dataSource) {
+        return new DataSourceTransactionManager(dataSource);
     }
 
-    @Bean
-    public static PropertySourcesPlaceholderConfigurer placeholderConfigurer() {
-        return new PropertySourcesPlaceholderConfigurer();
-    }
+
 }
