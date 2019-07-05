@@ -1,184 +1,4 @@
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 1875 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 981 ms
-ERROR - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "https://openapi.yiban.cn/oauth/authorize?client_id=2f07cd37223a4ec3&redirect_uri=&state=Query&display=": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/https://openapi.yiban.cn/oauth/authorize?client_id=2f07cd37223a4ec3&redirect_uri=&state=Query&display=.html]")
-org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/https://openapi.yiban.cn/oauth/authorize?client_id=2f07cd37223a4ec3&redirect_uri=&state=Query&display=.html]")
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
-	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
-	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
-	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
-	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1370)
-	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1116)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1055)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/templates/https://openapi.yiban.cn/oauth/authorize?client_id=2f07cd37223a4ec3&redirect_uri=&state=Query&display=.html]
-	at org.springframework.web.context.support.ServletContextResource.getInputStream(ServletContextResource.java:158)
-	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
-	... 41 more
-ERROR - [THYMELEAF][http-nio-8080-exec-4] Exception processing template "https://openapi.yiban.cn/oauth/authorize?client_id=2f07cd37223a4ec3&redirect_uri=&state=Query&display=": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/https://openapi.yiban.cn/oauth/authorize?client_id=2f07cd37223a4ec3&redirect_uri=&state=Query&display=.html]")
-org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/https://openapi.yiban.cn/oauth/authorize?client_id=2f07cd37223a4ec3&redirect_uri=&state=Query&display=.html]")
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
-	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
-	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
-	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
-	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1370)
-	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1116)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1055)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/templates/https://openapi.yiban.cn/oauth/authorize?client_id=2f07cd37223a4ec3&redirect_uri=&state=Query&display=.html]
-	at org.springframework.web.context.support.ServletContextResource.getInputStream(ServletContextResource.java:158)
-	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
-	... 41 more
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 2010 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 991 ms
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 1789 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 932 ms
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 1659 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 890 ms
-WARN - No mapping for GET /infocollect/
-WARN - No mapping for GET /infocollect/
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 1673 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 858 ms
-WARN - No mapping for GET /infocollect/
-WARN - No mapping for GET /infocollect/
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 1684 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 980 ms
-WARN - No mapping for GET /infocollect/
-WARN - No mapping for GET /infocollect/
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 1812 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 1000 ms
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 1687 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 897 ms
-WARN - No mapping for GET /infocollect/main.html
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 1703 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 904 ms
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 1834 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 978 ms
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 1814 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 963 ms
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 1862 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 931 ms
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 1795 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 923 ms
-WARN - No mapping for GET /info_collect_war_exploded/
-WARN - No mapping for GET /info_collect_war_exploded/
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 1780 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 891 ms
-WARN - No mapping for GET /info_collect_war_exploded/
-WARN - No mapping for GET /info_collect_war_exploded/
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 1866 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 917 ms
-WARN - No mapping for GET /info_collect_war_exploded/
-WARN - No mapping for GET /info_collect_war_exploded/
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 1726 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 963 ms
-WARN - No mapping for GET /info_collect_war_exploded/main.html
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 1811 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 907 ms
-ERROR - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
+[http-nio-8080-exec-1] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -227,7 +47,7 @@ Caused by: java.io.FileNotFoundException: Could not open ServletContext resource
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-ERROR - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
+[http-nio-8080-exec-3] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -276,113 +96,7 @@ Caused by: java.io.FileNotFoundException: Could not open ServletContext resource
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 1973 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 999 ms
-ERROR - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
-org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
-	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
-	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
-	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
-	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1370)
-	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1116)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1055)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/templates/.html]
-	at org.springframework.web.context.support.ServletContextResource.getInputStream(ServletContextResource.java:158)
-	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
-	... 41 more
-ERROR - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
-org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
-	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
-	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
-	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
-	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1370)
-	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1116)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1055)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/templates/.html]
-	at org.springframework.web.context.support.ServletContextResource.getInputStream(ServletContextResource.java:158)
-	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
-	... 41 more
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 2269 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 1184 ms
-ERROR - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/templates/.html]")
+[http-nio-8080-exec-1] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/templates/.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/templates/.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -431,7 +145,7 @@ Caused by: java.io.FileNotFoundException: Could not open ServletContext resource
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-ERROR - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/templates/.html]")
+[http-nio-8080-exec-3] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/templates/.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/templates/.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -480,11 +194,7 @@ Caused by: java.io.FileNotFoundException: Could not open ServletContext resource
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 1722 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 891 ms
-ERROR - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "class path resource [ /templates/.html]")
+[http-nio-8080-exec-1] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "class path resource [ /templates/.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [ /templates/.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -533,7 +243,7 @@ Caused by: java.io.FileNotFoundException: class path resource [ /templates/.html
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-ERROR - [THYMELEAF][http-nio-8080-exec-5] Exception processing template "": An error happened during template parsing (template: "class path resource [ /templates/.html]")
+[http-nio-8080-exec-5] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-5] Exception processing template "": An error happened during template parsing (template: "class path resource [ /templates/.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [ /templates/.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -582,11 +292,7 @@ Caused by: java.io.FileNotFoundException: class path resource [ /templates/.html
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 1972 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 943 ms
-ERROR - [THYMELEAF][http-nio-8080-exec-2] Exception processing template "": An error happened during template parsing (template: "class path resource [ /templates/*.html]")
+[http-nio-8080-exec-2] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-2] Exception processing template "": An error happened during template parsing (template: "class path resource [ /templates/*.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [ /templates/*.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -635,7 +341,7 @@ Caused by: java.io.FileNotFoundException: class path resource [ /templates/*.htm
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-ERROR - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "class path resource [ /templates/*.html]")
+[http-nio-8080-exec-3] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "class path resource [ /templates/*.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [ /templates/*.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -684,11 +390,7 @@ Caused by: java.io.FileNotFoundException: class path resource [ /templates/*.htm
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 2260 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 938 ms
-ERROR - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "class path resource [templates/.html]")
+[http-nio-8080-exec-1] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "class path resource [templates/.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -737,7 +439,7 @@ Caused by: java.io.FileNotFoundException: class path resource [templates/.html] 
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-ERROR - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "class path resource [templates/.html]")
+[http-nio-8080-exec-3] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "class path resource [templates/.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -786,11 +488,7 @@ Caused by: java.io.FileNotFoundException: class path resource [templates/.html] 
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 2097 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 1037 ms
-ERROR - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "class path resource [templates/html]")
+[http-nio-8080-exec-1] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "class path resource [templates/html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -839,7 +537,7 @@ Caused by: java.io.FileNotFoundException: class path resource [templates/html] c
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-ERROR - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "class path resource [templates/html]")
+[http-nio-8080-exec-3] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "class path resource [templates/html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -888,11 +586,7 @@ Caused by: java.io.FileNotFoundException: class path resource [templates/html] c
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 2248 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 1079 ms
-ERROR - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "class path resource [templates/.html]")
+[http-nio-8080-exec-1] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "class path resource [templates/.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -941,7 +635,7 @@ Caused by: java.io.FileNotFoundException: class path resource [templates/.html] 
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-ERROR - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "class path resource [templates/.html]")
+[http-nio-8080-exec-3] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "class path resource [templates/.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -990,12 +684,8 @@ Caused by: java.io.FileNotFoundException: class path resource [templates/.html] 
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 1827 ms
-INFO - Initializing Servlet 'dispatcher'
-WARN - [THYMELEAF][RMI TCP Connection(3)-127.0.0.1] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-INFO - Completed initialization in 958 ms
-ERROR - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "class path resource [templates/.html]")
+[RMI TCP Connection(3)-127.0.0.1] WARN org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][RMI TCP Connection(3)-127.0.0.1] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+[http-nio-8080-exec-1] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "class path resource [templates/.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -1044,7 +734,7 @@ Caused by: java.io.FileNotFoundException: class path resource [templates/.html] 
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-ERROR - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "class path resource [templates/.html]")
+[http-nio-8080-exec-3] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "class path resource [templates/.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -1093,12 +783,8 @@ Caused by: java.io.FileNotFoundException: class path resource [templates/.html] 
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 1819 ms
-INFO - Initializing Servlet 'dispatcher'
-WARN - [THYMELEAF][RMI TCP Connection(3)-127.0.0.1] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-INFO - Completed initialization in 909 ms
-ERROR - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
+[RMI TCP Connection(3)-127.0.0.1] WARN org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][RMI TCP Connection(3)-127.0.0.1] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+[http-nio-8080-exec-1] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -1147,7 +833,7 @@ Caused by: java.io.FileNotFoundException: Could not open ServletContext resource
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-ERROR - [THYMELEAF][http-nio-8080-exec-4] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
+[http-nio-8080-exec-4] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-4] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -1196,12 +882,8 @@ Caused by: java.io.FileNotFoundException: Could not open ServletContext resource
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 1780 ms
-INFO - Initializing Servlet 'dispatcher'
-WARN - [THYMELEAF][RMI TCP Connection(3)-127.0.0.1] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-INFO - Completed initialization in 927 ms
-ERROR - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/.html]")
+[RMI TCP Connection(3)-127.0.0.1] WARN org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][RMI TCP Connection(3)-127.0.0.1] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+[http-nio-8080-exec-1] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF/.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -1250,7 +932,7 @@ Caused by: java.io.FileNotFoundException: Could not open ServletContext resource
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-ERROR - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/.html]")
+[http-nio-8080-exec-3] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF/.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -1299,12 +981,8 @@ Caused by: java.io.FileNotFoundException: Could not open ServletContext resource
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 1747 ms
-INFO - Initializing Servlet 'dispatcher'
-WARN - [THYMELEAF][RMI TCP Connection(3)-127.0.0.1] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-INFO - Completed initialization in 908 ms
-ERROR - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/.html]")
+[RMI TCP Connection(3)-127.0.0.1] WARN org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][RMI TCP Connection(3)-127.0.0.1] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+[http-nio-8080-exec-1] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF/.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -1353,7 +1031,7 @@ Caused by: java.io.FileNotFoundException: Could not open ServletContext resource
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-ERROR - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/.html]")
+[http-nio-8080-exec-3] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF/.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -1402,12 +1080,8 @@ Caused by: java.io.FileNotFoundException: Could not open ServletContext resource
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 2104 ms
-INFO - Initializing Servlet 'dispatcher'
-WARN - [THYMELEAF][RMI TCP Connection(3)-127.0.0.1] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-INFO - Completed initialization in 1048 ms
-ERROR - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF.html]")
+[RMI TCP Connection(3)-127.0.0.1] WARN org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][RMI TCP Connection(3)-127.0.0.1] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+[http-nio-8080-exec-1] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -1456,7 +1130,7 @@ Caused by: java.io.FileNotFoundException: Could not open ServletContext resource
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-ERROR - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF.html]")
+[http-nio-8080-exec-3] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -1505,12 +1179,8 @@ Caused by: java.io.FileNotFoundException: Could not open ServletContext resource
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 1930 ms
-INFO - Initializing Servlet 'dispatcher'
-WARN - [THYMELEAF][RMI TCP Connection(3)-127.0.0.1] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-INFO - Completed initialization in 1212 ms
-ERROR - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/.html]")
+[RMI TCP Connection(3)-127.0.0.1] WARN org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][RMI TCP Connection(3)-127.0.0.1] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+[http-nio-8080-exec-1] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF/.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -1559,7 +1229,7 @@ Caused by: java.io.FileNotFoundException: Could not open ServletContext resource
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-ERROR - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/.html]")
+[http-nio-8080-exec-3] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF/.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -1608,11 +1278,7 @@ Caused by: java.io.FileNotFoundException: Could not open ServletContext resource
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 2009 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 938 ms
-ERROR - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates.html]")
+[http-nio-8080-exec-1] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -1661,7 +1327,7 @@ Caused by: java.io.FileNotFoundException: Could not open ServletContext resource
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-ERROR - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates.html]")
+[http-nio-8080-exec-3] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -1710,11 +1376,7 @@ Caused by: java.io.FileNotFoundException: Could not open ServletContext resource
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 1773 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 978 ms
-ERROR - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
+[http-nio-8080-exec-1] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -1763,7 +1425,7 @@ Caused by: java.io.FileNotFoundException: Could not open ServletContext resource
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-ERROR - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
+[http-nio-8080-exec-3] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -1812,7 +1474,7 @@ Caused by: java.io.FileNotFoundException: Could not open ServletContext resource
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-ERROR - [THYMELEAF][http-nio-8080-exec-5] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
+[http-nio-8080-exec-5] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-5] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -1861,11 +1523,7 @@ Caused by: java.io.FileNotFoundException: Could not open ServletContext resource
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 1799 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 1034 ms
-ERROR - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
+[http-nio-8080-exec-1] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -1914,7 +1572,7 @@ Caused by: java.io.FileNotFoundException: Could not open ServletContext resource
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-ERROR - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
+[http-nio-8080-exec-3] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -1963,11 +1621,7 @@ Caused by: java.io.FileNotFoundException: Could not open ServletContext resource
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 2162 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 1134 ms
-ERROR - [THYMELEAF][http-nio-8080-exec-2] Exception processing template "": Application Context cannot be null
+[http-nio-8080-exec-2] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-2] Exception processing template "": Application Context cannot be null
 java.lang.IllegalArgumentException: Application Context cannot be null
 	at org.thymeleaf.util.Validate.notNull(Validate.java:37)
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.<init>(SpringResourceTemplateResource.java:64)
@@ -2015,7 +1669,7 @@ java.lang.IllegalArgumentException: Application Context cannot be null
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
-ERROR - [THYMELEAF][http-nio-8080-exec-4] Exception processing template "": Application Context cannot be null
+[http-nio-8080-exec-4] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-4] Exception processing template "": Application Context cannot be null
 java.lang.IllegalArgumentException: Application Context cannot be null
 	at org.thymeleaf.util.Validate.notNull(Validate.java:37)
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.<init>(SpringResourceTemplateResource.java:64)
@@ -2063,11 +1717,7 @@ java.lang.IllegalArgumentException: Application Context cannot be null
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 2185 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 1227 ms
-ERROR - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
+[http-nio-8080-exec-1] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -2116,7 +1766,7 @@ Caused by: java.io.FileNotFoundException: Could not open ServletContext resource
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-ERROR - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
+[http-nio-8080-exec-3] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -2165,11 +1815,7 @@ Caused by: java.io.FileNotFoundException: Could not open ServletContext resource
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 2447 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 1314 ms
-ERROR - [THYMELEAF][http-nio-8080-exec-2] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
+[http-nio-8080-exec-2] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-2] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -2218,7 +1864,7 @@ Caused by: java.io.FileNotFoundException: Could not open ServletContext resource
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-ERROR - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
+[http-nio-8080-exec-3] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -2267,7 +1913,7 @@ Caused by: java.io.FileNotFoundException: Could not open ServletContext resource
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-ERROR - [THYMELEAF][http-nio-8080-exec-5] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
+[http-nio-8080-exec-5] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-5] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -2316,15 +1962,7 @@ Caused by: java.io.FileNotFoundException: Could not open ServletContext resource
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 1564 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 873 ms
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 1713 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 915 ms
-ERROR - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
+[http-nio-8080-exec-1] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -2373,7 +2011,7 @@ Caused by: java.io.FileNotFoundException: Could not open ServletContext resource
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-ERROR - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
+[http-nio-8080-exec-3] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -2422,11 +2060,7 @@ Caused by: java.io.FileNotFoundException: Could not open ServletContext resource
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 1795 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 925 ms
-ERROR - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/]")
+[http-nio-8080-exec-1] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -2475,7 +2109,7 @@ Caused by: java.io.FileNotFoundException: Could not open ServletContext resource
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-ERROR - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/]")
+[http-nio-8080-exec-3] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -2524,12 +2158,8 @@ Caused by: java.io.FileNotFoundException: Could not open ServletContext resource
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 1796 ms
-INFO - Initializing Servlet 'dispatcher'
-WARN - [THYMELEAF][RMI TCP Connection(3)-127.0.0.1] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-INFO - Completed initialization in 928 ms
-ERROR - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
+[RMI TCP Connection(3)-127.0.0.1] WARN org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][RMI TCP Connection(3)-127.0.0.1] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+[http-nio-8080-exec-1] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
@@ -2578,73 +2208,3 @@ Caused by: java.io.FileNotFoundException: Could not open ServletContext resource
 	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
 	... 41 more
-ERROR - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "": An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
-org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "ServletContext resource [/WEB-INF/templates/.html]")
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
-	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
-	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
-	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
-	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1370)
-	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1116)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1055)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/templates/.html]
-	at org.springframework.web.context.support.ServletContextResource.getInputStream(ServletContextResource.java:158)
-	at org.thymeleaf.spring5.templateresource.SpringResourceTemplateResource.reader(SpringResourceTemplateResource.java:103)
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
-	... 41 more
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 2615 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 1289 ms
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 1719 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 893 ms
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 2366 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 1229 ms
-WARN - No mapping for GET /info_collect_war_exploded/main.html
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 1795 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 953 ms
-INFO - Root WebApplicationContext: initialization started
-INFO - Root WebApplicationContext initialized in 1851 ms
-INFO - Initializing Servlet 'dispatcher'
-INFO - Completed initialization in 966 ms

@@ -11,5 +11,4 @@ public class Student {
     private String realName;
     private String nickName;
     private String phoneNum;
-
 }

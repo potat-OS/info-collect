@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 
-    <properties resource="mysql-cfg.properties"/>
+    <properties resource="jdbc.properties"/>
     <!--Definite aliases-->
     <typeAliases>
         <package name="com.yb"/>
