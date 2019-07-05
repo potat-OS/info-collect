@@ -82,8 +82,7 @@ public class SpringMvcConfig extends WebMvcConfigurationSupport implements Appli
     public ThymeleafViewResolver viewResolver(SpringTemplateEngine templateEngine) {
         ThymeleafViewResolver viewResolver = new ThymeleafViewResolver();
         viewResolver.setTemplateEngine(templateEngine);
-        viewResolver.setOrder(1);
-        viewResolver.setViewNames(new String[]{".html", ".xhtml"});
+        viewResolver.setCharacterEncoding("UTF-8");
         return viewResolver;
     }
 }
