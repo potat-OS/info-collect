@@ -67,6 +67,7 @@ public class SpringMvcConfig extends WebMvcConfigurationSupport implements Appli
         templateResolver.setPrefix("/WEB-INF/templates/");
         templateResolver.setSuffix(".html");
         templateResolver.setCacheable(false);
+        templateResolver.setCharacterEncoding("UTF-8");
         return templateResolver;
     }
 
