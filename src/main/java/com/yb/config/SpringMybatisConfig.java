@@ -31,6 +31,9 @@ public class SpringMybatisConfig {
         return new PropertySourcesPlaceholderConfigurer();
     }
 
+    @Value("${jdbc.driver}")
+    private String driver;
+
     @Value("${jdbc.url}")
     private String url;
 
@@ -61,8 +64,10 @@ public class SpringMybatisConfig {
     @Bean
     public DataSource dataSource() {
         DruidDataSource dataSource = new DruidDataSource();
+        dataSource.setDriverClassName(driver);
         dataSource.setUrl(url);
         dataSource.setUsername(username);
+        dataSource.setPassword(password);
         dataSource.setMinIdle(minIdle);
         dataSource.setMaxActive(maxActive);
         dataSource.setInitialSize(initialSize);
@@ -73,13 +78,13 @@ public class SpringMybatisConfig {
     }
 
     @Bean
-    public SqlSessionFactory sessionFactory(DataSource dataSource) throws Exception {
+    public SqlSessionFactoryBean sessionFactory(DataSource dataSource) throws Exception {
         ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
         SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();
         sessionFactory.setDataSource(dataSource);
         sessionFactory.setConfigLocation(resolver.getResource("mybatis-cfg.xml"));
-        sessionFactory.setMapperLocations(resolver.getResources("mapper/*.xml"));
-        return sessionFactory.getObject();
+        sessionFactory.setMapperLocations(resolver.getResources("classpath:mapper/*.xml"));
+        return sessionFactory;
     }
 
     @Bean

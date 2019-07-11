@@ -1,13 +1,15 @@
 package com.yb.dao;
 
-import com.yb.model.Student;
+import com.yb.entity.Student;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 /**
  * @author Jue-PC
  */
-public interface StuMapper {
+@Repository
+public interface StudentMapper {
     /**
      * Find all students
      *

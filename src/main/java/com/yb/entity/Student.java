@@ -1,4 +1,4 @@
-package com.yb.model;
+package com.yb.entity;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -13,6 +13,5 @@ import lombok.ToString;
 public class Student {
     private String stuId;
     private String realName;
-    private String nickName;
     private String phoneNum;
 }
