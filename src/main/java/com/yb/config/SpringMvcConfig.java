@@ -1,7 +1,7 @@
 package com.yb.config;
 
-
 import com.yb.Mark;
+import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Bean;
@@ -34,13 +34,22 @@ public class SpringMvcConfig extends WebMvcConfigurationSupport implements Appli
     }
 
     @Override
-    protected void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/static/**").addResourceLocations("/static/");
+    public void setApplicationContext(final ApplicationContext context) throws BeansException {
+        this.applicationContext = context;
     }
 
-    @Bean
-    public DateFormatter dateFormatter() {
-        return new DateFormatter();
+    @Override
+    protected void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
+        super.configureDefaultServletHandling(configurer);
+        configurer.enable();
+    }
+
+    @Override
+    protected void addResourceHandlers(ResourceHandlerRegistry registry) {
+        super.addResourceHandlers(registry);
+        registry.addResourceHandler("/css/**").addResourceLocations("/static/css/");
+        registry.addResourceHandler("/js/**").addResourceLocations("/static/js/");
+        registry.addResourceHandler("/img/**").addResourceLocations("/static/img/");
     }
 
     @Override
@@ -49,14 +58,9 @@ public class SpringMvcConfig extends WebMvcConfigurationSupport implements Appli
         registry.addFormatter(dateFormatter());
     }
 
-    @Override
-    public void setApplicationContext(final ApplicationContext context) {
-        this.applicationContext = context;
-    }
-
-    @Override
-    public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
-        configurer.enable();
+    @Bean
+    public DateFormatter dateFormatter() {
+        return new DateFormatter();
     }
 
     @Bean

@@ -2,7 +2,6 @@ package com.yb.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import com.yb.dao.DaoMark;
-import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Value;

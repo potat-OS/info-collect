@@ -1,12 +1,12 @@
 package com.yb.service.impl;
 
 import cn.yiban.open.Authorize;
+import cn.yiban.open.common.User;
 import com.alibaba.fastjson.JSONObject;
 import com.yb.config.YbMsg;
+import com.yb.model.Teacher;
 import com.yb.service.TeacherService;
-import com.yb.util.YbUtil;
 import org.springframework.stereotype.Service;
-import javax.servlet.http.HttpServletRequest;
 
 /**
  * @author Jue-PC
@@ -22,18 +22,16 @@ public class TeacherServiceImpl implements TeacherService {
     }
 
     @Override
-    public String idCheck(String token, HttpServletRequest request) {
-        final int stuIdLength = 12;
-        YbUtil ybUser = new YbUtil(token);
-        request.getSession().setAttribute("yibanUser", ybUser);
-        JSONObject object = JSONObject.parseObject(ybUser.verifyme()).getJSONObject("info");
+    public boolean schoolCheck(Teacher teacher) {
+        String schoolName = teacher.getSchoolName();
+        return "西安石油大学".equals(schoolName);
+    }
+
+    @Override
+    public Teacher getInfo(String token) {
+        User ybUser = new User(token);
+        JSONObject object = JSONObject.parseObject(ybUser.me()).getJSONObject("info");
         System.out.println(object);
-        String studentId = object.getString("yb_studentid");
-        System.out.println(studentId);
-        if (String.valueOf(studentId).length() < stuIdLength) {
-            return "info";
-        } else {
-            return "info";
-        }
+        return new Teacher(object.getString("yb_username"), object.getString("yb_schoolname"));
     }
 }

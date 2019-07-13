@@ -11,7 +11,8 @@ public interface StudentService {
      * find all students
      *
      * @return List
+     * @param department
      */
-    List queryAll();
+    List queryAll(String department);
 
 }

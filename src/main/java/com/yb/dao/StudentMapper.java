@@ -13,7 +13,23 @@ public interface StudentMapper {
     /**
      * Find all students
      *
+     * @param department
      * @return List
      */
-    List<Student> queryAll();
+    List<Student> queryAll(String department);
+
+    /**
+     * Insert student
+     *
+     * @param student
+     */
+    void insert(Student student);
+
+    /**
+     * Update student
+     *
+     * @param student
+     */
+    void upadate(Student student);
+
 }

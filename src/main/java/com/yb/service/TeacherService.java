@@ -1,5 +1,7 @@
 package com.yb.service;
 
+import com.yb.model.Teacher;
+
 import javax.servlet.http.HttpServletRequest;
 
 /**
@@ -18,9 +20,17 @@ public interface TeacherService {
     /**
      * check teacher's id and department
      *
-     * @param token
-     * @param request
+     * @param teacher
      * @return url
      */
-    String idCheck(String token, HttpServletRequest request);
+    boolean schoolCheck(Teacher teacher);
+
+    /**
+     * get teacher name
+     *
+     * @param token
+     * @return
+     */
+    Teacher getInfo(String token);
+
 }

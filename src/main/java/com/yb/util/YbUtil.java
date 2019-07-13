@@ -5,6 +5,8 @@ import cn.yiban.util.HTTPSimple;
 import static com.yb.config.YbMsg.*;
 
 /**
+ * 需要校级权限
+ *
  * @author Jue-PC
  */
 public class YbUtil {
