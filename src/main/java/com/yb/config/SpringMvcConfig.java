@@ -39,20 +39,6 @@ public class SpringMvcConfig extends WebMvcConfigurationSupport implements Appli
     }
 
     @Override
-    protected void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
-        super.configureDefaultServletHandling(configurer);
-        configurer.enable();
-    }
-
-    @Override
-    protected void addResourceHandlers(ResourceHandlerRegistry registry) {
-        super.addResourceHandlers(registry);
-        registry.addResourceHandler("/css/**").addResourceLocations("/static/css/");
-        registry.addResourceHandler("/js/**").addResourceLocations("/static/js/");
-        registry.addResourceHandler("/img/**").addResourceLocations("/static/img/");
-    }
-
-    @Override
     protected void addFormatters(final FormatterRegistry registry) {
         super.addFormatters(registry);
         registry.addFormatter(dateFormatter());

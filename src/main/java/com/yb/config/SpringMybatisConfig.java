@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
-import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.core.io.support.ResourcePatternResolver;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
@@ -21,14 +20,10 @@ import javax.sql.DataSource;
  * @author Jue-PC
  */
 @Configuration
-@PropertySource({"classpath:jdbc.properties"})
+@PropertySource({"classpath:jdbc/jdbc.properties"})
 @EnableTransactionManagement
 @MapperScan(basePackageClasses = {DaoMark.class})
 public class SpringMybatisConfig {
-
-    public static PropertySourcesPlaceholderConfigurer placeholderConfigurer() {
-        return new PropertySourcesPlaceholderConfigurer();
-    }
 
     @Value("${jdbc.driver}")
     private String driver;
@@ -81,8 +76,9 @@ public class SpringMybatisConfig {
         ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
         SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();
         sessionFactory.setDataSource(dataSource);
-        sessionFactory.setConfigLocation(resolver.getResource("mybatis-cfg.xml"));
-        sessionFactory.setMapperLocations(resolver.getResources("classpath:mapper/*.xml"));
+        sessionFactory.setTypeAliasesPackage("com.yb.entity");
+        sessionFactory.setConfigLocation(resolver.getResource("mybatis/mybatis-cfg.xml"));
+        sessionFactory.setMapperLocations(resolver.getResources("mapper/*.xml"));
         return sessionFactory;
     }
 
