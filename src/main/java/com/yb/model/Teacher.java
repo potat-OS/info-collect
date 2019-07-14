@@ -11,10 +11,8 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-@AllArgsConstructor
 public class Teacher {
-
+    private String ybUserId;
     private String realName;
     private String schoolName;
-
 }

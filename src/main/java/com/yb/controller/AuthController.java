@@ -2,17 +2,17 @@ package com.yb.controller;
 
 
 import cn.yiban.open.Authorize;
-import com.yb.config.YbMsg;
+import com.alibaba.fastjson.JSONObject;
 import com.yb.model.Teacher;
 import com.yb.service.impl.TeacherServiceImpl;
+import com.yb.util.YbUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
+
+import static com.yb.config.YbMsg.*;
 
 /**
  * @author Jue-PC
@@ -26,29 +26,33 @@ public class AuthController {
     @Autowired
     public AuthController(TeacherServiceImpl teacherService) {this.teacherService = teacherService;}
 
-    @RequestMapping("/")
-    public void main(HttpServletResponse response) throws IOException {
-        Authorize authorize = new Authorize(YbMsg.APP_ID, YbMsg.APP_SEC);
-        String url = authorize.forwardurl(YbMsg.CALLBACK, "Query", Authorize.DISPLAY_TAG_T.WEB);
-        response.sendRedirect(url);
+    @RequestMapping("/index")
+    public String index() {
+        Authorize authorize = new Authorize(APP_ID, APP_SEC);
+        String url = authorize.forwardurl(CALLBACK, "Jue", Authorize.DISPLAY_TAG_T.WEB);
+        return "redirect:" + url;
     }
 
-    @RequestMapping("/info")
-    public String info(HttpServletRequest request, Model model, Teacher teacher) {
-        final int normalNameLength = 3;
-        String code = request.getParameter("code");
-        String token = teacherService.getToken(code);
-        teacher = teacherService.getInfo(token);
-        String teacherName = teacher.getRealName();
+    @RequestMapping("/auth")
+    public String info(HttpServletRequest request) {
+        final String attributeName = "token";
+        String token = teacherService.getToken(request);
+        Teacher teacher = teacherService.getInfo(token);
+        //judge school
         if (teacherService.schoolCheck(teacher)) {
-            if (teacherName.length() <= normalNameLength) {
-                model.addAttribute("teacherName", teacherName.charAt(0) +"老师, 您好");
-            } else {
-                model.addAttribute("teacherName",teacherName.substring(0,1)+"老师, 您好");
-            }
-            return "information";
-        } else {
-            return "error/errorId";
-        }
+            //save access_token in session
+            request.getSession().setAttribute(attributeName, token);
+            //get in app
+            return "redirect:" + APP_URL;
+        } else { return "error/errorId"; }
+
+    }
+
+    @RequestMapping("/signOut")
+    public String signOut(HttpServletRequest request) {
+        YbUtil ybUtil = new YbUtil((String) request.getSession().getAttribute("token"));
+        ybUtil.getUtil().revoke();
+        request.getSession().removeAttribute("token");
+        return "redirect:" + ROOT_URL;
     }
 }

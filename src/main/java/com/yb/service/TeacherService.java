@@ -12,10 +12,10 @@ public interface TeacherService {
     /**
      * get access token
      *
-     * @param code
-     * @return token
+     * @param request
+     * @return teacher
      */
-    String getToken(String code);
+    String getToken(HttpServletRequest request);
 
     /**
      * check teacher's id and department

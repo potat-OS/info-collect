@@ -1,5 +1,7 @@
 package com.yb.service;
 
+import com.yb.entity.Pager;
+
 import java.util.List;
 
 /**
@@ -11,8 +13,14 @@ public interface StudentService {
      * find all students
      *
      * @return List
-     * @param department
+     * @param pager
      */
-    List queryAll(String department);
+    List queryAll(Pager pager);
+
+    /**
+     * @param department
+     * @return int
+     */
+    int getPageCount(String department);
 
 }

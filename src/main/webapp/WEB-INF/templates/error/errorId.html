@@ -1,25 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="UTF-8">
     <title>error</title>
-    <link href="/static/css/bootstrap.css" rel="stylesheet">
+    <link href="/static/css/bootstrap.css"
+          th:href="@{/static/css/bootstrap.css}"
+          type="text/css"
+          rel="stylesheet">
+    <link href="/static/img/304430_20190609221047_1.png"
+          th:href="@{/static/img/304430_20190609221047_1.png}"/>
 </head>
 <style>
     .errorInfo {
-        margin:  200px 0;
+        margin: 200px 0;
         text-align: center;
         text-shadow: grey;
-        font-family: Impact,fantasy;
+        font-family: Impact, fantasy;
         color: whitesmoke;
         background-image: url("/static/img/304430_20190609221047_1.png");
         background-repeat: no-repeat;
         background-size: cover;
     }
 </style>
-<link href="/static/css/bootstrap-responsive.css" rel="stylesheet">
-<body class="errorInfo">
-<div >
+<link href="/static/css/bootstrap-responsive.css"
+      th:href="@{/static/css/bootstrap-responsive.css}"
+      type="text/css"
+      rel="stylesheet">
+
+<body th:src="@{/static/img/304430_20190609221047_1.png}" class="errorInfo">
+<div>
     <h1><strong>仅限西安石油大学师生使用哦</strong></h1>
     <br>
     <a href="https://github.com/potat-OS">

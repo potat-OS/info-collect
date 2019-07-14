@@ -1,6 +1,7 @@
 package com.yb.controller;
 
 import com.yb.entity.Student;
+import com.yb.model.Teacher;
 import com.yb.service.impl.StudentServiceImpl;
 import com.yb.service.impl.TeacherServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +14,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
+import static com.yb.config.YbMsg.ROOT_URL;
+
 /**
  * @author Jue-PC
  */
@@ -20,27 +23,40 @@ import java.util.List;
 public class InfoController {
 
     private final StudentServiceImpl studentService;
+    private final TeacherServiceImpl teacherService;
 
     @Autowired
     public InfoController(StudentServiceImpl studentService, TeacherServiceImpl teacherService) {
         this.studentService = studentService;
+        this.teacherService = teacherService;
+    }
+
+    @RequestMapping("/information")
+    public String information(HttpServletRequest request, Model model) {
+        final String attributeName = "token";
+        Teacher teacher = teacherService.getInfo((String) request.getSession().getAttribute(attributeName));
+        String teacherName = teacher.getRealName();
+        model.addAttribute("teacherName", teacherName + "老师,您好!");
+//            final int normalNameLength = 3;
+//            String teacherName = teacher.getRealName();
+//            if (teacherName.length() <= normalNameLength) {
+//                model.addAttribute("teacherName", teacherName.charAt(0) + "老师, 您好");
+//            } else {
+//                model.addAttribute("teacherName", teacherName.substring(0, 1) + "老师, 您好");
+//            }
+        return "teacher/information";
     }
 
     @RequestMapping("/infoTable")
     public String infoTable() {
-        return "infoTable";
-    }
-
-    @RequestMapping(value = "/selectDepartment")
-    public String selectDepartment() {
-        return "selectDepartment";
+        return "teacher/infoTable";
     }
 
     @RequestMapping(value = "/dkTable")
     public String dkTable(ModelMap modelMap) {
         List<Student> students = studentService.queryAll("地球科学与工程学院");
         modelMap.addAttribute("students", students);
-        return "infoTable";
+        return "teacher/infoTable";
     }
 
     @RequestMapping(value = "/jkTable")

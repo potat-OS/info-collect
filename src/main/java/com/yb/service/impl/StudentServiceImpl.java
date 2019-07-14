@@ -1,6 +1,7 @@
 package com.yb.service.impl;
 
 import com.yb.dao.StudentMapper;
+import com.yb.entity.Pager;
 import com.yb.entity.Student;
 import com.yb.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +21,12 @@ public class StudentServiceImpl implements StudentService {
     public StudentServiceImpl(StudentMapper studentMapper) {this.studentMapper = studentMapper;}
 
     @Override
-    public List<Student> queryAll(String department) {
-        return studentMapper.queryAll(department);
+    public List<Student> queryAll(Pager pager) {
+        return studentMapper.queryAll(pager);
+    }
+
+    @Override
+    public int getPageCount(String department) {
+        return studentMapper.getPageCount(department);
     }
 }

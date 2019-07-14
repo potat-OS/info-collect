@@ -1,5 +1,6 @@
 package com.yb.dao;
 
+import com.yb.entity.Pager;
 import com.yb.entity.Student;
 import org.springframework.stereotype.Repository;
 
@@ -13,10 +14,18 @@ public interface StudentMapper {
     /**
      * Find all students
      *
-     * @param department
+     * @param pager
      * @return List
      */
-    List<Student> queryAll(String department);
+    List<Student> queryAll(Pager pager);
+
+    /**
+     * get page count
+     *
+     * @param department
+     * @return
+     */
+    int getPageCount(String department);
 
     /**
      * Insert student
