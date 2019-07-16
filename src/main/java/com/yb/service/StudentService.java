@@ -1,6 +1,6 @@
 package com.yb.service;
 
-import com.yb.entity.Pager;
+import com.yb.entity.Timing;
 
 import java.util.List;
 
@@ -12,15 +12,16 @@ public interface StudentService {
     /**
      * find all students
      *
+     * @param department
      * @return List
-     * @param pager
      */
-    List queryAll(Pager pager);
+    List queryAll(String department);
 
     /**
+     * get page count
+     *
      * @param department
      * @return int
      */
-    int getPageCount(String department);
-
+    int getCount(String department);
 }

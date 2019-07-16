@@ -4,17 +4,16 @@ import com.yb.entity.Student;
 import com.yb.model.Teacher;
 import com.yb.service.impl.StudentServiceImpl;
 import com.yb.service.impl.TeacherServiceImpl;
+import com.yb.util.GetStuNums;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-
+import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
-import static com.yb.config.YbMsg.ROOT_URL;
+import static com.yb.util.GetStuNums.EACH_STU_NUMS;
+import static com.yb.util.GetStuNums.getDept;
 
 /**
  * @author Jue-PC
@@ -24,6 +23,7 @@ public class InfoController {
 
     private final StudentServiceImpl studentService;
     private final TeacherServiceImpl teacherService;
+    private       String             departmentName;
 
     @Autowired
     public InfoController(StudentServiceImpl studentService, TeacherServiceImpl teacherService) {
@@ -35,76 +35,26 @@ public class InfoController {
     public String information(HttpServletRequest request, Model model) {
         final String attributeName = "token";
         Teacher teacher = teacherService.getInfo((String) request.getSession().getAttribute(attributeName));
+        for (int i = 0; i < EACH_STU_NUMS.length; i++) {
+            model.addAttribute("stuNum" + i, "2019届新生人数: " + studentService.getCount(getDept(i)));
+        }
         String teacherName = teacher.getRealName();
         model.addAttribute("teacherName", teacherName + "老师,您好!");
-//            final int normalNameLength = 3;
-//            String teacherName = teacher.getRealName();
-//            if (teacherName.length() <= normalNameLength) {
-//                model.addAttribute("teacherName", teacherName.charAt(0) + "老师, 您好");
-//            } else {
-//                model.addAttribute("teacherName", teacherName.substring(0, 1) + "老师, 您好");
-//            }
         return "teacher/information";
     }
 
+    @RequestMapping("/info")
+    public String infoTable(HttpServletRequest request) {
+        int deptId = Integer.parseInt(request.getParameter("deptId"));
+        departmentName = GetStuNums.getDept(deptId);
+        return "teacher/getter/info";
+    }
+
     @RequestMapping("/infoTable")
-    public String infoTable() {
+    public String infoTable(Model model) {
+        List<Student> students = studentService.queryAll(departmentName);
+        model.addAttribute("students", students);
         return "teacher/infoTable";
-    }
-
-    @RequestMapping(value = "/dkTable")
-    public String dkTable(ModelMap modelMap) {
-        List<Student> students = studentService.queryAll("地球科学与工程学院");
-        modelMap.addAttribute("students", students);
-        return "teacher/infoTable";
-    }
-
-    @RequestMapping(value = "/jkTable")
-    public String jkTable(Model model) {
-        List<Student> students = studentService.queryAll("计算机学院");
-        model.addAttribute("students", students);
-        return "infoTable";
-    }
-
-    @RequestMapping(value = "/clTable")
-    public String clTable(Model model) {
-        List<Student> students = studentService.queryAll("材料科学与工程学院");
-        model.addAttribute("students", students);
-        return "infoTable";
-    }
-
-    @RequestMapping(value = "/jxTable")
-    public String jxTable(Model model) {
-        List<Student> students = studentService.queryAll("机械工程学院");
-        model.addAttribute("students", students);
-        return "infoTable";
-    }
-
-    @RequestMapping(value = "/sgTable")
-    public String sgTable(Model model) {
-        List<Student> students = studentService.queryAll("石油工程学院");
-        model.addAttribute("students", students);
-        return "infoTable";
-    }
-
-    @RequestMapping(value = "/wgyTable")
-    public String wgyTable(Model model) {
-        List<Student> students = studentService.queryAll("外国语学院");
-        model.addAttribute("students", students);
-        return "infoTable";
-    }
-
-    @RequestMapping(value = "/rwTable")
-    public String rwTable(Model model) {
-        List<Student> students = studentService.queryAll("人文学院");
-        model.addAttribute("students", students);
-        return "infoTable";
-    }
-
-    @RequestMapping(value = "/hgTable")
-    public String hgTable(Model model) {
-        List<Student> students = studentService.queryAll("化学化工学院");
-        model.addAttribute("students", students);
-        return "infoTable";
     }
 }
+

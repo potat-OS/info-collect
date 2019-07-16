@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-import static com.yb.config.YbMsg.ROOT_URL;
+import static com.yb.config.YbMsg.MAIN_PAGE;
 
 /**
  * @author Jue-PC
@@ -27,8 +27,12 @@ public class LogInFilter implements Filter {
         YbUtil ybUtil = new YbUtil(token);
         JSONObject object = JSONObject.parseObject(ybUtil.getUtil().query());
         boolean isAlive = "200".equals(object.getString("status"));
-        if (token == null || !isAlive) {
-            response.sendRedirect(ROOT_URL);
+        System.out.println(object.getString("expire_in") + "!!!!!!!!!!!!!!!!!!");
+        if (token == null) {
+            response.sendRedirect(MAIN_PAGE);
+        } else if (!isAlive) {
+            request.getSession().removeAttribute("token");
+            response.sendRedirect(MAIN_PAGE);
         } else {
             filterChain.doFilter(request, response);
         }

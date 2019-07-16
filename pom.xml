@@ -102,6 +102,11 @@
             <artifactId>druid</artifactId>
             <version>1.0.6</version>
         </dependency>
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>4.1.6</version>
+        </dependency>
         <!--Json handler dependency-->
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -140,7 +145,7 @@
             <version>1.18.8</version>
             <scope>provided</scope>
         </dependency>
-
+        <!--yiban open api depend http client-->
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
@@ -150,6 +155,17 @@
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpcore</artifactId>
             <version>4.4.10</version>
+        </dependency>
+        <!--excel handler-->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>3.9</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>3.9</version>
         </dependency>
     </dependencies>
 

@@ -6,9 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="info-collect" />
         <module name="info-collet" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="info-collect" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

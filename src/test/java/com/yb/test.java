@@ -1,7 +1,9 @@
 package com.yb;
 
 import com.yb.dao.StudentMapper;
+import com.yb.dao.TimingMapper;
 import com.yb.entity.Student;
+import com.yb.entity.Timing;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +19,9 @@ public class test {
     @Autowired
     private StudentMapper studentMapper;
 
+    @Autowired
+    private TimingMapper timingMapper;
+
     @Test
     public void dbTest() {
         List<Student> list = studentMapper.queryAll("计算机学院");
@@ -26,10 +31,10 @@ public class test {
     @Test
     public void insertTest() {
         Student student = new Student();
-        student.setStuId("8s441dd4ww");
+        student.setStuId("8s441d55ww");
         student.setRealName("asdfasdf");
         student.setPhoneNum("asdfasdf");
-        student.setDepartment("地质学");
+        student.setDepartment("5615");
         student.setMajor("地球科学与工程");
         student.setClassName("dsfasdf");
         student.setAddress("asdfasdf");
@@ -38,6 +43,12 @@ public class test {
         student.setParent2("asdfsadf");
         student.setParent2PhoneNum("asdfsafd");
         studentMapper.insert(student);
+    }
+
+    @Test
+    public void timingTest() {
+        Timing timing = timingMapper.getTiming("teacher");
+        System.out.println(timing.getStartTime());
     }
 }
 
