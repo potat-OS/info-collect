@@ -40,6 +40,11 @@
         <filter-name>LogInFilter</filter-name>
         <url-pattern>/down</url-pattern>
     </filter-mapping>
+    <filter-mapping>
+        <filter-name>LogInFilter</filter-name>
+        <url-pattern>/errorTiming</url-pattern>
+    </filter-mapping>
+
 
     <!--不拦截以下suffix-->
     <servlet-mapping>

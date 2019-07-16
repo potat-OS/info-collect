@@ -1,6 +1,8 @@
 package com.yb.filter;
 
 import com.alibaba.fastjson.JSONObject;
+import com.yb.service.TeacherService;
+import com.yb.service.impl.TeacherServiceImpl;
 import com.yb.util.YbUtil;
 
 import javax.servlet.*;
@@ -8,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-import static com.yb.config.YbMsg.MAIN_PAGE;
+import static com.yb.config.YbMsg.*;
 
 /**
  * @author Jue-PC
@@ -21,11 +23,12 @@ public class LogInFilter implements Filter {
 
         HttpServletRequest request = (HttpServletRequest) servletRequest;
         HttpServletResponse response = (HttpServletResponse) servletResponse;
-
+        TeacherServiceImpl teacherService = new TeacherServiceImpl();
         final String attributeName = "token";
         String token = (String) request.getSession().getAttribute(attributeName);
         YbUtil ybUtil = new YbUtil(token);
-        JSONObject object = JSONObject.parseObject(ybUtil.getUtil().query());
+        String statusObj = ybUtil.getUtil().query();
+        JSONObject object = JSONObject.parseObject(statusObj);
         boolean isAlive = "200".equals(object.getString("status"));
         System.out.println(object.getString("expire_in") + "!!!!!!!!!!!!!!!!!!");
         if (token == null) {
@@ -33,6 +36,8 @@ public class LogInFilter implements Filter {
         } else if (!isAlive) {
             request.getSession().removeAttribute("token");
             response.sendRedirect(MAIN_PAGE);
+        } else if (MANAGER_2.equals(teacherService.getInfo(token).getYbUserId())) {
+            response.sendRedirect(ROOT_URL + "setTiming");
         } else {
             filterChain.doFilter(request, response);
         }

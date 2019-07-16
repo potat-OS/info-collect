@@ -4,6 +4,8 @@
     <title>information</title>
     <meta http-equiv="content-type" content="text/html" charset="UTF-8">
     <link href="/static/css/bootstrap.css" th:href="@{/static/css/bootstrap.css}" rel="stylesheet" type="text/css">
+    <link href="/static/css/bootstrap-responsive.css" th:href="@{/static/css/bootstrap-responsive.css}" rel="stylesheet"
+          type="text/css">
 </head>
 <body>
 <div class="container-fluid">
@@ -24,7 +26,7 @@
             </tr>
             </thead>
             <tbody>
-            <tr th:each="student : ${students}">
+            <tr th:each="student : ${students.list}">
                 <td th:text="${student.realName}"></td>
                 <td th:text="${student.major}"></td>
                 <td th:text="${student.className}"></td>
@@ -40,14 +42,50 @@
         </table>
     </div>
 </div>
-<ul class="pager pagination pagination-centered">
-    <li><a href="#">Previous</a></li>
-    <li><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">Next</a></li>
-</ul>
+<div class="pagination pagination-centered pagination-large">
+    <ul>
+        <li class="page-item">
+            <a class="page-link" th:if="${not isFirstPage}"
+               th:href="@{${'infoTable'}(pageNum=${pageNum - 1},pageSize=${pageSize})}"
+               aria-label="Previous">&laquo;
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+            <a class="page-link" th:if="${isFirstPage}" href="javascript:void(0);" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        <li class="page-item" th:each="pageNo : ${#numbers.sequence(1,totalPages)}">
+            <a class="page-link" th:if="${pageNum eq pageNo}" href="javascript:void(0);">
+                <span th:text="${pageNo}"></span>
+            </a>
+            <a class="page-link" th:if="${not (pageNum eq pageNo)}"
+               th:href="@{${'infoTable'}(pageNum=${pageNo},pageSize=${pageSize})}">
+                <span th:text="${pageNo}"></span>
+            </a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" th:if="${not isLastPage}"
+               th:href="@{${'infoTable'}(pageNum=${pageNum + 1},pageSize=${pageSize})}"
+               aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+            <a class="page-link" th:if="${isLastPage}" href="javascript:void(0);" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
 <script type="text/javascript" src="/static/js/jquery.js" th:src="@{/static/js/jquery.js}"></script>
 <script type="text/javascript" src="/static/js/bootstrap.js" th:src="@{/static/js/bootstrap.js}"></script>
+<script type="text/javascript" src="/static/js/bootstrap-modal.js     "
+        th:src="@{/static/js/bootstrap-modal.js     }"></script>
 <script type="text/javascript" src="/static/js/bootstrap-tab.js" th:src="@{/static/js/bootstrap-tab.js}"></script>
+<script type="text/javascript" src="/static/js/bootstrap-button.js    "
+        th:src="@{/static/js/bootstrap-button.js    }"></script>
+<script type="text/javascript" src="/static/js/bootstrap-collapse.js  "
+        th:src="@{/static/js/bootstrap-collapse.js  }"></script>
+<script type="text/javascript" src="/static/js/bootstrap-tooltip.js   "
+        th:src="@{/static/js/bootstrap-tooltip.js   }"></script>
 </body>
 </html>

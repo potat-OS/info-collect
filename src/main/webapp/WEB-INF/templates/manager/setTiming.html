@@ -7,11 +7,21 @@
           rel="stylesheet"/>
 </head>
 <body>
-<div class="well well-large span6 text-center">
-    <form>
-        <input name="studentStartTime" class="input-medium" type="date" placeholder="student start time"/>
-        <input name="studentEndTime" class="input-medium" type="date" placeholder="student end time"/>
-        <input name="teacherStartTime" class="input-medium" type="date" placeholder="teacher start time">
+<div th:cellpadding="10" class="well pagination-centered">
+    <form th:action="@{setTime}" class="form-actions">
+        <div class="input-group">
+            <span class="input-group-addon">学生开始录入时间</span>
+            <input name="studentStartTime" class="form-control input-block-level input-large" type="date"/>
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon">学生结束录入时间</span>
+            <input name="studentEndTime" class="form-control input-block-level input-large" type="date"/>
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon">教师开始下载时间</span>
+            <input name="teacherStartTime" class="form-control input-block-level input-large" type="date"/>
+        </div>
+        <button type="submit" class="btn btn-info btn-large">提交</button>
     </form>
 </div>
 

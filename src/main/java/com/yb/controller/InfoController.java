@@ -1,5 +1,7 @@
 package com.yb.controller;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.yb.entity.Student;
 import com.yb.model.Teacher;
 import com.yb.service.impl.StudentServiceImpl;
@@ -9,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
@@ -51,9 +54,17 @@ public class InfoController {
     }
 
     @RequestMapping("/infoTable")
-    public String infoTable(Model model) {
+    public String infoTable(Model model, @RequestParam(defaultValue = "1") Integer pageNum
+            , @RequestParam(defaultValue = "30") Integer pageSize) {
+        PageHelper.startPage(pageNum,pageSize);
         List<Student> students = studentService.queryAll(departmentName);
-        model.addAttribute("students", students);
+        PageInfo pageInfo = new PageInfo<Student>(students,7);
+        model.addAttribute("students", pageInfo);
+        model.addAttribute("pageNum",pageInfo.getPageNum());
+        model.addAttribute("pageSize",pageInfo.getPageSize());
+        model.addAttribute("isFirstPage",pageInfo.isIsFirstPage());
+        model.addAttribute("isLastPage",pageInfo.isIsLastPage());
+        model.addAttribute("totalPages",pageInfo.getPages());
         return "teacher/infoTable";
     }
 }

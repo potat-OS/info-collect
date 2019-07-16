@@ -14,7 +14,6 @@ import javax.servlet.http.HttpServletRequest;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 
 import static com.yb.config.YbMsg.*;
@@ -50,9 +49,6 @@ public class AuthController {
         final String attributeName = "token";
         String token = teacherService.getToken(request);
         Teacher teacher = teacherService.getInfo(token);
-        if (MANAGER_2.equals(teacher.getYbUserId())) {
-            return "manager/setTiming";
-        }
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         Date instance = new Date();
         Date teacherStartTime = dateFormat.parse(managerService.getTiming("teacher").getStartTime());
