@@ -45,7 +45,6 @@
         <url-pattern>/errorTiming</url-pattern>
     </filter-mapping>
 
-
     <!--不拦截以下suffix-->
     <servlet-mapping>
         <servlet-name>default</servlet-name>

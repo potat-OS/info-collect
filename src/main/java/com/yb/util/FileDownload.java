@@ -20,7 +20,7 @@ import static com.yb.config.YbMsg.TABLE_ROOT_PATH;
  */
 public class FileDownload {
     public static ResponseEntity<byte[]> download(int fileIndex) throws Exception {
-        File file = new File(TABLE_ROOT_PATH + "Table" + fileIndex + ".xls");
+        File file = new File(TABLE_ROOT_PATH + fileIndex + ".xls");
         byte[] body = new byte[(int) file.length()];
         try (BufferedInputStream inputStream = new BufferedInputStream(new FileInputStream(file))) {
             int line;

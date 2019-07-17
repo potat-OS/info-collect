@@ -41,7 +41,6 @@ public class AuthController {
         Authorize authorize = new Authorize(APP_ID, APP_SEC);
         String url = authorize.forwardurl(CALLBACK, "Jue", Authorize.DISPLAY_TAG_T.WEB);
         return "redirect:" + url;
-
     }
 
     @RequestMapping("/auth")

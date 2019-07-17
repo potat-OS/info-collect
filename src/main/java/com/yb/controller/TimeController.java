@@ -1,7 +1,6 @@
 package com.yb.controller;
 
 import com.yb.entity.Timing;
-import org.apache.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 

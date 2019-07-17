@@ -14,7 +14,7 @@ public class YbMsg {
     public static final String YIBAN_USER_VERIFY_ME     = "user/verify_me";
     public static final String YIBAN_USER_TOKEN_INFO    = "user/token_info";
     public static final String YIBAN_OAUTH_REVOKE_TOKEN = "oauth/revoke_token";
-    public static final String TABLE_ROOT_PATH          = "C:/Users/Administrator/Documents/";
+    public static final String TABLE_ROOT_PATH          = "C:/Users/Administrator/Documents/Table";
 
     public static final String MANAGER_1 = "10919652";
     public static final String MANAGER_2 = "10908468";
