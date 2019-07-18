@@ -5,7 +5,7 @@ import com.yb.dao.TimingMapper;
 import com.yb.entity.Student;
 import com.yb.entity.Timing;
 import com.yb.util.Excel.ExcelUtil;
-import com.yb.util.GetStuNums;
+import com.yb.util.DeptGetter;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,7 +32,7 @@ public class test {
 
     @Test
     public void dbTest() {
-        List<Student> list = studentMapper.queryAll(GetStuNums.getDept(1));
+        List<Student> list = studentMapper.queryAll(DeptGetter.getDept(1));
         System.out.println(list.get(0).toString());
     }
 
@@ -76,8 +76,8 @@ public class test {
 
     @Test
     public void excelTest() {
-        for (int i = 0; i < GetStuNums.EACH_STU_NUMS.length; i++) {
-            ExcelUtil.createSheet(GetStuNums.getDept(i), TABLE_ROOT_PATH + i + ".xls", studentMapper.queryAll(GetStuNums.getDept(i)));
+        for (int i = 0; i < DeptGetter.EACH_STU_NUMS.length; i++) {
+            ExcelUtil.createSheet(DeptGetter.getDept(i), TABLE_ROOT_PATH + i + ".xls", studentMapper.queryAll(DeptGetter.getDept(i)));
         }
     }
 }

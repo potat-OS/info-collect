@@ -17,7 +17,7 @@
         /* Container */
         .container-narrow {
             margin: 0 auto;
-            max-width: 700px;
+            max-width: 800px;
         }
 
         .container-narrow > hr {
@@ -87,7 +87,7 @@
                     </h4>
                 </a>
             </div>
-            <div id="collapseOne" class="panel-collapse collapse">
+            <div id="collapseOne" class="collapse">
                 <div class="panel-body row-fluid">
                     <div class="span6">
                         <div class="well">
@@ -269,32 +269,10 @@
 <section>
     <script>
         function onClick(deptId) {
-            $.ajax({
-                async: false,
-                type: 'GET',
-                url: '/info_collect/info?deptId=' + deptId,
-                cache: true
-            }).success(function () {
-                    window.open('/info_collect/infoTable');
-                }
-            ).error(function () {
-                alert("error!")
-            });
+            window.open('/info_collect/infoTable/' + deptId);
         }
-
         function download(deptId) {
-            $.ajax({
-                type: 'GET',
-                url: '/info_collect/down?deptId=' + deptId,
-            }).success(
-                function () {
-                    window.open('/info_collect/download');
-                }
-            ).error(
-                function () {
-                    alert('下载失败!');
-                }
-            );
+            window.location.href = '/info_collect/download/' + deptId;
         }
     </script>
 </section>
