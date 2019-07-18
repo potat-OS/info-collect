@@ -39,17 +39,17 @@ public class test {
     @Test
     public void insertTest() {
         Student student = new Student();
-        student.setStuId("8s441d55ww");
-        student.setRealName("asdfasdf");
-        student.setPhoneNum("asdfasdf");
-        student.setDepartment("5615");
-        student.setMajor("地球科学与工程");
-        student.setClassName("dsfasdf");
-        student.setAddress("asdfasdf");
-        student.setParent1("sadfasdf");
-        student.setParent1PhoneNum("asfdasdf");
-        student.setParent2("asdfsadf");
-        student.setParent2PhoneNum("asdfsafd");
+        student.setStuId("201611090204");
+        student.setRealName("韩林珏");
+        student.setPhoneNum("15102900171");
+        student.setDepartment("地球科学与工程学院");
+        student.setMajor("勘查技术与工程");
+        student.setClassName("1603");
+        student.setAddress("陕西省西安市新城区太华路");
+        student.setParent1("韩梦飞");
+        student.setParent1PhoneNum("13700271665");
+        student.setParent2("雷晓雅");
+        student.setParent2PhoneNum("13088957715");
         studentMapper.insert(student);
     }
 

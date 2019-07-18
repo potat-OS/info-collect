@@ -50,21 +50,21 @@ public class InfoController {
     public String infoTable(HttpServletRequest request) {
         int deptId = Integer.parseInt(request.getParameter("deptId"));
         departmentName = GetStuNums.getDept(deptId);
-        return "teacher/getter/info";
+        return "teacher/forwarder/info";
     }
 
     @RequestMapping("/infoTable")
     public String infoTable(Model model, @RequestParam(defaultValue = "1") Integer pageNum
             , @RequestParam(defaultValue = "30") Integer pageSize) {
-        PageHelper.startPage(pageNum,pageSize);
+        PageHelper.startPage(pageNum, pageSize);
         List<Student> students = studentService.queryAll(departmentName);
-        PageInfo pageInfo = new PageInfo<Student>(students,7);
+        PageInfo pageInfo = new PageInfo<Student>(students, 7);
         model.addAttribute("students", pageInfo);
-        model.addAttribute("pageNum",pageInfo.getPageNum());
-        model.addAttribute("pageSize",pageInfo.getPageSize());
-        model.addAttribute("isFirstPage",pageInfo.isIsFirstPage());
-        model.addAttribute("isLastPage",pageInfo.isIsLastPage());
-        model.addAttribute("totalPages",pageInfo.getPages());
+        model.addAttribute("pageNum", pageInfo.getPageNum());
+        model.addAttribute("pageSize", pageInfo.getPageSize());
+        model.addAttribute("isFirstPage", pageInfo.isIsFirstPage());
+        model.addAttribute("isLastPage", pageInfo.isIsLastPage());
+        model.addAttribute("totalPages", pageInfo.getPages());
         return "teacher/infoTable";
     }
 }

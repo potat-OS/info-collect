@@ -70,6 +70,7 @@ public class ExcelUtil {
         File file = new File(filePath);
         try (BufferedOutputStream outputStream = new BufferedOutputStream(new FileOutputStream(file))) {
             workbook.write(outputStream);
+            System.out.println(sheetName + "表已生成");
         } catch (IOException e) {
             e.printStackTrace();
         }

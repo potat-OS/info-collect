@@ -30,75 +30,14 @@
                parent1_phone_num,
                parent2,
                parent2_phone_num
-        FROM stu_info
+        FROM stu_info_2019
         WHERE department = #{department}
         ORDER BY stu_id
     </select>
 
     <select id="getCount" parameterType="java.lang.String" resultType="int">
         SELECT COUNT(*)
-        FROM stu_info
+        FROM stu_info_2019
         WHERE department = #{department}
     </select>
-
-
-    <select id="queryId" parameterType="java.lang.String" resultMap="StudentMap">
-        SELECT stu_id
-        FROM stu_info
-        WHERE stu_id = #{stuId}
-    </select>
-
-
-    <insert id="insert" parameterType="Student">
-        INSERT INTO stu_info(stu_id, real_name, phone_num, department, major, class_name, address, parent1,
-                             parent1_phone_num, parent2, parent2_phone_num)
-        VALUES (#{stuId},
-                #{realName},
-                #{phoneNum},
-                #{department},
-                #{major},
-                #{className},
-                #{address},
-                #{parent1},
-                #{parent1PhoneNum},
-                #{parent2},
-                #{parent2PhoneNum})
-    </insert>
-
-    <update id="update" parameterType="Student">
-        UPDATE stu_info SET
-        <set>
-            <if test="realName != null">
-                real_name = #{realName},
-            </if>
-            <if test="phoneNum != null">
-                phone_num = #{phoneNum},
-            </if>
-            <if test="department != null">
-                department = #{department},
-            </if>
-            <if test="major != null">
-                major = #{major},
-            </if>
-            <if test="className != null">
-                class_name = #{className},
-            </if>
-            <if test="address != null">
-                address = #{address},
-            </if>
-            <if test="parent1 != null">
-                parent1 = #{parent1},
-            </if>
-            <if test="parent1PhoneNum != null">
-                parent1_phone_num = #{parent1PhoneNum},
-            </if>
-            <if test="parent2 != null">
-                parent2 = #{parent2},
-            </if>
-            <if test="parent2PhoneNum != null">
-                parent2_phone_num = #{parent2PhoneNum},
-            </if>
-        </set>
-        WHERE stu_id = #{stuId}
-    </update>
 </mapper>

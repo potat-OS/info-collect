@@ -3,14 +3,14 @@
 <head>
     <title>information</title>
     <meta http-equiv="content-type" content="text/html" charset="UTF-8">
-    <link href="/static/css/bootstrap.css" th:href="@{/static/css/bootstrap.css}" rel="stylesheet" type="text/css">
-    <link href="/static/css/bootstrap-responsive.css" th:href="@{/static/css/bootstrap-responsive.css}" rel="stylesheet"
-          type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div class="container-fluid">
+<div style="font-family: Times,cursive" class="container-fluid">
     <div class="table">
-        <table class="table table-striped table-bordered">
+        <table class="table table-hover table-striped table-bordered">
             <thead>
             <tr>
                 <td>姓名</td>
@@ -42,50 +42,38 @@
         </table>
     </div>
 </div>
-<div class="pagination pagination-centered pagination-large">
-    <ul>
-        <li class="page-item">
-            <a class="page-link" th:if="${not isFirstPage}"
+<div align="center">
+    <ul class="pagination pagination-centered pagination-lg">
+        <li>
+            <a class="btn-link" th:if="${not isFirstPage}"
                th:href="@{${'infoTable'}(pageNum=${pageNum - 1},pageSize=${pageSize})}"
                aria-label="Previous">&laquo;
                 <span aria-hidden="true">&laquo;</span>
             </a>
-            <a class="page-link" th:if="${isFirstPage}" href="javascript:void(0);" aria-label="Previous">
+            <a class="btn-link" th:if="${isFirstPage}" href="javascript:void(0);" aria-label="Previous">
                 <span aria-hidden="true">&laquo;</span>
             </a>
         </li>
-        <li class="page-item" th:each="pageNo : ${#numbers.sequence(1,totalPages)}">
-            <a class="page-link" th:if="${pageNum eq pageNo}" href="javascript:void(0);">
+        <li th:each="pageNo : ${#numbers.sequence(1,totalPages)}">
+            <a class="btn-link" th:if="${pageNum eq pageNo}" href="javascript:void(0);">
                 <span th:text="${pageNo}"></span>
             </a>
-            <a class="page-link" th:if="${not (pageNum eq pageNo)}"
+            <a class="btn-link" th:if="${not (pageNum eq pageNo)}"
                th:href="@{${'infoTable'}(pageNum=${pageNo},pageSize=${pageSize})}">
                 <span th:text="${pageNo}"></span>
             </a>
         </li>
-        <li class="page-item">
-            <a class="page-link" th:if="${not isLastPage}"
+        <li>
+            <a class="btn-link" th:if="${not isLastPage}"
                th:href="@{${'infoTable'}(pageNum=${pageNum + 1},pageSize=${pageSize})}"
                aria-label="Next">
                 <span aria-hidden="true">&raquo;</span>
             </a>
-            <a class="page-link" th:if="${isLastPage}" href="javascript:void(0);" aria-label="Next">
+            <a class="btn-link" th:if="${isLastPage}" href="javascript:void(0);" aria-label="Next">
                 <span aria-hidden="true">&raquo;</span>
             </a>
         </li>
     </ul>
 </div>
-
-<script type="text/javascript" src="/static/js/jquery.js" th:src="@{/static/js/jquery.js}"></script>
-<script type="text/javascript" src="/static/js/bootstrap.js" th:src="@{/static/js/bootstrap.js}"></script>
-<script type="text/javascript" src="/static/js/bootstrap-modal.js     "
-        th:src="@{/static/js/bootstrap-modal.js     }"></script>
-<script type="text/javascript" src="/static/js/bootstrap-tab.js" th:src="@{/static/js/bootstrap-tab.js}"></script>
-<script type="text/javascript" src="/static/js/bootstrap-button.js    "
-        th:src="@{/static/js/bootstrap-button.js    }"></script>
-<script type="text/javascript" src="/static/js/bootstrap-collapse.js  "
-        th:src="@{/static/js/bootstrap-collapse.js  }"></script>
-<script type="text/javascript" src="/static/js/bootstrap-tooltip.js   "
-        th:src="@{/static/js/bootstrap-tooltip.js   }"></script>
 </body>
 </html>

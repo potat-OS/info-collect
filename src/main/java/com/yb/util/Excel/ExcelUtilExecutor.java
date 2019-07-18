@@ -31,7 +31,7 @@ public class ExcelUtilExecutor {
     void setTimer() throws ParseException {
         Timer timer = new Timer(true);
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd-hh-mm-ss");
-        timer.schedule(new ExcelUtilTask(studentService), dateFormat.parse(managerService.getTiming("teacher").getStartTime() + "-00-10-01"));
-        System.out.println("Excel已生成");
+        timer.schedule(new ExcelUtilTask(studentService), dateFormat.parse(managerService.getTiming("student").getEndTime() + "-00-10-01"));
+        System.out.println("各院系Excel已生成");
     }
 }

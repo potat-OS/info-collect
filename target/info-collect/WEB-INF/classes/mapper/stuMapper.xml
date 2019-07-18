@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yb.dao.StudentMapper">
+
+    <resultMap id="StudentMap" type="Student">
+        <id property="stuId" column="stu_id"/>
+        <result property="realName" column="real_name"/>
+        <result property="phoneNum" column="phone_num"/>
+        <result property="department" column="department"/>
+        <result property="major" column="major"/>
+        <result property="className" column="class_name"/>
+        <result property="address" column="address"/>
+        <result property="parent1" column="parent1"/>
+        <result property="parent1PhoneNum" column="parent1_phone_num"/>
+        <result property="parent2" column="parent2"/>
+        <result property="parent2PhoneNum" column="parent2_phone_num"/>
+    </resultMap>
+
+    <select id="queryAll" parameterType="java.lang.String" resultMap="StudentMap">
+        SELECT stu_id,
+               real_name,
+               phone_num,
+               department,
+               major,
+               class_name,
+               address,
+               parent1,
+               parent1_phone_num,
+               parent2,
+               parent2_phone_num
+        FROM stu_info_2019
+        WHERE department = #{department}
+        ORDER BY stu_id
+    </select>
+
+    <select id="getCount" parameterType="java.lang.String" resultType="int">
+        SELECT COUNT(*)
+        FROM stu_info_2019
+        WHERE department = #{department}
+    </select>
+</mapper>

@@ -57,6 +57,10 @@ public class AuthController {
             if (teacherService.schoolCheck(teacher)) {
                 //save access_token in session
                 request.getSession().setAttribute(attributeName, token);
+                if (MANAGER_2.equals(teacher.getYbUserId())) {
+                    //get in manager side
+                    return "redirect:" + ROOT_URL + "setTiming";
+                }
                 //get in app
                 return "redirect:" + APP_URL;
             } else { return "error/errorId"; }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>设置起始时间</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+</head>
+<style>
+    /* Container */
+    .container-narrow {
+        margin: 70px auto;
+        max-width: 800px;
+    }
+
+    .container-narrow > hr {
+        margin: 30px 0;
+    }
+
+    input {
+        font-size: large;
+        text-align: center;
+    }
+</style>
+<body style="font-family: Times,cursive">
+<div class="masthead">
+    <h3 class="text-muted">Manager</h3>
+</div>
+<hr/>
+<div class="container container-narrow well">
+    <div>
+        <form th:action="@{setTime}" class="form-actions">
+            <div class="row">
+                <div class="col-md-6">
+                    <span style="font-size: large;font-family: 仿宋,cursive">学生</span>
+                    <div class="input-group">
+                        <span class="input-group-addon">开始</span>
+                        <input name="studentStartTime" class="form-control input-block-level" type="date"/>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon">结束</span>
+                        <input name="studentEndTime" class="form-control input-block-level" type="date"/>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <span style="font-size: large;font-family: 仿宋,cursive">教师</span>
+                    <div class="input-group">
+                        <span class="input-group-addon">开始</span>
+                        <input name="teacherStartTime" class="form-control input-block-level" type="date"/>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <button style="margin-top: 0;margin-right: 20px" type="submit"
+                    class="btn btn-success btn-lg pull-right">提交
+            </button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
