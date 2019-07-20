@@ -1,8 +1,18 @@
 <component name="ArtifactManager">
-  <artifact type="war" name="info-collect">
-    <output-path>$PROJECT_DIR$/target/info-collect</output-path>
+  <artifact type="war" build-on-make="true" name="info-collect">
+    <output-path>$PROJECT_DIR$/target/</output-path>
     <root id="archive" name="info-collect.war">
       <element id="artifact" artifact-name="info-collect:war exploded" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="library" level="application" name="jquery" />
+          <element id="library" level="application" name="canvas-nest" />
+          <element id="library" level="application" name="bootstrap" />
+        </element>
+      </element>
     </root>
   </artifact>
 </component>

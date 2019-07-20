@@ -1,10 +1,12 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="info-collect:war exploded">
-    <output-path>$PROJECT_DIR$/target/info_collect_war_exploded</output-path>
+    <output-path>$PROJECT_DIR$/out/artifacts/target</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="info-collect" />
+          <element id="library" level="project" name="bootstrap" />
+          <element id="library" level="project" name="jquery" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.springframework:spring-context:5.1.8.RELEASE" />

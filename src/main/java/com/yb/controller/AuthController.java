@@ -51,9 +51,10 @@ public class AuthController {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         Date instance = new Date();
         Date teacherStartTime = dateFormat.parse(managerService.getTiming("teacher").getStartTime());
-        if (MANAGER_2.equals(teacher.getYbUserId())) {
+        if (MANAGER_2.equals(teacher.getYbUserId()) || MANAGER_1.equals(teacher.getYbUserId())) {
             //get in manager side
             request.getSession().setAttribute("token", token);
+            request.getSession().setAttribute("manager","manager");
             return "redirect:" + ROOT_URL + "setTiming";
         } else {
             if (instance.after(teacherStartTime)) {
@@ -61,13 +62,10 @@ public class AuthController {
                 if (teacherService.schoolCheck(teacher)) {
                     //save access_token in session
                     request.getSession().setAttribute(attributeName, token);
-
                     //get in app
                     return "redirect:" + APP_URL;
                 } else { return "error/errorId"; }
-            } else {
-                return "redirect:" + ROOT_URL + "errorTiming";
-            }
+            } else { return "redirect:" + ROOT_URL + "errorTiming"; }
         }
 
     }

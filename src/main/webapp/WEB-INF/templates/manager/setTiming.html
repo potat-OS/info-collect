@@ -31,7 +31,7 @@
 <hr/>
 <div class="container container-narrow well">
     <div>
-        <form th:action="@{setTime}" class="form-actions">
+        <form action="setTime" class="form-actions">
             <div class="row">
                 <div class="col-md-6">
                     <span style="font-size: large;font-family: 仿宋,cursive">学生</span>
@@ -54,9 +54,8 @@
                 </div>
             </div>
             <hr>
-            <button style="margin-top: 0;margin-right: 20px" type="submit"
-                    class="btn btn-success btn-lg pull-right">提交
-            </button>
+            <input style="margin-top: 0;margin-right: 20px" type="submit"
+                   class="btn btn-success btn-lg pull-right" value="提交">
         </form>
     </div>
 </div>
