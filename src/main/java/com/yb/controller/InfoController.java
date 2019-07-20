@@ -1,4 +1,4 @@
-package com.yb.teacherSide.controller;
+package com.yb.controller;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;

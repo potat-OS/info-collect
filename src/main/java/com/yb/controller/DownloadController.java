@@ -1,4 +1,4 @@
-package com.yb.teacherSide.controller;
+package com.yb.controller;
 
 import com.yb.util.FileDownloader;
 import org.springframework.http.ResponseEntity;

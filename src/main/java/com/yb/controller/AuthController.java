@@ -1,4 +1,4 @@
-package com.yb.teacherSide.controller;
+package com.yb.controller;
 
 
 import cn.yiban.open.Authorize;
@@ -51,22 +51,25 @@ public class AuthController {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         Date instance = new Date();
         Date teacherStartTime = dateFormat.parse(managerService.getTiming("teacher").getStartTime());
-
-        if (instance.after(teacherStartTime)) {
-            //judge school
-            if (teacherService.schoolCheck(teacher)) {
-                //save access_token in session
-                request.getSession().setAttribute(attributeName, token);
-                if (MANAGER_2.equals(teacher.getYbUserId())) {
-                    //get in manager side
-                    return "redirect:" + ROOT_URL + "setTiming";
-                }
-                //get in app
-                return "redirect:" + APP_URL;
-            } else { return "error/errorId"; }
+        if (MANAGER_2.equals(teacher.getYbUserId())) {
+            //get in manager side
+            request.getSession().setAttribute("token", token);
+            return "redirect:" + ROOT_URL + "setTiming";
         } else {
-            return "redirect:" + ROOT_URL + "errorTiming";
+            if (instance.after(teacherStartTime)) {
+                //judge school
+                if (teacherService.schoolCheck(teacher)) {
+                    //save access_token in session
+                    request.getSession().setAttribute(attributeName, token);
+
+                    //get in app
+                    return "redirect:" + APP_URL;
+                } else { return "error/errorId"; }
+            } else {
+                return "redirect:" + ROOT_URL + "errorTiming";
+            }
         }
+
     }
 
     @RequestMapping("/signOut")

@@ -1,4 +1,4 @@
-package com.yb.util.Excel;
+package com.yb.util.excel;
 
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.stereotype.Component;

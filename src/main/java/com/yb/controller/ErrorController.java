@@ -1,4 +1,4 @@
-package com.yb.teacherSide.controller;
+package com.yb.controller;
 
 import com.yb.entity.Timing;
 import com.yb.service.impl.ManagerServiceImpl;

@@ -1,4 +1,4 @@
-package com.yb.util.Excel;
+package com.yb.util.excel;
 
 import com.yb.service.impl.StudentServiceImpl;
 import com.yb.util.DeptGetter;

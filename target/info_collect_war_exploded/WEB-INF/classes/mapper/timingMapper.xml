@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yb.dao.TimingMapper">
+    <resultMap id="TimingMap" type="Timing">
+        <id property="identity" column="identity"/>
+        <result property="startTime" column="start_time"/>
+        <result property="endTime" column="end_time"/>
+    </resultMap>
+    <select id="getTiming" parameterType="java.lang.String" resultMap="TimingMap">
+        SELECT start_time, end_time
+        FROM timing
+        WHERE identity = #{identity}
+    </select>
+
+    <update id="setTiming" parameterType="Timing">
+        UPDATE timing SET
+        <if test="startTime != null">
+            start_time = #{sartTime},
+        </if>
+        <if test="endTime != null">
+            end_time = #{endTime}
+        </if>
+        WHERE identity = #{identity}
+    </update>
+</mapper>
