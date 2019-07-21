@@ -6,145 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec4eb2f0-c1b5-4de3-9600-5b4ee4d7543d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/info_collect_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/com/yb/Mark.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/com/yb/config/SpringConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/com/yb/config/SpringMvcConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/com/yb/config/SpringMybatisConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/com/yb/config/WebConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/com/yb/config/YbMsg.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/com/yb/controller/AuthController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/com/yb/controller/DownloadController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/com/yb/controller/ErrorController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/com/yb/controller/InfoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/com/yb/controller/TimeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/com/yb/dao/DaoMark.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/com/yb/dao/StudentMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/com/yb/dao/TimingMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/com/yb/entity/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/com/yb/entity/Timing.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/com/yb/filter/LogInFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/com/yb/filter/ManagerFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/com/yb/model/Teacher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/com/yb/service/ManagerService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/com/yb/service/StudentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/com/yb/service/TeacherService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/com/yb/service/impl/ManagerServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/com/yb/service/impl/StudentServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/com/yb/service/impl/TeacherServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/com/yb/util/DeptGetter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/com/yb/util/FileDownloader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/com/yb/util/YbUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/com/yb/util/excel/ExcelUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/com/yb/util/excel/ExcelUtilExecutor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/com/yb/util/excel/ExcelUtilTask.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/com/yb/util/excel/TimerStarter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/jdbc/jdbc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/mapper/stuMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/mapper/timingMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/classes/mybatis/mybatis-cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/YBOpenApi-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/attoparser-2.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/commons-codec-1.10.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/core-3.1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/dom4j-1.6.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/druid-1.0.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/fastjson-1.2.57.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/hamcrest-core-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/httpclient-4.5.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/httpcore-4.4.10.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/javassist-3.20.0-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/jconsole.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/jsqlparser-0.9.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/junit-4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/mybatis-3.5.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/mybatis-spring-2.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/mysql-connector-java-5.1.41.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/ognl-3.1.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/pagehelper-4.1.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/poi-3.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/poi-ooxml-3.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/poi-ooxml-schemas-3.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/slf4j-log4j12-1.7.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/spring-aop-5.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/spring-beans-5.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/spring-context-5.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/spring-core-5.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/spring-expression-5.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/spring-jcl-5.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/spring-jdbc-5.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/spring-test-5.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/spring-tx-5.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/spring-web-5.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/spring-webmvc-5.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/stax-api-1.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/thymeleaf-3.0.11.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/thymeleaf-spring5-3.0.11.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/tools.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/unbescape-1.1.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/xml-apis-1.0.b2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/lib/xmlbeans-2.3.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/static/css/cover.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/static/img/304430_20190609221047_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/templates/error/errorIO.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/templates/error/errorId.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/templates/error/errorTiming.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/templates/manager/setTiming.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/templates/manager/success.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/templates/teacher/infoTable.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/templates/teacher/information.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/target/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/Mark.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/config/SpringConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/config/SpringMvcConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/config/SpringMybatisConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/config/WebConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/config/YbMsg.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/controller/AuthController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/controller/DownloadController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/controller/ErrorController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/controller/InfoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/controller/TimeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/dao/DaoMark.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/dao/StudentMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/dao/TimingMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/entity/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/entity/Timing.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/filter/LogInFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/filter/ManagerFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/model/Teacher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/service/ManagerService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/service/StudentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/service/TeacherService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/service/impl/ManagerServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/service/impl/StudentServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/service/impl/TeacherServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/util/DeptGetter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/util/FileDownloader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/util/YbUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/util/excel/ExcelUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/util/excel/ExcelUtilExecutor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/util/excel/ExcelUtilTask.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/util/excel/TimerStarter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/jdbc/jdbc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/mapper/stuMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/mapper/timingMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/mybatis/mybatis-cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/info-collect/com/yb/test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect.war" beforeDir="false" />
-    </list>
+    <list default="true" id="ec4eb2f0-c1b5-4de3-9600-5b4ee4d7543d" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -678,6 +540,11 @@
             </path>
             <path>
               <item name="info-collect" type="b2602c69:ProjectViewProjectNode" />
+              <item name="info-collect" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="info-collect" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
             <path>
@@ -712,7 +579,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -815,9 +682,9 @@
       <option name="OPEN_IN_BROWSER_URL" value="http://118.89.153.182:8080/info-collect/" />
       <option name="UPDATING_POLICY" value="hot-swap-classes" />
       <deployment>
-        <artifact name="info-collect:war exploded">
+        <artifact name="info-collect">
           <settings>
-            <option name="CONTEXT_PATH" value="/info_collect_war_exploded" />
+            <option name="CONTEXT_PATH" value="/info_collect" />
           </settings>
         </artifact>
       </deployment>
@@ -876,7 +743,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="info-collect:war exploded" />
+          <artifact name="info-collect" />
         </option>
       </method>
     </configuration>
@@ -1005,7 +872,7 @@
       <workItem from="1563610221563" duration="2337000" />
       <workItem from="1563623430241" duration="3242000" />
       <workItem from="1563627025848" duration="1728000" />
-      <workItem from="1563629072099" duration="9959000" />
+      <workItem from="1563629072099" duration="10054000" />
     </task>
     <servers />
   </component>
@@ -1042,7 +909,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="405750000" />
+    <option name="totallyTimeSpent" value="405845000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1508,7 +1375,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
