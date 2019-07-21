@@ -17,7 +17,7 @@
     <update id="setTiming" parameterType="Timing">
         UPDATE timing SET
         <if test="startTime != null">
-            start_time = #{sartTime},
+            start_time = #{startTime},
         </if>
         <if test="endTime != null">
             end_time = #{endTime}

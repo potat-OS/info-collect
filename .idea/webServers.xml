@@ -11,7 +11,7 @@
         </fileTransfer>
       </webServer>
       <webServer id="642312d5-7038-42ae-bccf-0fecdac78cc7" name="potatOS" url="http://118.89.153.182">
-        <fileTransfer host="118.89.153.182" port="22" rootFolder="/home/ubuntu/Catalina/apache-tomcat-9.0.22/webapps" accessType="SFTP">
+        <fileTransfer host="118.89.153.182" port="22" rootFolder="/home/ubuntu/Catalina/tomcat9/webapps" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
