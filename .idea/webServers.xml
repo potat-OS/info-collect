@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="281cb3ee-3306-4a20-ba77-8646ce7a6339" name="yiban" url="http://119.28.52.142:8080">
+        <fileTransfer host="119.28.52.142" port="22" privateKey="C:\Users\Administrator\.ssh\Beijing" rootFolder="/usr/local/apache-tomcat-9.0.22/webapps" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
