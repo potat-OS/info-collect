@@ -12,7 +12,7 @@ public class YbMsg {
     public static final String APP_URL                  = "http://118.89.153.182:8080/info-collect/teacher/information";
     public static final String YIBAN_OPEN_URL           = "https://openapi.yiban.cn/";
     public static final String YIBAN_USER_VERIFY_ME     = "user/verify_me";
-    public static final String TABLE_ROOT_PATH          = "/tables/Table";
+    public static final String TABLE_ROOT_PATH          = "/home/ubuntu/yiban/tables/Table";
 
     public static final String MANAGER_1 = "10919652";
     public static final String MANAGER_2 = "10908468";
