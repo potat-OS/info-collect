@@ -16,6 +16,6 @@ public class YbMsg {
 
     public static final String MANAGER_1 = "10919652";
     public static final String MANAGER_2 = "10908468";
-    public static final String MANAGER_3 = "";
+    public static final String MANAGER_3 = "10590148";
 
 }

@@ -1,7 +1,5 @@
 package com.yb.util;
 
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.context.request.RequestContextHolder;
@@ -25,28 +23,22 @@ public class FileDownloader {
         try (BufferedInputStream inputStream = new BufferedInputStream(new FileInputStream(file))) {
             int line;
             if ((line = inputStream.read(body)) != -1) {
-                System.out.println(line);
+                System.out.println("读取文件" + line);
             }
         }
         HttpServletRequest request = ((ServletRequestAttributes) Objects.requireNonNull(RequestContextHolder
                 .getRequestAttributes())).getRequest();
         String fileName = DeptGetter.getDept(fileIndex) + ".xls";
         String header = request.getHeader("User-Agent").toUpperCase();
-        HttpStatus status = HttpStatus.CREATED;
-        try {
-            if (header.contains("MSIE") || header.contains("TRIDENT") || header.contains("EDGE")) {
-                fileName = URLEncoder.encode(fileName, "UTF-8");
-                status = HttpStatus.OK;
-            } else {
-                fileName = new String(fileName.getBytes(StandardCharsets.UTF_8), StandardCharsets.ISO_8859_1);
-            }
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
+
+        if (header.contains("MSIE") || header.contains("TRIDENT") || header.contains("EDGE")) {
+            fileName = URLEncoder.encode(fileName, "UTF-8");
+            return ResponseEntity.ok().header("Content-Disposition", "attachment;fileName="
+                    + fileName).contentType(MediaType.APPLICATION_OCTET_STREAM).body(body);
+        } else {
+            fileName = new String(fileName.getBytes(StandardCharsets.UTF_8), StandardCharsets.ISO_8859_1);
+            return ResponseEntity.ok().header("Content-Disposition", "attachment;fileName="
+                    + fileName).contentType(MediaType.APPLICATION_OCTET_STREAM).body(body);
         }
-        HttpHeaders headers = new HttpHeaders();
-        headers.setContentType(MediaType.APPLICATION_OCTET_STREAM);
-        headers.setContentDispositionFormData("attachment", fileName);
-        headers.setContentLength(file.length());
-        return new ResponseEntity<>(body, headers, status);
     }
 }

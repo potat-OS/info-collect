@@ -13,7 +13,6 @@ import java.util.List;
 /**
  * @author Jue-PC
  */
-@Component
 public class ExcelUtil {
     private static final String[] ROW_NAME = {
             "学号"

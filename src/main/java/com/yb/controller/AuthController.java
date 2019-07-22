@@ -51,7 +51,7 @@ public class AuthController {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         Date instance = new Date();
         Date teacherStartTime = dateFormat.parse(managerService.getTiming("teacher").getStartTime());
-        if (MANAGER_2.equals(teacher.getYbUserId()) || MANAGER_1.equals(teacher.getYbUserId())) {
+        if (MANAGER_2.equals(teacher.getYbUserId()) || MANAGER_1.equals(teacher.getYbUserId()) || MANAGER_3.equals(teacher.getYbUserId())) {
             //get in manager side
             request.getSession().setAttribute("token", token);
             request.getSession().setAttribute("manager", "manager");
