@@ -32,10 +32,12 @@ public class test {
 //
 //    @Test
 //    public void dbTest() {
-//        List<Student> list = studentMapper.queryAll(DeptGetter.getDept(1));
-//        System.out.println(list.get(0).toString());
+//        Timing timing = new Timing();
+//        timing.setIdentity("student");
+//        timing.setStartTime("2019-7-18");
+//        timingMapper.setTiming(timing);
 //    }
-//
+
 //    @Test
 //    public void insertTest() {
 //        Student student = new Student();

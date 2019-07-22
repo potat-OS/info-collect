@@ -19,8 +19,8 @@ public class ManagerServiceImpl implements ManagerService {
     public ManagerServiceImpl(TimingMapper timingMapper) {this.timingMapper = timingMapper;}
 
     @Override
-    public int setTiming(Timing timing) {
-        return timingMapper.setTiming(timing);
+    public void setTiming(Timing timing) {
+        timingMapper.setTiming(timing);
     }
     @Override
     public Timing getTiming(String identity) {

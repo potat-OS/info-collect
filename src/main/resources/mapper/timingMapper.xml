@@ -15,13 +15,16 @@
     </select>
 
     <update id="setTiming" parameterType="Timing">
-        UPDATE timing SET
-        <if test="startTime != null">
-            start_time = #{startTime},
-        </if>
-        <if test="endTime != null">
-            end_time = #{endTime}
-        </if>
+        UPDATE timing
+        <trim prefix="SET" suffixOverrides=",">
+            identity = #{identity},
+            <if test="startTime != null and startTime != ''">
+                start_time = #{startTime},
+            </if>
+            <if test="endTime != null and endTime != ''">
+                end_time = #{endTime},
+            </if>
+        </trim>
         WHERE identity = #{identity}
     </update>
 </mapper>

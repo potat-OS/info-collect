@@ -23,6 +23,6 @@ public interface TimingMapper {
      * @param timing
      * @return
      */
-    int setTiming(Timing timing);
+    void setTiming(Timing timing);
 
 }

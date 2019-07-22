@@ -27,4 +27,9 @@ public class ErrorController {
         model.addAttribute("startTime", "开始时间为" + timing.getStartTime() + "哦~~");
         return "error/errorTiming";
     }
+
+    @RequestMapping("/mError")
+    public String mError() {
+        return "error/mError";
+    }
 }

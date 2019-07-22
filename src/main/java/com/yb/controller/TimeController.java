@@ -8,10 +8,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
 
+import static com.yb.config.YbMsg.APP_URL;
+
 /**
  * @author Jue-PC
  */
 @Controller
+@RequestMapping("/manager")
 public class TimeController {
 
     private final
@@ -27,19 +30,21 @@ public class TimeController {
 
     @RequestMapping("/setTime")
     public String setTime(HttpServletRequest request) {
-        Timing teacherTiming = new Timing();
         Timing studentTiming = new Timing();
-        String studentStart = request.getParameter("studentStartTime");
-        String studentEnd = request.getParameter("studentEndTime");
-        String teacherStart = request.getParameter("teacherStartTime");
         studentTiming.setIdentity("student");
+        studentTiming.setStartTime(request.getParameter("studentStartTime"));
+        studentTiming.setEndTime(request.getParameter("studentEndTime"));
+        managerService.setTiming(studentTiming);
+        Timing teacherTiming = new Timing();
         teacherTiming.setIdentity("teacher");
-        studentTiming.setStartTime(studentStart);
-        studentTiming.setEndTime(studentEnd);
-        teacherTiming.setStartTime(teacherStart);
+        teacherTiming.setStartTime(request.getParameter("teacherStartTime"));
         System.out.println(studentTiming.toString() + "\n" + teacherTiming.toString());
         managerService.setTiming(teacherTiming);
-        managerService.setTiming(studentTiming);
         return "manager/success";
+    }
+
+    @RequestMapping("/goApp")
+    public String success() {
+        return "redirect:"+APP_URL;
     }
 }

@@ -19,6 +19,6 @@ public interface ManagerService {
      *
      * @param timing
      */
-    int setTiming(Timing timing);
+    void setTiming(Timing timing);
 
 }

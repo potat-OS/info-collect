@@ -22,6 +22,7 @@ import static com.yb.util.DeptGetter.getDept;
  * @author Jue-PC
  */
 @Controller
+@RequestMapping("/teacher")
 public class InfoController {
 
     private final StudentServiceImpl studentService;

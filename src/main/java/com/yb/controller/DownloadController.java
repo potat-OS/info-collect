@@ -13,7 +13,7 @@ import java.io.IOException;
 @Controller
 public class DownloadController {
 
-    @RequestMapping("/download/{deptId}")
+    @RequestMapping("/teacher/download/{deptId}")
     public ResponseEntity<byte[]> download(@PathVariable int deptId) throws IOException {
         return FileDownloader.download(deptId);
     }
@@ -21,7 +21,7 @@ public class DownloadController {
     @ExceptionHandler(IOException.class)
     public String exception(IOException e) {
         e.printStackTrace();
-        return "errorIO";
+        return "error/errorIO";
     }
 
 }

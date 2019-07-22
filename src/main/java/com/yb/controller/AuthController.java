@@ -54,8 +54,8 @@ public class AuthController {
         if (MANAGER_2.equals(teacher.getYbUserId()) || MANAGER_1.equals(teacher.getYbUserId())) {
             //get in manager side
             request.getSession().setAttribute("token", token);
-            request.getSession().setAttribute("manager","manager");
-            return "redirect:" + ROOT_URL + "setTiming";
+            request.getSession().setAttribute("manager", "manager");
+            return "redirect:" + ROOT_URL + "manager/setTiming";
         } else {
             if (instance.after(teacherStartTime)) {
                 //judge school
@@ -67,7 +67,6 @@ public class AuthController {
                 } else { return "error/errorId"; }
             } else { return "redirect:" + ROOT_URL + "errorTiming"; }
         }
-
     }
 
     @RequestMapping("/signOut")
@@ -75,6 +74,10 @@ public class AuthController {
         YbUtil ybUtil = new YbUtil((String) request.getSession().getAttribute("token"));
         ybUtil.getUtil().revoke();
         request.getSession().removeAttribute("token");
+
+        if (request.getSession().getAttribute("manager") != null)
+            request.getSession().removeAttribute("manager");
+
         return "redirect:" + MAIN_PAGE;
     }
 }

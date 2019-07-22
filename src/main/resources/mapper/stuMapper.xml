@@ -65,39 +65,41 @@
     </insert>
 
     <update id="update" parameterType="Student">
-        UPDATE stu_info_2019 SET
-        <set>
-            <if test="realName != null">
-                real_name = #{realName},
-            </if>
-            <if test="phoneNum != null">
-                phone_num = #{phoneNum},
-            </if>
-            <if test="department != null">
-                department = #{department},
-            </if>
-            <if test="major != null">
-                major = #{major},
-            </if>
-            <if test="className != null">
-                class_name = #{className},
-            </if>
-            <if test="address != null">
-                address = #{address},
-            </if>
-            <if test="parent1 != null">
-                parent1 = #{parent1},
-            </if>
-            <if test="parent1PhoneNum != null">
-                parent1_phone_num = #{parent1PhoneNum},
-            </if>
-            <if test="parent2 != null">
-                parent2 = #{parent2},
-            </if>
-            <if test="parent2PhoneNum != null">
-                parent2_phone_num = #{parent2PhoneNum},
-            </if>
-        </set>
+        UPDATE stu_info_2019
+        <trim prefix="SET" suffixOverrides=",">
+            <set>
+                <if test="realName != null">
+                    real_name = #{realName},
+                </if>
+                <if test="phoneNum != null">
+                    phone_num = #{phoneNum},
+                </if>
+                <if test="department != null">
+                    department = #{department},
+                </if>
+                <if test="major != null">
+                    major = #{major},
+                </if>
+                <if test="className != null">
+                    class_name = #{className},
+                </if>
+                <if test="address != null">
+                    address = #{address},
+                </if>
+                <if test="parent1 != null">
+                    parent1 = #{parent1},
+                </if>
+                <if test="parent1PhoneNum != null">
+                    parent1_phone_num = #{parent1PhoneNum},
+                </if>
+                <if test="parent2 != null">
+                    parent2 = #{parent2},
+                </if>
+                <if test="parent2PhoneNum != null">
+                    parent2_phone_num = #{parent2PhoneNum}
+                </if>
+            </set>
+        </trim>
         WHERE stu_id = #{stuId}
     </update>
 </mapper>
