@@ -2,16 +2,21 @@
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta http-equiv="content-type" content="text/html" charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <title>info&supdsub;collect</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
     <style type="text/css">
         body {
-            min-height: 764px;
+            min-height: 100%;
             padding-top: 50px;
             padding-bottom: 40px;
             background: linear-gradient(white, rgba(52, 52, 52, 0.86)) no-repeat;
             font-family: "Microsoft YaHei UI", fantasy;
+        }
+
+        html {
+            min-height: 100%;
         }
 
         .container-narrow {
