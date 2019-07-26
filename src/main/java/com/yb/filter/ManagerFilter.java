@@ -9,14 +9,16 @@ import static com.yb.config.YbMsg.ROOT_URL;
 
 public class ManagerFilter implements Filter {
     @Override
-    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain chain) throws IOException, ServletException {
+    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         HttpServletRequest request = (HttpServletRequest) servletRequest;
         HttpServletResponse response = (HttpServletResponse) servletResponse;
 
-        if (request.getSession().getAttribute("manager") != null) {
-            chain.doFilter(request, response);
+        String managerAttribute = "managerToken";
+        if (request.getSession().getAttribute(managerAttribute) != null) {
+            filterChain.doFilter(request, response);
         } else {
-            response.sendRedirect(ROOT_URL+"mError");
+            response.sendRedirect(ROOT_URL + "managerError");
         }
+
     }
 }

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>信息录入</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <link href="/static/css/cover.css" th:href="@{/static/css/cover.css}" rel="stylesheet">
+</head>
+<style>
+    body {
+        width: auto;
+        font-family: "Microsoft YaHei UI",fantasy;
+    }
+
+    .container-narrow {
+        margin: 0 auto;
+        max-width: 600px;
+    }
+</style>
+<body>
+<div class="container container-narrow ">
+    <h3 style="margin-top: 70px" align="right">✍</h3>
+    <hr>
+    <form onsubmit="return comf()" action="submit" class="form-actions">
+        <div class="input-group">
+            <span class="input-group-addon">📞</span>
+            <input id="phoneNumber" name="phoneNumber" class="form-control input-block-level" onblur="verify1()"
+                   type="tel"
+                   placeholder="联系方式"
+                   required oninput="value=value.replace(/[^\d]/g,'')"/>
+            <span id="message1" class="input-group-addon"></span>
+        </div>
+        <br>
+        <div class="input-group">
+            <span class="input-group-addon">📚</span>
+            <input name="major" class="form-control input-block-level" type="text" placeholder="专业全称"
+                   required/>
+        </div>
+        <br>
+        <div id="inputgroup1" class="input-group">
+            <span class="input-group-addon">🏠</span>
+            <input name="address" class="form-control input-block-level" type="text" placeholder="家庭住址"
+                   required/>
+        </div>
+        <br>
+        <div id="inputgroup2" class="input-group">
+            <span class="input-group-addon">👪<br><br>📞</span>
+            <input name="parent1" class="form-control input-block-level" type="text" placeholder="家庭成员1"
+                   required/>
+            <input id="parent1PhoneNumber" name="parent1PhoneNumber" class="form-control input-block-level" type="tel"
+                   placeholder="成员1联系方式" required onblur="verify2()" oninput="value=value.replace(/[^\d]/g,'')">
+            <span id="message2" class="input-group-addon"></span>
+        </div>
+        <br>
+        <div id="inputgroup3" class="input-group">
+            <span class="input-group-addon">👪<br><br>📞</span>
+            <input name="parent2" class="form-control input-block-level" type="text" placeholder="家庭成员2"/>
+            <input id="parent2PhoneNumber" name="parent2PhoneNumber" class="form-control input-block-level"
+                   placeholder="成员2联系方式"
+                   type="tel" onblur="verify3()" oninput="value=value.replace(/[^\d]/g,'')">
+            <span id="message3" class="input-group-addon"></span>
+        </div>
+        <br>
+        <div align="center">
+            <h4>请确认信息无误后提交哦~</h4>
+            <input class="btn btn-success btn-lg btn-block" type="submit" value="提交✔"/>
+        </div>
+    </form>
+</div>
+<script>
+    function verify1() {
+        let phoneNum = document.getElementById("phoneNumber").value;
+        let message1 = document.getElementById("message1");
+        if (phoneNum.length !== 11) {
+            message1.innerText = "❌";
+        } else {
+            message1.innerText = "";
+        }
+    }
+
+    function verify2() {
+        let parent1PhoneNum = document.getElementById("parent1PhoneNumber").value;
+        let message2 = document.getElementById("message2");
+        if (parent1PhoneNum.length !== 11) {
+            message2.innerText = "❌";
+        } else {
+            message2.innerText = "";
+        }
+    }
+
+    function verify3() {
+        let parent2PhoneNum = document.getElementById("parent1PhoneNumber").value;
+        let message3 = document.getElementById("message3");
+        if (parent2PhoneNum.length !== 11 && (parent2PhoneNum.length !== 0 || parent2PhoneNum != null)) {
+            message3.innerText = "❌";
+        } else {
+            message3.innerText = "";
+        }
+    }
+
+    function comf() {
+        let phoneNum = document.getElementById("phoneNumber").value;
+        let parent1PhoneNum = document.getElementById("parent1PhoneNumber").value;
+        let parent2PhoneNum = document.getElementById("parent2PhoneNumber").value;
+        if ((parent2PhoneNum.length !== 11 && parent2PhoneNum.length > 0) || parent1PhoneNum.length !== 11 || phoneNum.length !== 11) {
+            alert("请检查号码长度!");
+            return false;
+        } else {
+            return confirm("确认提交吗?")
+        }
+    }
+
+</script>
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+</body>
+</html>

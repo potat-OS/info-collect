@@ -12,9 +12,6 @@
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="info-collect" />
-          <element id="library" level="application" name="jquery" />
-          <element id="library" level="application" name="canvas-nest" />
-          <element id="library" level="application" name="bootstrap" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.springframework:spring-context:5.1.8.RELEASE" />

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <link th:href="@{/static/css/cover.css}" rel="stylesheet">
+    <title>&hearts;welcome&hearts;</title>
+</head>
+<style>
+    body {
+        width: auto;
+        font-family: "Microsoft YaHei UI", fantasy;
+    }
+</style>
+<body>
+<div class="site-wrapper">
+    <div class="site-wrapper-inner">
+        <div class="cover-container">
+            <div class="masthead clearfix">
+                <div class="inner">
+                    <h3 class="masthead-brand">info&supdsub;collect</h3>
+                    <nav>
+                        <ul class="nav masthead-nav">
+                            <li class="active"><a href="welcome">Home</a></li>
+                            <li><a href="/info-collect/signOut">注销</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="inner cover cover-container">
+                <h1 class="cover-heading" th:text="${stuName}"></h1>
+                <h2 class="lead">👏欢迎来到西安石油大学!👏</h2>
+                <div th:if="${not isExist}">
+                    <p class="lead">💪填写下面这一份表单,做好开学第一件事吧!💪</p>
+                    <p class="lead">
+                        <a href="stuInfo" class="btn btn-lg btn-success">GO!🏃‍</a>
+                    </p>
+                </div>
+                <div th:if="${isExist}">
+                    <p class="lead">恭喜, 录入成功啦!👏</p>
+                    <p class="lead">建议检查下信息的正确性哦~</p>
+                    <p class="lead">
+                        <a href="myPage" class="btn btn-lg btn-info">我的信息‍</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="mastfoot">
+            <div class="inner">
+                <p>&copy;<a href="http://www.yiban.cn/school/index/id/5000084">石大YiBan</a>.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+</body>
+</html>

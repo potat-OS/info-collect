@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * @author Jue-PC
  */
-public class ExcelUtil {
+class ExcelUtil {
     private static final String[] ROW_NAME = {
             "学号"
             , "姓名"
@@ -27,7 +27,7 @@ public class ExcelUtil {
             , "家庭联系人②"
             , "联系方式"};
 
-    public static void createSheet(String sheetName, String filePath, List<Student> students) {
+    static void createSheet(String sheetName, String filePath, List<Student> students) {
         XSSFWorkbook workbook = new XSSFWorkbook();
         XSSFSheet sheet = workbook.createSheet(sheetName);
         XSSFRow title = sheet.createRow(0);

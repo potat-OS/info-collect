@@ -22,6 +22,7 @@ public class ManagerServiceImpl implements ManagerService {
     public void setTiming(Timing timing) {
         timingMapper.setTiming(timing);
     }
+
     @Override
     public Timing getTiming(String identity) {
         return timingMapper.getTiming(identity);

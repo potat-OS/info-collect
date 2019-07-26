@@ -3,9 +3,9 @@
 <head>
     <meta http-equiv="content-type" content="text/html" charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>设置起始时间</title>
+    <title>set time</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
-    <link href="/static/css/icover.css" th:href="@{/static/css/icover.css}" rel="stylesheet">
+    <link th:href="@{/static/css/cover.css}" rel="stylesheet">
 </head>
 <style>
     .container-narrow {
@@ -15,13 +15,13 @@
 
     body {
         width: auto;
-        font-family: Times, sans-serif;
+        font-family: "Microsoft YaHei UI",fantasy;
     }
 
     input {
-        font-size: larger;
+        font-size: large;
         text-align: center;
-        font-family: Times, cursive
+        font-family: Times, fantasy;
     }
 
     #student, #teacher {
@@ -29,37 +29,46 @@
         margin-right: 20px;
     }
 </style>
-<body class="container-fluid">
-<h2 align="left" class="text-muted">Manager</h2>
-<hr>
-<form action="setTime" class="form-actions">
-    <div class="container-narrow row">
-        <div id="student" class="col-md-5 well">
-            <span style="font-size: large;font-family: 仿宋,cursive;color: rgba(31,31,31,0.86);">学生</span><br>
-            <div class="input-group">
-                <span class="input-group-addon">开始</span>
-                <input name="studentStartTime" class="form-control input-block-level" type="date"/>
-            </div>
-            <div class="input-group">
-                <span class="input-group-addon">结束</span>
-                <input name="studentEndTime" class="form-control input-block-level" type="date"/>
-            </div>
-        </div>
-        <div id="teacher" class="col-md-5 well">
-            <span style="font-size: large;font-family: 仿宋,cursive;color: rgba(31,31,31,0.86);">教师</span><br>
-            <div class="input-group">
-                <span class="input-group-addon">开始</span>
-                <input name="teacherStartTime" class="form-control input-block-level" type="date"/>
-            </div>
-        </div>
-    </div>
+<body>
+<div class="site-wrapper container">
+    <h2 align="left" class="text-muted">Manager</h2>
     <hr>
-    <input style="margin-top: 0;margin-right: 25%" type="submit"
-           class="btn btn-success btn-lg pull-right" value="提交">
-</form>
+    <div class="inner cover cover-container">
+        <form action="setTime" class="form-actions">
+            <div align="center" class="container-narrow row">
+                <div id="student" class="col-md-5">
+                    <span style="font-size: large;">学生</span><br>
+                    <div class="input-group">
+                        <span class="input-group-addon">开始</span>
+                        <input name="studentStartTime" class="form-control input-block-level" type="date"/>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon">结束</span>
+                        <input name="studentEndTime" class="form-control input-block-level" type="date"/>
+                    </div>
+                </div>
+                <div id="teacher" class="col-md-5">
+                    <span style="font-size: large;">教师</span><br>
+                    <div class="input-group">
+                        <span class="input-group-addon">开始</span>
+                        <input name="teacherStartTime" class="form-control input-block-level" type="date"/>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon">结束</span>
+                        <input name="teacherStartTime" class="form-control input-block-level" disabled/>
+                    </div>
+                </div>
+            </div>
+            <hr hidden>
+            <input style="margin-top: 0;margin-right: 20%" type="submit"
+                   class="btn btn-success btn-lg pull-right" value="提交">
+        </form>
+    </div>
+</div>
+
+
 <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"
-        th:src="@{https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js}"></script>
+<script src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
 </body>
 </html>
