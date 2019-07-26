@@ -78,7 +78,7 @@ public class StuInfoController {
         student.setParent2(request.getParameter("parent2"));
         student.setParent2PhoneNum(request.getParameter("parent2PhoneNum"));
         studentService.update(student);
-        return "student/updateSuccess";
+        return "student/welcome";
     }
 
     @ExceptionHandler(Exception.class)

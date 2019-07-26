@@ -71,6 +71,7 @@ public class TeacherInfoController {
         PageHelper.startPage(pageNum, pageSize);
         List<Student> students = studentService.queryAll(DeptGetter.getDept(deptId));
         PageInfo pageInfo = new PageInfo<Student>(students, 7);
+        model.addAttribute("deptId",deptId);
         model.addAttribute("students", pageInfo);
         model.addAttribute("pageNum", pageInfo.getPageNum());
         model.addAttribute("pageSize", pageInfo.getPageSize());

@@ -55,16 +55,15 @@ public class AuthController {
         final String stuAttributeName = "stuToken";
         final String managerAttributeName = "managerToken";
         String token = commonService.getToken(request);
-        IdModel baseModel = commonService.getInfo(token);
         IdModel realModel = commonService.getRealInfo(token);
-        if (MANAGER_JUE.equals(baseModel.getYbUserId()) || MANAGER_RAN.equals(baseModel.getYbUserId())) {
+        if (MANAGER_JUE.equals(realModel.getYbUserId()) || MANAGER_RAN.equals(realModel.getYbUserId())) {
             System.out.println("学号为: " + realModel.getStuId() + "工号为: " + realModel.getEmployId());
             request.getSession().setAttribute(managerAttributeName, token);
             //get in manager side
             return "redirect:" + ROOT_URL + "manager/setTiming";
         } else {
             //judge school
-            if (commonService.schoolCheck(baseModel)) {
+            if (commonService.schoolCheck(realModel)) {
                 if (commonService.idCheck(realModel)) {
                     if (commonService.timeCheck("student")) {
                         //save access_token in session
