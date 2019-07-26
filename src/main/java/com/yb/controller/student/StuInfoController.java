@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
 
+import static com.yb.config.YbMsg.*;
+
 /**
  * @author Jue-PC
  */
@@ -19,15 +21,12 @@ import javax.servlet.http.HttpServletRequest;
 @RequestMapping("/student")
 public class StuInfoController {
 
-    private final
-    CommonServiceImpl commonService;
 
     private final
     StudentServiceImpl studentService;
 
     @Autowired
-    public StuInfoController(CommonServiceImpl commonService, StudentServiceImpl studentService) {
-        this.commonService = commonService;
+    public StuInfoController(StudentServiceImpl studentService) {
         this.studentService = studentService;
     }
 
@@ -78,7 +77,7 @@ public class StuInfoController {
         student.setParent2(request.getParameter("parent2"));
         student.setParent2PhoneNum(request.getParameter("parent2PhoneNum"));
         studentService.update(student);
-        return "student/welcome";
+        return "redirect:" + STU_MAIN_PAGE;
     }
 
     @ExceptionHandler(Exception.class)

@@ -7,103 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec4eb2f0-c1b5-4de3-9600-5b4ee4d7543d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/info_collect.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/537b26cb-3879-4ad9-bbb4-ed774e9ce01e.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/64c7e3e3-d0cb-46e8-84b2-e13d07749d7b.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/META-INF/info-collect.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/Mark.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/config/SpringConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/config/SpringMvcConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/config/SpringMybatisConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/config/WebConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/config/YbMsg.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/controller/AuthController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/controller/DownloadController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/controller/ErrorController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/controller/InfoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/controller/TimeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/controller/common/AuthController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/controller/common/ErrorController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/controller/manager/TimeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/controller/student/MainController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/controller/student/StuInfoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/controller/teacher/DownloadController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/controller/teacher/TeacherInfoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/dao/DaoMark.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/dao/StudentMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/dao/TimingMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/entity/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/entity/Timing.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/filter/LogInFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/filter/ManagerFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/filter/StudentFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/filter/TeacherFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/model/IdModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/model/Teacher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/service/CommonService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/service/ExcelUtilExecutor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/service/ManagerService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/service/StudentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/service/TeacherService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/service/impl/CommonServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/service/impl/ManagerServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/service/impl/StudentServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/service/impl/TeacherServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/util/DeptGetter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/util/FileDownloader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/util/YbUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/util/excel/ExcelUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/util/excel/ExcelUtilTask.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/jdbc/jdbc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/mapper/stuMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/mapper/timingMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/mybatis/mybatis-cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/info-collect/com/yb/test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/info-collect/com/yb/tests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yb/controller/AuthController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yb/controller/DownloadController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yb/controller/ErrorController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yb/controller/InfoController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yb/controller/TimeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yb/controller/common/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yb/controller/common/AuthController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yb/controller/student/StuInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yb/controller/student/StuInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yb/controller/teacher/TeacherInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yb/controller/teacher/TeacherInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yb/filter/LogInFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yb/model/Teacher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yb/service/TeacherService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yb/service/impl/TeacherServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/errorIO.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/errorTiming.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/mError.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/teacherErrorTiming.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/teacherErrorTiming.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/teacher/infoTable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/teacher/infoTable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/teacher/information.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/teacher/information.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/icover.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/yb/test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/META-INF/info-collect.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/controller/AuthController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/controller/DownloadController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/controller/ErrorController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/controller/InfoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/controller/TimeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/controller/common/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/controller/common/AuthController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/filter/LogInFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/model/Teacher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/service/TeacherService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/service/impl/TeacherServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/http_cdn.bootcss.com_canvas-nest.js_1.0.1_canvas-nest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/http_cdn.jsdelivr.net_npm_bootstrap@3.3.7_dist_js_bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/http_cdn.staticfile.org_jquery_2.1.1_jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/error/errorIO.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/error/errorTiming.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/error/mError.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/error/teacherErrorTiming.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/error/teacherErrorTiming.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/static/css/icover.css" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -171,6 +75,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yb/controller/student/MainController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="39" column="53" lean-forward="true" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/teacher/infoTable.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-44">
@@ -184,15 +97,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="201">
               <caret line="73" column="44" selection-start-line="73" selection-start-column="44" selection-end-line="73" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8ca6f64a-3cbc-47bd-8f57-6690efd5acc5/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-124">
-              <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -215,20 +119,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yb/controller/student/StuInfoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="80" column="33" lean-forward="true" selection-start-line="80" selection-start-column="33" selection-end-line="80" selection-end-column="33" />
+            <state relative-caret-position="-836">
+              <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#795#796#0" expanded="true" />
+                <element signature="e#847#848#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/updateSuccess.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="22" column="67" lean-forward="true" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="67" />
+            <state relative-caret-position="198">
+              <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -309,7 +218,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/stuSuccess.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/yb/util/DeptGetter.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/welcome.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/updateSuccess.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/myPage.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/errorIO.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/yb/controller/common/ErrorController.java" />
@@ -326,6 +234,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/yb/controller/teacher/TeacherInfoController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/teacher/information.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/teacher/infoTable.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/updateSuccess.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/yb/controller/student/StuInfoController.java" />
       </list>
     </option>
@@ -805,7 +714,7 @@
       <workItem from="1564057725015" duration="14241000" />
       <workItem from="1564134917280" duration="7464000" />
       <workItem from="1564144393770" duration="47000" />
-      <workItem from="1564147559374" duration="5828000" />
+      <workItem from="1564147559374" duration="6191000" />
     </task>
     <servers />
   </component>
@@ -842,7 +751,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="598290000" />
+    <option name="totallyTimeSpent" value="598653000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1165,13 +1074,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yb/controller/student/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="39" column="53" lean-forward="true" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8ca6f64a-3cbc-47bd-8f57-6690efd5acc5/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-124">
@@ -1227,17 +1129,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yb/controller/student/StuInfoController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/updateSuccess.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="80" column="33" lean-forward="true" selection-start-line="80" selection-start-column="33" selection-end-line="80" selection-end-column="33" />
+        <state relative-caret-position="198">
+          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/updateSuccess.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yb/controller/student/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="22" column="67" lean-forward="true" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="67" />
+        <state relative-caret-position="202">
+          <caret line="39" column="53" lean-forward="true" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yb/controller/student/StuInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-836">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#795#796#0" expanded="true" />
+            <element signature="e#847#848#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
