@@ -2,7 +2,6 @@ package com.yb.controller.student;
 
 import com.yb.entity.Student;
 import com.yb.model.IdModel;
-import com.yb.service.impl.CommonServiceImpl;
 import com.yb.service.impl.StudentServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
