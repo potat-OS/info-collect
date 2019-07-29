@@ -33,13 +33,13 @@
                 <h1 class="cover-heading" th:text="${stuName}"></h1>
                 <h2 class="lead">👏欢迎来到西安石油大学!👏</h2>
                 <div th:if="${not isExist}">
-                    <p class="lead">💪填写下面这一份表单,做好开学第一件事吧!💪</p>
+                    <p class="lead">填写下面这一份表单,做好开学第一件事吧!</p>
                     <p class="lead">
                         <a href="stuInfo" class="btn btn-lg btn-success">GO!🏃‍</a>
                     </p>
                 </div>
                 <div th:if="${isExist}">
-                    <p class="lead">恭喜, 录入成功啦!👏</p>
+                    <p class="lead">恭喜, 录入成功啦!</p>
                     <p class="lead">建议检查下信息的正确性哦~</p>
                     <p class="lead">
                         <a href="myPage" class="btn btn-lg btn-info">我的信息‍</a>

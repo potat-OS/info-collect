@@ -34,8 +34,9 @@ public class MainController {
     public String welcome(HttpServletRequest request, Model model) {
         if (request.getSession().getAttribute("managerToken") != null) {
             IdModel realModel = commonService.getRealInfo((String) request.getSession().getAttribute("managerToken"));
-            if (request.getSession().getAttribute("stuModel") == null)
+            if (request.getSession().getAttribute("stuModel") == null) {
                 request.getSession().setAttribute("stuModel", realModel);
+            }
             model.addAttribute("isExist", studentService.checkId(realModel.getStuId()));
             model.addAttribute("stuName", "Manager");
         } else {
@@ -44,11 +45,11 @@ public class MainController {
                 request.getSession().setAttribute("stuModel", realModel);
             model.addAttribute("isExist", studentService.checkId(realModel.getStuId()));
             if (realModel.getRealName().length() <= 3) {
-                model.addAttribute("stuName", "🎉小" + realModel.getRealName().substring(0, 1) + "同学你好鸭~🎉");
+                model.addAttribute("stuName", "🎉小" + realModel.getRealName().substring(0, 1) + "同学你好~🎉");
             } else if (realModel.getRealName().length() == 4) {
-                model.addAttribute("stuName", "🎉" + realModel.getRealName().substring(0, 2) + "同学你好鸭~🎉");
+                model.addAttribute("stuName", "🎉" + realModel.getRealName().substring(0, 2) + "同学你好~🎉");
             } else {
-                model.addAttribute("stuName", "🎉新同学你好鸭~🎉");
+                model.addAttribute("stuName", "🎉新同学你好~🎉");
             }
         } return "student/welcome";
     }
