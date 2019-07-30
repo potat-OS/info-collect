@@ -12,7 +12,23 @@
     body {
         min-height: 100%;
         width: auto;
-        font-family: "Microsoft YaHei UI", fantasy;
+        font-family: "Microsoft YaHei UI", monospace;
+    }
+
+    html {
+        min-height: 100%;
+    }
+
+    dt {
+        margin-top: 8px;
+    }
+
+    dd {
+        text-align: left;
+    }
+
+    td {
+        text-align: left;
     }
 
     .container-narrow {
@@ -21,32 +37,88 @@
     }
 </style>
 <body>
-<div align="left">
-    <div class="container">
-        <h1 th:text="${stuName}">的信息</h1>
-        <p class="left">为避免不必要的损失,以下信息如有错误或遗漏,请及时更改!</p>
-        <hr>
-        <div class="well container-narrow">
-            <ul class="list-group">
-                <li class="list-group-item">🔒学号:&emsp;&emsp;&emsp; <span th:text="${student.stuId}"></span></li>
-                <li class="list-group-item">✒姓名:&emsp;&emsp;&emsp;&nbsp; <span th:text="${student.realName}"></span>
-                </li>
-                <li class="list-group-item">📞联系方式:&emsp; <span th:text="${student.phoneNum}"></span></li>
-                <li class="list-group-item">🏫院系:&emsp;&emsp;&emsp; <span th:text="${student.department}"></span></li>
-                <li class="list-group-item">📚专业:&emsp;&emsp;&emsp; <span th:text="${student.major}"></span></li>
-                <li class="list-group-item">🎓班级:&emsp;&emsp;&emsp; <span th:text="${student.className}"></span></li>
-            </ul>
-            <ul class="list-group">
-                <li class="list-group-item">🏠家庭住址:&emsp;&emsp;&nbsp; <span th:text="${student.address}"></span></li>
-                <li class="list-group-item">👪家庭成员一:&emsp; <span th:text="${student.parent1}"></span></li>
-                <li class="list-group-item">📞联系方式:&emsp;&emsp; <span th:text="${student.parent1PhoneNum}"></span></li>
-                <li class="list-group-item">👪家庭成员二:&emsp; <span th:text="${student.parent2}"></span></li>
-                <li class="list-group-item">📞联系方式:&emsp;&emsp; <span th:text="${student.parent2PhoneNum}"></span></li>
-            </ul>
-            <div align="center">
-                <a href="goUpdate">
-                    <button class="btn btn-warning btn-lg btn-block">更改✍</button>
-                </a>
+<div class="site-wrapper">
+    <div class="site-wrapper-inner">
+        <div class="cover-container">
+            <div class="masthead clearfix">
+                <div class="inner">
+                    <img class="pull-left" th:src="@{/static/img/yiban_logo.png}" height="45px" width="35px"
+                         alt="易班logo">
+                    <h3 class="masthead-brand text-muted">西石大易班发展中心</h3>
+                    <nav>
+                        <ul class="nav masthead-nav">
+                            <li><a href="welcome">主页</a></li>
+                            <li class="active"><a href="myPage">我的信息</a></li>
+                            <li><a href="/info-collect/signOut">注销</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="inner cover cover-container">
+                <div class="well container-narrow">
+                    <table class="table table-hover table-striped table-bordered">
+                        <tr>
+                            <td style="font-weight: bold">🔒&nbsp;&nbsp;学号:</td>
+                            <td th:text="${student.stuId}">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold">🏫&nbsp;&nbsp;院系:</td>
+                            <td th:text="${student.department}">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold">📚&nbsp;&nbsp;专业:</td>
+                            <td th:text="${student.major}">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold">🎓&nbsp;&nbsp;班级:</td>
+                            <td th:text="${student.className}">
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="table table-hover table-striped table-bordered">
+                        <tr>
+                            <td style="font-weight: bold">📇&nbsp;&nbsp;姓名:</td>
+                            <td th:text="${student.realName}">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold">📞&nbsp;&nbsp;联系方式:</td>
+                            <td th:text="${student.phoneNum}">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold">🏠&nbsp;&nbsp;家庭住址:</td>
+                            <td th:text="${student.address}">
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="table table-hover table-striped table-bordered">
+                        <thead>
+                        <tr>
+                            <td style="font-weight: bold">👪&nbsp;&nbsp;家庭成员:</td>
+                            <td style="font-weight: bold">📞&nbsp;&nbsp;联系方式:</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td th:text="${student.parent1}"></td>
+                            <td th:text="${student.parent1PhoneNum}"></td>
+                        </tr>
+                        <tr>
+                            <td th:text="${student.parent2}"></td>
+                            <td th:text="${student.parent2PhoneNum}"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div align="center">
+                        <a href="goUpdate">
+                            <button class="btn btn-warning btn-lg btn-block">更改✍</button>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

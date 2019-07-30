@@ -23,6 +23,7 @@ public class AuthController {
 
     private final
     CommonServiceImpl commonService;
+
     @Autowired
     public AuthController(CommonServiceImpl commonService) {
         this.commonService = commonService;
@@ -56,8 +57,7 @@ public class AuthController {
         final String managerAttributeName = "managerToken";
         String token = commonService.getToken(request);
         IdModel realModel = commonService.getRealInfo(token);
-        if (MANAGER_JUE.equals(realModel.getYbUserId()) || MANAGER_RAN.equals(realModel.getYbUserId())) {
-            System.out.println("学号为: " + realModel.getStuId() + "工号为: " + realModel.getEmployId());
+        if (MANAGER_JUE.equals(realModel.getYbUserId()) || MANAGER_RAN.equals(realModel.getYbUserId()) || MANAGER_LEE.equals(realModel.getYbUserId())) {
             request.getSession().setAttribute(managerAttributeName, token);
             //get in manager side
             return "redirect:" + ROOT_URL + "manager/setTiming";

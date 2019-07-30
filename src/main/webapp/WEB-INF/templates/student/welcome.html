@@ -11,7 +11,7 @@
 <style>
     body {
         width: auto;
-        font-family: "Microsoft YaHei UI", fantasy;
+        font-family: "Microsoft YaHei UI", monospace;
     }
 </style>
 <body>
@@ -20,10 +20,12 @@
         <div class="cover-container">
             <div class="masthead clearfix">
                 <div class="inner">
-                    <h3 class="masthead-brand">info&supdsub;collect</h3>
+                    <img class="pull-left" th:src="@{/static/img/yiban_logo.png}" height="45px" width="35px" alt="易班logo">
+                    <h3 class="masthead-brand text-muted">西石大易班发展中心</h3>
                     <nav>
                         <ul class="nav masthead-nav">
-                            <li class="active"><a href="welcome">Home</a></li>
+                            <li class="active"><a href="welcome">主页</a></li>
+                            <li th:if="${isExist}"><a href="myPage">我的信息</a></li>
                             <li><a href="/info-collect/signOut">注销</a></li>
                         </ul>
                     </nav>
@@ -40,7 +42,7 @@
                 </div>
                 <div th:if="${isExist}">
                     <p class="lead">恭喜, 录入成功啦!</p>
-                    <p class="lead">建议检查下信息的正确性哦~</p>
+                    <p class="lead">建议检查下信息的正确性哦</p>
                     <p class="lead">
                         <a href="myPage" class="btn btn-lg btn-info">我的信息‍</a>
                     </p>
@@ -49,7 +51,7 @@
         </div>
         <div class="mastfoot">
             <div class="inner">
-                <p>&copy;<a href="http://www.yiban.cn/school/index/id/5000084">石大YiBan</a>.</p>
+                <p>&copy;<a href="http://www.yiban.cn/school/index/id/5000084">石大易班</a>.</p>
             </div>
         </div>
     </div>

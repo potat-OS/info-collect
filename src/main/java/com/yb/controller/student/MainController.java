@@ -45,11 +45,11 @@ public class MainController {
                 request.getSession().setAttribute("stuModel", realModel);
             model.addAttribute("isExist", studentService.checkId(realModel.getStuId()));
             if (realModel.getRealName().length() <= 3) {
-                model.addAttribute("stuName", "🎉小" + realModel.getRealName().substring(0, 1) + "同学你好~🎉");
+                model.addAttribute("stuName", "🎉小" + realModel.getRealName().substring(0, 1) + "同学你好🎉");
             } else if (realModel.getRealName().length() == 4) {
-                model.addAttribute("stuName", "🎉" + realModel.getRealName().substring(0, 2) + "同学你好~🎉");
+                model.addAttribute("stuName", "🎉" + realModel.getRealName().substring(0, 2) + "同学你好🎉");
             } else {
-                model.addAttribute("stuName", "🎉新同学你好~🎉");
+                model.addAttribute("stuName", "🎉新同学你好🎉");
             }
         } return "student/welcome";
     }
@@ -58,7 +58,6 @@ public class MainController {
     public String myPage(Model model, HttpServletRequest request) {
         IdModel stuModel = (IdModel) request.getSession().getAttribute("stuModel");
         Student student = studentService.queryById(stuModel.getStuId());
-        model.addAttribute("stuName", student.getRealName() + "同学的信息");
         model.addAttribute("student", student);
         return "student/myPage";
     }

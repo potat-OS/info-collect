@@ -47,7 +47,7 @@ public class CommonServiceImpl implements CommonService {
 
     @Override
     public boolean idCheck(IdModel idModel) {
-        return idModel.getStuId().length() == 12 && (idModel.getEmployId() == null || idModel.getEmployId().isEmpty());
+        return idModel.getStuId().length() == 12;
     }
 
     @Override
@@ -77,7 +77,6 @@ public class CommonServiceImpl implements CommonService {
         idModel.setDepartment(object.getString("yb_collegename"));
         idModel.setStuId(object.getString("yb_studentid"));
         idModel.setRealName(object.getString("yb_realname"));
-        idModel.setEmployId(object.getString("yb_employid"));
         return idModel;
     }
 
@@ -90,7 +89,6 @@ public class CommonServiceImpl implements CommonService {
         idModel.setUsername(getBasicInfo.getString("yb_username"));
         idModel.setSchoolName(getBasicInfo.getString("yb_schoolname"));
         idModel.setYbUserId(getBasicInfo.getString("yb_userid"));
-        idModel.setSex(getBasicInfo.getString("yb_sex"));
         return idModel;
     }
 }

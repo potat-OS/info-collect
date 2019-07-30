@@ -17,6 +17,4 @@ public class IdModel {
     private String realName;
     private String username;
     private String schoolName;
-    private String sex;
-    private String employId;
 }

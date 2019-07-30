@@ -26,13 +26,13 @@ public class ErrorController {
 
     @RequestMapping("/errorTeacherId")
     public String errorTeacherId(Model model) {
-        model.addAttribute("errorMessage", "只有学生才可访问哦~");
+        model.addAttribute("errorMessage", "只对学生开放哦~");
         return "error/commonError";
     }
 
     @RequestMapping("/errorStuId")
     public String errorStuId(Model model) {
-        model.addAttribute("errorMessage", "只对老师开放哦~");
+        model.addAttribute("errorMessage", "只对教师开放哦~");
         return "error/commonError";
     }
 

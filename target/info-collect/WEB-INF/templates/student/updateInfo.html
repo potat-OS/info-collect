@@ -11,7 +11,7 @@
 <style>
     body {
         width: auto;
-        font-family: "Microsoft YaHei UI", fantasy;
+        font-family: "Microsoft YaHei UI", monospace;
     }
 
     .container-narrow {
@@ -21,8 +21,8 @@
 </style>
 <body>
 <div class="container">
-    <h3 style="margin-top: 70px" align="right">✍</h3>
-    <hr>
+    <h3 style="margin-top: 70px;font-size: xx-large" align="center">✍</h3>
+    <br>
     <form onsubmit="return comf()" action="updateInfo" class="form-actions container-narrow">
         <div class="input-group">
             <span class="input-group-addon">🔒</span>
@@ -30,7 +30,7 @@
                    th:value="${student.stuId}" readonly required/>
         </div>
         <div class="input-group">
-            <span class="input-group-addon">✒</span>
+            <span class="input-group-addon">📇</span>
             <input name="realName" class="form-control input-block-level" type="text" placeholder="姓名"
                    th:value="${student.realName}" disabled="" required/>
         </div>
