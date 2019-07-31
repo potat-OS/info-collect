@@ -6,32 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec4eb2f0-c1b5-4de3-9600-5b4ee4d7543d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yb/controller/teacher/DownloadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yb/controller/teacher/DownloadController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yb/service/impl/CommonServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yb/service/impl/CommonServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yb/util/DeptGetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yb/util/DeptGetter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yb/util/FileDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yb/util/FileDownloader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yb/util/excel/ExcelUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yb/util/excel/ExcelUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yb/util/excel/ExcelUtilTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yb/util/excel/ExcelUtilTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/commonError.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/commonError.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/errorId.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/errorId.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/managerError.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/managerError.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/stuErrorTiming.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/stuErrorTiming.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/teacherErrorTiming.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/teacherErrorTiming.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/manager/setTiming.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/manager/setTiming.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/manager/success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/manager/success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/myPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/myPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/stuInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/stuInfo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/stuSuccess.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/stuSuccess.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/updateInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/updateInfo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/welcome.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/teacher/infoTable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/teacher/infoTable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/teacher/information.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/teacher/information.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/cover.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/cover.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/yb/tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/yb/tests.java" afterDir="false" />
-    </list>
+    <list default="true" id="ec4eb2f0-c1b5-4de3-9600-5b4ee4d7543d" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -847,7 +822,7 @@
       <workItem from="1564134917280" duration="7464000" />
       <workItem from="1564144393770" duration="47000" />
       <workItem from="1564147559374" duration="43367000" />
-      <workItem from="1564535687803" duration="15333000" />
+      <workItem from="1564535687803" duration="15896000" />
     </task>
     <servers />
   </component>
@@ -884,7 +859,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="651162000" />
+    <option name="totallyTimeSpent" value="651725000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
