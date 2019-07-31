@@ -32,14 +32,14 @@ public class ExcelUtilTask extends TimerTask {
             SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
             Date date = dateFormat.parse(managerService.getTiming("student").getEndTime());
             Date instance = new Date();
-            File file = new File(TABLE_ROOT_PATH + "0.xls");
+            File file = new File(TABLE_ROOT_PATH + "0.xlsx");
             if (file.exists()) {
                 System.out.println("表已存在,无需生成!");
             } else {
                 if (instance.after(date)) {
                     for (int i = 0; i < DeptGetter.EACH_STU_NUMS.length; i++) {
                         ExcelUtil.createSheet(DeptGetter.getDept(i)
-                                , TABLE_ROOT_PATH + i + ".xls"
+                                , TABLE_ROOT_PATH + i + ".xlsx"
                                 , studentService.queryAll(DeptGetter.getDept(i)));
                     }
                     System.out.println("各院系表已生成!");

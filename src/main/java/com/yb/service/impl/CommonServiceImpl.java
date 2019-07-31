@@ -74,7 +74,12 @@ public class CommonServiceImpl implements CommonService {
         IdModel idModel = new IdModel();
         idModel.setYbUserId(object.getString("yb_userid"));
         idModel.setSchoolName(object.getString("yb_schoolname"));
-        idModel.setDepartment(object.getString("yb_collegename"));
+        String departmentName = object.getString("yb_collegename");
+        if (departmentName.contains("（") && departmentName.contains("）")) {
+            departmentName = departmentName.replace("（", "(");
+            departmentName = departmentName.replace("）", ")");
+        }
+        idModel.setDepartment(departmentName);
         idModel.setStuId(object.getString("yb_studentid"));
         idModel.setRealName(object.getString("yb_realname"));
         return idModel;

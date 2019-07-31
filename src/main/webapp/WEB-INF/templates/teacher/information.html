@@ -50,16 +50,14 @@
 </head>
 <body>
 <div class="container">
-    <div class="well">
-        <div class="container-narrow">
-            <ul class="nav nav-pills pull-right">
-                <li class="active"><a href="information">主页</a></li>
-                <!--<li><a href="">联系我们</a></li>-->
-                <li><a href="/info-collect/signOut">注销</a></li>
-            </ul>
-            <img class="pull-left" th:src="@{/static/img/yiban_logo.png}" height="50px" width="40px" alt="易班logo">
-            <h3 class="pull-left masthead-brand text-muted">&nbsp;石大易班</h3>
-        </div>
+    <div class="container-narrow well">
+        <ul class="nav nav-pills pull-right">
+            <li class="active"><a href="information">主页</a></li>
+            <!--<li><a href="">联系我们</a></li>-->
+            <li><a href="/info-collect/signOut">注销</a></li>
+        </ul>
+        <img class="pull-left" th:src="@{/static/img/yiban_logo.png}" height="50px" width="40px" alt="易班logo">
+        <h3 class="pull-left masthead-brand text-muted">&nbsp;石大易班</h3>
         <hr>
         <div class="jumbotron">
             <h1 th:text="${teacherName}"></h1>
@@ -84,16 +82,14 @@
                         </h4>
                     </a>
                 </div>
-                <div id="collapseOne" class="collapse container-fluid">
+                <div id="collapseOne" class="collapse">
                     <div class="row-fluid panel-body">
                         <div class="col-md-6">
                             <div class="well">
                                 <h4>地球科学与工程学院</h4>
                                 <p th:text="${stuNum0}"></p>
                                 <div class="btn-group">
-                                    <a href="download/0" target="_blank" download>
-                                        <button class="btn btn-primary">下载</button>
-                                    </a>
+                                    <a href="download/0" target="_blank" class="btn btn-primary" download>下载</a>
                                     <a href="infoTable/0" target="_blank">
                                         <button type="button" class="btn">预览</button>
                                     </a>
@@ -103,9 +99,7 @@
                                 <h4>计算机学院</h4>
                                 <p th:text="${stuNum1}"></p>
                                 <div class="btn-group">
-                                    <a href="download/1" target="_blank" download>
-                                        <button class="btn btn-primary">下载</button>
-                                    </a>
+                                    <a href="download/1" target="_blank" class="btn btn-primary" download>下载</a>
                                     <a href="infoTable/1" target="_blank">
                                         <button type="button" class="btn">预览</button>
                                     </a>
@@ -115,9 +109,7 @@
                                 <h4>石油工程学院</h4>
                                 <p th:text="${stuNum2}"></p>
                                 <div class="btn-group">
-                                    <a href="download/2" target="_blank" download>
-                                        <button class="btn btn-primary">下载</button>
-                                    </a>
+                                    <a href="download/2" target="_blank" class="btn btn-primary" download>下载</a>
                                     <a href="infoTable/2" target="_blank">
                                         <button type="button" class="btn">预览</button>
                                     </a>
@@ -127,9 +119,7 @@
                                 <h4>机械工程学院</h4>
                                 <p th:text="${stuNum3}"></p>
                                 <div class="btn-group">
-                                    <a href="download/3" target="_blank" download>
-                                        <button class="btn btn-primary">下载</button>
-                                    </a>
+                                    <a href="download/3" target="_blank" class="btn btn-primary" download>下载</a>
                                     <a href="infoTable/3" target="_blank">
                                         <button type="button" class="btn">预览</button>
                                     </a>
@@ -141,9 +131,7 @@
                                 <h4>材料科学与工程学院</h4>
                                 <p th:text="${stuNum4}"></p>
                                 <div class="btn-group">
-                                    <a href="download/4" target="_blank" download>
-                                        <button class="btn btn-primary">下载</button>
-                                    </a>
+                                    <a href="download/4" target="_blank" class="btn btn-primary" download>下载</a>
                                     <a href="infoTable/4" target="_blank">
                                         <button type="button" class="btn">预览</button>
                                     </a>
@@ -153,9 +141,7 @@
                                 <h4>理学院</h4>
                                 <p th:text="${stuNum5}"></p>
                                 <div class="btn-group">
-                                    <a href="download/5" target="_blank" download>
-                                        <button class="btn btn-primary">下载</button>
-                                    </a>
+                                    <a href="download/5" target="_blank" class="btn btn-primary" download>下载</a>
                                     <a href="infoTable/5" target="_blank">
                                         <button type="button" class="btn">预览</button>
                                     </a>
@@ -165,9 +151,7 @@
                                 <h4>化学化工学院</h4>
                                 <p th:text="${stuNum6}"></p>
                                 <div class="btn-group">
-                                    <a href="download/6" target="_blank" download>
-                                        <button class="btn btn-primary">下载</button>
-                                    </a>
+                                    <a href="download/6" target="_blank" class="btn btn-primary" download>下载</a>
                                     <a href="infoTable/6" target="_blank">
                                         <button type="button" class="btn">预览</button>
                                     </a>
@@ -177,9 +161,7 @@
                                 <h4>电子工程学院</h4>
                                 <p th:text="${stuNum7}"></p>
                                 <div class="btn-group">
-                                    <a href="download/7" target="_blank" download>
-                                        <button class="btn btn-primary">下载</button>
-                                    </a>
+                                    <a href="download/7" target="_blank" class="btn btn-primary" download>下载</a>
                                     <a href="infoTable/7" target="_blank">
                                         <button type="button" class="btn">预览</button>
                                     </a>
@@ -205,9 +187,7 @@
                                 <h4>马克思主义学院</h4>
                                 <p th:text="${stuNum8}"></p>
                                 <div class="btn-group">
-                                    <a href="download/8" target="_blank" download>
-                                        <button class="btn btn-primary">下载</button>
-                                    </a>
+                                    <a href="download/8" target="_blank" class="btn btn-primary" download>下载</a>
                                     <a href="infoTable/8" target="_blank">
                                         <button type="button" class="btn">预览</button>
                                     </a>
@@ -217,9 +197,7 @@
                                 <h4>人文学院</h4>
                                 <p th:text="${stuNum9}"></p>
                                 <div class="btn-group">
-                                    <a href="download/9" target="_blank" download>
-                                        <button class="btn btn-primary">下载</button>
-                                    </a>
+                                    <a href="download/9" target="_blank" class="btn btn-primary" download>下载</a>
                                     <a href="infoTable/9" target="_blank">
                                         <button type="button" class="btn">预览</button>
                                     </a>
@@ -231,9 +209,7 @@
                                 <h4>外国语学院</h4>
                                 <p th:text="${stuNum10}"></p>
                                 <div class="btn-group">
-                                    <a href="download/10" target="_blank" download>
-                                        <button class="btn btn-primary">下载</button>
-                                    </a>
+                                    <a href="download/10" target="_blank" class="btn btn-primary" download>下载</a>
                                     <a href="infoTable/10" target="_blank">
                                         <button type="button" class="btn">预览</button>
                                     </a>
@@ -243,9 +219,7 @@
                                 <h4>经济管理学院</h4>
                                 <p th:text="${stuNum11}"></p>
                                 <div class="btn-group">
-                                    <a href="download/11" target="_blank" download>
-                                        <button class="btn btn-primary">下载</button>
-                                    </a>
+                                    <a href="download/11" target="_blank" class="btn btn-primary" download>下载</a>
                                     <a href="infoTable/11" target="_blank">
                                         <button type="button" class="btn">预览</button>
                                     </a>
@@ -271,9 +245,7 @@
                                 <h4>体育系</h4>
                                 <p th:text="${stuNum12}"></p>
                                 <div class="btn-group">
-                                    <a href="download/12" target="_blank" download>
-                                        <button class="btn btn-primary">下载</button>
-                                    </a>
+                                    <a href="download/12" target="_blank" class="btn btn-primary" download>下载</a>
                                     <a href="infoTable/12" target="_blank">
                                         <button type="button" class="btn">预览</button>
                                     </a>
@@ -283,9 +255,7 @@
                                 <h4>音乐系</h4>
                                 <p th:text="${stuNum13}"></p>
                                 <div class="btn-group">
-                                    <a href="download/13" target="_blank" download>
-                                        <button class="btn btn-primary">下载</button>
-                                    </a>
+                                    <a href="download/13" target="_blank" class="btn btn-primary" download>下载</a>
                                     <a href="infoTable/13" target="_blank">
                                         <button type="button" class="btn">预览</button>
                                     </a>
@@ -297,9 +267,7 @@
                                 <h4>国际教育学院(丝路能源学院)</h4>
                                 <p th:text="${stuNum14}"></p>
                                 <div class="btn-group">
-                                    <a href="download/14" target="_blank" download>
-                                        <button class="btn btn-primary">下载</button>
-                                    </a>
+                                    <a href="download/14" target="_blank" class="btn btn-primary" download>下载</a>
                                     <a href="infoTable/14" target="_blank">
                                         <button type="button" class="btn">预览</button>
                                     </a>
@@ -309,9 +277,7 @@
                                 <h4>继续教育学院</h4>
                                 <p th:text="${stuNum15}"></p>
                                 <div class="btn-group">
-                                    <a href="download/15" target="_blank" download>
-                                        <button class="btn btn-primary">下载</button>
-                                    </a>
+                                    <a href="download/15" target="_blank" class="btn btn-primary" download>下载</a>
                                     <a href="infoTable/15" target="_blank">
                                         <button type="button" class="btn">预览</button>
                                     </a>

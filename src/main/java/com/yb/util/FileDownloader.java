@@ -1,15 +1,14 @@
 package com.yb.util;
 
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.context.request.RequestContextHolder;
-import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.*;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
-import java.util.Objects;
 
 import static com.yb.config.YbMsg.TABLE_ROOT_PATH;
 
@@ -17,8 +16,8 @@ import static com.yb.config.YbMsg.TABLE_ROOT_PATH;
  * @author Jue-PC
  */
 public class FileDownloader {
-    public static ResponseEntity<byte[]> download(int fileIndex) throws IOException {
-        File file = new File(TABLE_ROOT_PATH + fileIndex + ".xls");
+    public static ResponseEntity<byte[]> download(int fileIndex, HttpServletRequest request) throws IOException {
+        File file = new File(TABLE_ROOT_PATH + fileIndex + ".xlsx");
         byte[] body = new byte[(int) file.length()];
         try (BufferedInputStream inputStream = new BufferedInputStream(new FileInputStream(file))) {
             int line;
@@ -26,19 +25,22 @@ public class FileDownloader {
                 System.out.println("读取文件" + line);
             }
         }
-        HttpServletRequest request = ((ServletRequestAttributes) Objects.requireNonNull(RequestContextHolder
-                .getRequestAttributes())).getRequest();
-        String fileName = DeptGetter.getDept(fileIndex) + ".xls";
-        String header = request.getHeader("User-Agent").toUpperCase();
-
-        if (header.contains("MSIE") || header.contains("TRIDENT") || header.contains("EDGE")) {
+        String fileName = DeptGetter.getDept(fileIndex) + ".xlsx";
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_OCTET_STREAM);
+        String userAgent = request.getHeader("User-Agent").toLowerCase();
+        if (userAgent.contains("safari") && !userAgent.contains("chrome")) {
+            fileName = new String(fileName.getBytes(StandardCharsets.UTF_8), StandardCharsets.ISO_8859_1);
+            headers.setContentDispositionFormData("attachment", fileName);
+            return new ResponseEntity<byte[]>(body, headers, HttpStatus.CREATED);
+        } else if (userAgent.contains("msie") || userAgent.contains("like gecko") || userAgent.contains("trident")) {
             fileName = URLEncoder.encode(fileName, "UTF-8");
-            return ResponseEntity.ok().header("Content-Disposition", "attachment;fileName="
-                    + fileName).contentType(MediaType.APPLICATION_OCTET_STREAM).body(body);
+            headers.setContentDispositionFormData("attachment", fileName);
+            return new ResponseEntity<byte[]>(body, headers, HttpStatus.OK);
         } else {
             fileName = new String(fileName.getBytes(StandardCharsets.UTF_8), StandardCharsets.ISO_8859_1);
-            return ResponseEntity.ok().header("Content-Disposition", "attachment;fileName="
-                    + fileName).contentType(MediaType.APPLICATION_OCTET_STREAM).body(body);
+            headers.setContentDispositionFormData("attachment", fileName);
+            return new ResponseEntity<byte[]>(body, headers, HttpStatus.CREATED);
         }
     }
 }

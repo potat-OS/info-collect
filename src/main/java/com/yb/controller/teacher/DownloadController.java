@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
 /**
@@ -15,8 +16,8 @@ import java.io.IOException;
 public class DownloadController {
 
     @RequestMapping("/teacher/download/{deptId}")
-    public ResponseEntity<byte[]> download(@PathVariable int deptId) throws IOException {
-        return FileDownloader.download(deptId);
+    public ResponseEntity<byte[]> download(@PathVariable int deptId, HttpServletRequest request) throws IOException {
+        return FileDownloader.download(deptId,request);
     }
 
     @ExceptionHandler(IOException.class)

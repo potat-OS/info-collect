@@ -20,7 +20,7 @@ public class DeptGetter {
             , "体育系"
             , "音乐系"
             , "国际教育学院"
-            , "继续教育学院（职业技术学院）"};
+            , "继续教育学院(职业技术学院)"};
 
     public static String getDept(int index) {
         return EACH_STU_NUMS[index];
