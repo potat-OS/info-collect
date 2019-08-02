@@ -6,7 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec4eb2f0-c1b5-4de3-9600-5b4ee4d7543d" name="Default Changelist" comment="" />
+    <list default="true" id="ec4eb2f0-c1b5-4de3-9600-5b4ee4d7543d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc/jdbc.properties" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,6 +72,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc/jdbc.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yb/util/FileDownloader.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-27">
@@ -188,7 +199,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/yb/controller/common/AuthController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yb/controller/student/StuInfoController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yb/controller/student/MainController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/jdbc/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/cover.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/yb/util/DeptGetter.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/commonError.html" />
@@ -212,6 +222,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/teacher/information.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/yb/util/excel/ExcelUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yb/util/FileDownloader.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/jdbc/jdbc.properties" />
       </list>
     </option>
   </component>
@@ -822,7 +833,7 @@
       <workItem from="1564134917280" duration="7464000" />
       <workItem from="1564144393770" duration="47000" />
       <workItem from="1564147559374" duration="43367000" />
-      <workItem from="1564535687803" duration="15896000" />
+      <workItem from="1564535687803" duration="15944000" />
     </task>
     <servers />
   </component>
@@ -859,7 +870,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="651725000" />
+    <option name="totallyTimeSpent" value="651773000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -874,7 +885,7 @@
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49682876" visible="true" weight="0.2033557" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49682876" visible="true" weight="0.2033557" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" sideWeight="0.50317127" side_tool="true" weight="0.2033557" />
       <window_info id="Designer" order="3" />
@@ -885,7 +896,7 @@
       <window_info anchor="bottom" id="Debug" order="2" weight="0.3988355" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info active="true" anchor="bottom" x="23" y="295" width="1490" height="243" id="Run" order="5" sideWeight="0.49569583" visible="true" weight="0.36681223" />
+      <window_info anchor="bottom" x="23" y="295" width="1490" height="243" id="Run" order="5" sideWeight="0.49569583" weight="0.36681223" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32896653" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32896653" />
@@ -1213,13 +1224,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/myPage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -1323,6 +1327,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-27">
           <caret line="29" column="67" lean-forward="true" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
         </state>
       </provider>
     </entry>
