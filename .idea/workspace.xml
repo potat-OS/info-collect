@@ -7,47 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec4eb2f0-c1b5-4de3-9600-5b4ee4d7543d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/Mark.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/config/SpringConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/config/SpringMvcConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/config/SpringMybatisConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/config/WebConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/config/YbMsg.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/controller/common/AuthController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/controller/common/ErrorController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/controller/manager/TimeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/controller/student/MainController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/controller/student/StuInfoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/controller/teacher/DownloadController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/controller/teacher/TeacherInfoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/dao/DaoMark.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/dao/StudentMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/dao/TimingMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/entity/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/entity/Timing.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/filter/ManagerFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/filter/StudentFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/filter/TeacherFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/model/IdModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/service/CommonService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/service/ExcelUtilExecutor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/service/ManagerService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/service/StudentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/service/impl/CommonServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/service/impl/ManagerServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/service/impl/StudentServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/util/DeptGetter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/util/FileDownloader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/util/YbUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/util/excel/ExcelUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/util/excel/ExcelUtilTask.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/jdbc/jdbc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/mapper/stuMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/mapper/timingMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/mybatis/mybatis-cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/info-collect/com/yb/tests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc/jdbc.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/commonError.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/commonError.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/errorId.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/errorId.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/managerError.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/managerError.html" afterDir="false" />
@@ -62,110 +22,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/welcome.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/teacher/infoTable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/teacher/infoTable.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/teacher/information.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/teacher/information.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/img/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/Mark.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/config/SpringConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/config/SpringMvcConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/config/SpringMybatisConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/config/WebConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/config/YbMsg.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/controller/common/AuthController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/controller/common/ErrorController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/controller/manager/TimeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/controller/student/MainController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/controller/student/StuInfoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/controller/teacher/DownloadController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/controller/teacher/TeacherInfoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/dao/DaoMark.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/dao/StudentMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/dao/TimingMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/entity/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/entity/Timing.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/filter/ManagerFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/filter/StudentFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/filter/TeacherFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/model/IdModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/service/CommonService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/service/ExcelUtilExecutor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/service/ManagerService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/service/StudentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/service/impl/CommonServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/service/impl/ManagerServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/service/impl/StudentServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/util/DeptGetter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/util/FileDownloader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/util/YbUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/util/excel/ExcelUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/util/excel/ExcelUtilTask.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/jdbc/jdbc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/mapper/stuMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/mapper/timingMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/mybatis/mybatis-cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/YBOpenApi-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/attoparser-2.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/commons-codec-1.10.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/core-3.1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/dom4j-1.6.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/druid-1.0.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/fastjson-1.2.57.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/hamcrest-core-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/httpclient-4.5.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/httpcore-4.4.10.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/javassist-3.20.0-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/jsqlparser-0.9.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/junit-4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/mybatis-3.5.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/mybatis-spring-2.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/mysql-connector-java-5.1.41.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/ognl-3.1.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/pagehelper-4.1.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/poi-3.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/poi-ooxml-3.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/poi-ooxml-schemas-3.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/slf4j-log4j12-1.7.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/spring-aop-5.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/spring-beans-5.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/spring-context-5.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/spring-core-5.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/spring-expression-5.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/spring-jcl-5.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/spring-jdbc-5.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/spring-test-5.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/spring-tx-5.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/spring-web-5.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/spring-webmvc-5.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/stax-api-1.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/thymeleaf-3.0.11.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/thymeleaf-spring5-3.0.11.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/unbescape-1.1.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/xml-apis-1.0.b2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/lib/xmlbeans-2.3.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/error/commonError.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/error/errorId.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/error/managerError.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/error/stuErrorTiming.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/error/teacherErrorTiming.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/manager/setTiming.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/manager/success.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/student/myPage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/student/stuInfo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/student/stuSuccess.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/student/updateInfo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/student/welcome.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/teacher/infoTable.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/teacher/information.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/static/css/cover.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/static/img/304430_20190609221047_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/static/img/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/static/img/yiban_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -224,7 +81,16 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/teacher/information.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="154">
-              <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+              <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc/jdbc.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -233,21 +99,20 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/teacher/infoTable.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="110">
-              <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+              <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/favicon.ico">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/commonError.html">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/manager/setTiming.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+            <state relative-caret-position="176">
+              <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -256,7 +121,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/manager/success.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="176">
-              <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+              <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -265,7 +130,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/myPage.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
-              <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+              <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
               <folding>
                 <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -280,7 +145,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/stuInfo.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="140">
-              <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+              <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
               <folding>
                 <element signature="n#style#0;n#h3#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -292,7 +157,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/stuSuccess.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="176">
-              <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+              <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -301,7 +166,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/updateInfo.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="176">
-              <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+              <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
               <folding>
                 <element signature="n#style#0;n#h3#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -313,7 +178,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/welcome.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="176">
-              <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+              <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -349,7 +214,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/yb/filter/TeacherFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yb/filter/ManagerFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/yb/service/CommonService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yb/controller/manager/TimeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yb/controller/teacher/InfoController.java" />
@@ -379,15 +243,15 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8ca6f64a-3cbc-47bd-8f57-6690efd5acc5/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/yb/util/excel/ExcelUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yb/util/FileDownloader.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/jdbc/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/yb/controller/student/StuInfoController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yb/controller/teacher/TeacherInfoController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yb/controller/teacher/DownloadController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yb/filter/StudentFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/errorId.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/commonError.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/managerError.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/errorId.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/stuErrorTiming.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/managerError.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/teacherErrorTiming.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/manager/setTiming.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/manager/success.html" />
@@ -398,6 +262,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/welcome.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/teacher/information.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/teacher/infoTable.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/jdbc/jdbc.properties" />
       </list>
     </option>
   </component>
@@ -607,6 +472,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="info-collect" type="b2602c69:ProjectViewProjectNode" />
+              <item name="info-collect" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="jdbc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="info-collect" type="b2602c69:ProjectViewProjectNode" />
@@ -980,7 +853,7 @@
       <workItem from="1564144393770" duration="47000" />
       <workItem from="1564147559374" duration="43367000" />
       <workItem from="1564535687803" duration="15944000" />
-      <workItem from="1564758720046" duration="5455000" />
+      <workItem from="1564758720046" duration="6071000" />
     </task>
     <servers />
   </component>
@@ -1017,7 +890,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="657228000" />
+    <option name="totallyTimeSpent" value="657844000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1030,8 +903,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49682876" visible="true" weight="0.20604026" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49682876" visible="true" weight="0.20604026" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" sideWeight="0.50317127" side_tool="true" weight="0.2033557" />
       <window_info id="Designer" order="3" />
@@ -1042,7 +916,7 @@
       <window_info anchor="bottom" id="Debug" order="2" weight="0.3988355" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info active="true" anchor="bottom" x="23" y="295" width="1490" height="243" id="Run" order="5" sideWeight="0.49569583" visible="true" weight="0.36681223" />
+      <window_info anchor="bottom" x="23" y="295" width="1490" height="243" id="Run" order="5" sideWeight="0.49569583" visible="true" weight="0.36681223" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32896653" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32896653" />
@@ -1119,9 +993,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/static/img/yiban_logo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/img/304430_20190609221047_1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE-sources.jar!/org/springframework/http/ResponseEntity.java">
@@ -1236,20 +1107,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="49" column="44" lean-forward="true" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yb/controller/common/AuthController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1848">
@@ -1341,13 +1198,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yb/config/YbMsg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="71" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/cover.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
@@ -1358,38 +1208,65 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/errorId.html">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/favicon.ico">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yb/config/YbMsg.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="49" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="50" />
+        <state relative-caret-position="198">
+          <caret line="9" column="71" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="95" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/managerError.html">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/img/304430_20190609221047_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="54" column="26" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/commonError.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="56" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/errorId.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
-          <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+          <caret line="6" column="56" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/stuErrorTiming.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
-          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+          <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/managerError.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="56" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/teacherErrorTiming.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
-          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+          <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/manager/setTiming.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
-          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+          <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
           <folding>
             <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1400,14 +1277,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/manager/success.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
-          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+          <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/myPage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+          <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
           <folding>
             <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1420,7 +1297,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/stuInfo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
-          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+          <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
           <folding>
             <element signature="n#style#0;n#h3#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -1430,14 +1307,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/stuSuccess.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
-          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+          <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/updateInfo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
-          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+          <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
           <folding>
             <element signature="n#style#0;n#h3#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -1447,31 +1324,28 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/welcome.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
-          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+          <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/teacher/information.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
-          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/teacher/infoTable.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
-          <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+          <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/favicon.ico">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/commonError.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+        <state relative-caret-position="66">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
         </state>
       </provider>
     </entry>
