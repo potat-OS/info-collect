@@ -39,7 +39,6 @@ public class StuInfoController {
         IdModel idModel = (IdModel) request.getSession().getAttribute("stuModel");
         Student student = new Student();
         String stuId = idModel.getStuId();
-
         if (request.getSession().getAttribute("managerToken") == null) {
             String className = stuId.substring(2, 4) + stuId.substring(8, 10);
             student.setClassName(className);

@@ -20,7 +20,6 @@ public class StudentFilter implements Filter {
             , FilterChain filterChain) throws IOException, ServletException {
         HttpServletRequest request = (HttpServletRequest) servletRequest;
         HttpServletResponse response = (HttpServletResponse) servletResponse;
-
         final String stuAttributeName = "stuToken";
         final String teacherAttributeName = "teacherToken";
         final String managerAttributeName = "managerToken";

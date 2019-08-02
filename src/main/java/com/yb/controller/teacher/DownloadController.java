@@ -17,12 +17,12 @@ public class DownloadController {
 
     @RequestMapping("/teacher/download/{deptId}")
     public ResponseEntity<byte[]> download(@PathVariable int deptId, HttpServletRequest request) throws IOException {
-        return FileDownloader.download(deptId,request);
+        return FileDownloader.download(deptId, request);
     }
 
     @ExceptionHandler(IOException.class)
     public String exception(IOException e, Model model) {
-        model.addAttribute("errorMessage","文件读取异常");
+        model.addAttribute("errorMessage", "文件读取异常");
         e.printStackTrace();
         return "error/commonError";
     }
