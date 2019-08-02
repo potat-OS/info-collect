@@ -8,21 +8,22 @@
   <component name="ChangeListManager">
     <list default="true" id="ec4eb2f0-c1b5-4de3-9600-5b4ee4d7543d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/commonError.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/commonError.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/errorId.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/errorId.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/managerError.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/managerError.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/stuErrorTiming.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/stuErrorTiming.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/teacherErrorTiming.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/teacherErrorTiming.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/manager/setTiming.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/manager/setTiming.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/manager/success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/manager/success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/myPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/myPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/stuInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/stuInfo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/stuSuccess.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/stuSuccess.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/updateInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/updateInfo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/welcome.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/teacher/infoTable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/teacher/infoTable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/teacher/information.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/teacher/information.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/info-collect.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/error/commonError.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/error/commonError.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/error/errorId.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/error/errorId.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/error/managerError.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/error/managerError.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/error/stuErrorTiming.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/error/stuErrorTiming.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/error/teacherErrorTiming.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/error/teacherErrorTiming.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/manager/setTiming.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/manager/setTiming.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/manager/success.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/manager/success.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/student/myPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/student/myPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/student/stuInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/student/stuInfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/student/stuSuccess.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/student/stuSuccess.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/student/updateInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/student/updateInfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/student/welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/student/welcome.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/teacher/infoTable.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/teacher/infoTable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/teacher/information.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/teacher/information.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect/WEB-INF/web.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -89,8 +90,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc/jdbc.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+            <state relative-caret-position="264">
+              <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -853,7 +854,7 @@
       <workItem from="1564144393770" duration="47000" />
       <workItem from="1564147559374" duration="43367000" />
       <workItem from="1564535687803" duration="15944000" />
-      <workItem from="1564758720046" duration="6071000" />
+      <workItem from="1564758720046" duration="6376000" />
     </task>
     <servers />
   </component>
@@ -890,7 +891,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="657844000" />
+    <option name="totallyTimeSpent" value="658149000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -905,7 +906,7 @@
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49682876" visible="true" weight="0.20604026" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49682876" visible="true" weight="0.20604026" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" sideWeight="0.50317127" side_tool="true" weight="0.2033557" />
       <window_info id="Designer" order="3" />
@@ -916,7 +917,7 @@
       <window_info anchor="bottom" id="Debug" order="2" weight="0.3988355" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" x="23" y="295" width="1490" height="243" id="Run" order="5" sideWeight="0.49569583" visible="true" weight="0.36681223" />
+      <window_info active="true" anchor="bottom" x="23" y="295" width="1490" height="243" id="Run" order="5" sideWeight="0.49569583" visible="true" weight="0.36681223" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32896653" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32896653" />
@@ -1344,8 +1345,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        <state relative-caret-position="264">
+          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
         </state>
       </provider>
     </entry>
