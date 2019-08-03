@@ -7,6 +7,7 @@ import com.yb.service.impl.StudentServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
@@ -60,5 +61,12 @@ public class MainController {
         Student student = studentService.queryById(stuModel.getStuId());
         model.addAttribute("student", student);
         return "student/myPage";
+    }
+
+    @ExceptionHandler(Exception.class)
+    public String exception(Exception e, Model model) {
+        model.addAttribute("errorMessage", "出错辣ε=ε=ε=┏(゜ロ゜;)┛");
+        e.printStackTrace();
+        return "error/commonError";
     }
 }

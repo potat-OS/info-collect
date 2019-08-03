@@ -42,7 +42,7 @@
         <br>
         <div id="inputgroup1" class="input-group">
             <span class="input-group-addon">🏠</span>
-            <input name="address" class="form-control input-block-level" type="text" placeholder="家庭住址 /省/市/县(街道)/住址"
+            <input name="address" class="form-control input-block-level" type="text" placeholder="省/市/县(区)/街道/家庭住址"
                    required/>
         </div>
         <br>
@@ -51,7 +51,7 @@
             <input name="parent1" class="form-control input-block-level" type="text" placeholder="家庭成员一"
                    required/>
             <input id="parent1PhoneNumber" name="parent1PhoneNumber" class="form-control input-block-level" type="tel"
-                   placeholder="成员1联系方式" required onblur="verify2()" oninput="value=value.replace(/[^\d]/g,'')">
+                   placeholder="成员一联系方式" required onblur="verify2()" oninput="value=value.replace(/[^\d]/g,'')">
             <span id="message2" class="input-group-addon"></span>
         </div>
         <br>
@@ -59,7 +59,7 @@
             <span class="input-group-addon">👪<br><br>📞</span>
             <input name="parent2" class="form-control input-block-level" type="text" placeholder="家庭成员二"/>
             <input id="parent2PhoneNumber" name="parent2PhoneNumber" class="form-control input-block-level"
-                   placeholder="成员2联系方式"
+                   placeholder="成员二联系方式"
                    type="tel" onblur="verify3()" oninput="value=value.replace(/[^\d]/g,'')">
             <span id="message3" class="input-group-addon"></span>
         </div>

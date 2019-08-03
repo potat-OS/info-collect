@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yb.dao.StudentMapper">
+
+    <resultMap id="StudentMap" type="Student">
+        <id property="stuId" column="stu_id"/>
+        <result property="realName" column="real_name"/>
+        <result property="phoneNum" column="phone_num"/>
+        <result property="department" column="department"/>
+        <result property="major" column="major"/>
+        <result property="className" column="class_name"/>
+        <result property="address" column="address"/>
+        <result property="parent1" column="parent1"/>
+        <result property="parent1PhoneNum" column="parent1_phone_num"/>
+        <result property="parent2" column="parent2"/>
+        <result property="parent2PhoneNum" column="parent2_phone_num"/>
+    </resultMap>
+
+    <select id="queryAll" parameterType="java.lang.String" resultMap="StudentMap">
+        SELECT stu_id,
+               real_name,
+               phone_num,
+               department,
+               major,
+               class_name,
+               address,
+               parent1,
+               parent1_phone_num,
+               parent2,
+               parent2_phone_num
+        FROM stu_info_2019
+        WHERE department = #{department}
+        ORDER BY stu_id
+    </select>
+
+    <select id="queryById" parameterType="java.lang.String" resultMap="StudentMap">
+        SELECT *
+        FROM stu_info_2019
+        WHERE stu_id = #{stuId}
+    </select>
+
+    <select id="getCount" parameterType="java.lang.String" resultType="int">
+        SELECT COUNT(*)
+        FROM stu_info_2019
+        WHERE department = #{department}
+    </select>
+
+    <select id="checkId" parameterType="java.lang.String" resultType="int">
+        SELECT COUNT(stu_id)
+        FROM stu_info_2019
+        WHERE stu_id = #{stuId}
+    </select>
+
+
+    <insert id="insert" parameterType="Student">
+        INSERT INTO stu_info_2019(stu_id, real_name, phone_num, department, major, class_name, address, parent1,
+                                  parent1_phone_num, parent2, parent2_phone_num)
+        VALUES (#{stuId},
+                #{realName},
+                #{phoneNum},
+                #{department},
+                #{major},
+                #{className},
+                #{address},
+                #{parent1},
+                #{parent1PhoneNum},
+                #{parent2},
+                #{parent2PhoneNum})
+    </insert>
+
+    <update id="update" parameterType="Student">
+        UPDATE stu_info_2019
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="realName != null">
+                real_name = #{realName},
+            </if>
+            <if test="phoneNum != null">
+                phone_num = #{phoneNum},
+            </if>
+            <if test="department != null">
+                department = #{department},
+            </if>
+            <if test="major != null">
+                major = #{major},
+            </if>
+            <if test="className != null">
+                class_name = #{className},
+            </if>
+            <if test="address != null">
+                address = #{address},
+            </if>
+            <if test="parent1 != null">
+                parent1 = #{parent1},
+            </if>
+            <if test="parent1PhoneNum != null">
+                parent1_phone_num = #{parent1PhoneNum},
+            </if>
+            <if test="parent2 != null">
+                parent2 = #{parent2},
+            </if>
+            <if test="parent2PhoneNum != null">
+                parent2_phone_num = #{parent2PhoneNum},
+            </if>
+        </trim>
+        WHERE stu_id = #{stuId}
+    </update>
+</mapper>

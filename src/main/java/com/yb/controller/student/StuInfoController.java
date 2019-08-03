@@ -20,7 +20,6 @@ import static com.yb.config.YbMsg.*;
 @RequestMapping("/student")
 public class StuInfoController {
 
-
     private final
     StudentServiceImpl studentService;
 

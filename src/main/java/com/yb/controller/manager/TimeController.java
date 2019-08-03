@@ -4,6 +4,8 @@ import com.yb.entity.Timing;
 import com.yb.service.impl.ManagerServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
@@ -50,5 +52,12 @@ public class TimeController {
     @RequestMapping("/goStuApp")
     public String goStuApp() {
         return "redirect:" + STU_MAIN_PAGE;
+    }
+
+    @ExceptionHandler(Exception.class)
+    public String exception(Exception e, Model model) {
+        model.addAttribute("errorMessage", "出错辣ε=ε=ε=┏(゜ロ゜;)┛");
+        e.printStackTrace();
+        return "error/commonError";
     }
 }

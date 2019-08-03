@@ -19,6 +19,5 @@ public class ManagerFilter implements Filter {
         } else {
             response.sendRedirect(ROOT_URL + "managerError");
         }
-
     }
 }

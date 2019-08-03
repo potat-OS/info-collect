@@ -16,7 +16,6 @@ public interface TimingMapper {
      */
     Timing getTiming(String identity);
 
-
     /**
      * set timing
      *

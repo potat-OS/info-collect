@@ -44,7 +44,6 @@ public class TeacherFilter implements Filter {
                 filterChain.doFilter(request, response);
             }
         }
-
     }
 }
 
