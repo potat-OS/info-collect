@@ -37,9 +37,9 @@ public class TeacherFilter implements Filter {
             boolean isAlive = "200".equals(object.getString("status"));
             System.out.println("teacherToken存活时间为:\t" + object.getString("expire_in"));
 
-            if (teacherToken == null) { response.sendRedirect(MAIN_PAGE); } else if (!isAlive) {
+            if (teacherToken == null) { response.sendRedirect(ROOT_URL); } else if (!isAlive) {
                 request.getSession().removeAttribute("teacherToken");
-                response.sendRedirect(MAIN_PAGE);
+                response.sendRedirect(ROOT_URL);
             } else { filterChain.doFilter(request, response); }
         }
     }

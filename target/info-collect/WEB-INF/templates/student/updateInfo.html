@@ -74,7 +74,7 @@
 
         <div id="inputgroup3" class="input-group">
             <span class="input-group-addon">👪<br><br>📞</span>
-            <input name="parent2" class="form-control input-block-level" type="text" placeholder="家庭成员2"
+            <input id="parent2" name="parent2" class="form-control input-block-level" type="text" placeholder="家庭成员2"
                    th:value="${student.parent2}"/>
             <input id="parent2PhoneNum" name="parent2PhoneNum" class="form-control input-block-level"
                    placeholder="成员2联系方式"
@@ -110,11 +110,20 @@
 
     function verify3() {
         let parent2PhoneNum = document.getElementById("parent2PhoneNum").value;
+        let parent2 = document.getElementById("parent2").value;
         let message3 = document.getElementById("message3");
-        if (parent2PhoneNum.length !== 11 && parent2PhoneNum.length > 0) {
-            message3.innerText = "❌";
+        if (parent2.length > 0) {
+            if (parent2PhoneNum.length !== 11) {
+                message3.innerText = "❌";
+            } else {
+                message3.innerText = "";
+            }
         } else {
-            message3.innerText = "";
+            if (parent2PhoneNum.length > 0) {
+                message3.innerText = "❌";
+            } else {
+                message3.innerText = "";
+            }
         }
     }
 
@@ -122,11 +131,26 @@
         let phoneNum = document.getElementById("phoneNum").value;
         let parent1PhoneNum = document.getElementById("parent1PhoneNum").value;
         let parent2PhoneNum = document.getElementById("parent2PhoneNum").value;
-        if ((parent2PhoneNum.length !== 11 && parent2PhoneNum.length > 0) || parent1PhoneNum.length !== 11 || phoneNum.length !== 11) {
-            alert("请检查号码长度!");
-            return false;
+        let parent2 = document.getElementById("parent2").value;
+        if (parent2.length > 0) {
+            if (parent2PhoneNum.length !== 11 || parent1PhoneNum.length !== 11 || phoneNum.length !== 11) {
+                alert("请检查号码长度!");
+                return false;
+            } else {
+                return confirm("确认提交吗?");
+            }
         } else {
-            return confirm("确认提交吗?")
+            if (!(parent2PhoneNum.length > 0)) {
+                if (parent1PhoneNum.length !== 11 || phoneNum.length !== 11) {
+                    alert("请检查号码长度!");
+                    return false;
+                } else {
+                    return confirm("确认提交吗?");
+                }
+            } else {
+                alert("请填写成员二姓名");
+                return false;
+            }
         }
     }
 </script>

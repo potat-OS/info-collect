@@ -103,7 +103,7 @@ public class AuthController {
             YbUtil ybUtil = new YbUtil(managerToken);
             ybUtil.getUtil().revoke();
             request.getSession().removeAttribute("managerToken");
-        } return "redirect:" + MAIN_PAGE;
+        } return "redirect:" + ROOT_URL;
     }
 
     @ExceptionHandler(Exception.class)

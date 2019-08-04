@@ -36,10 +36,10 @@ public class StudentFilter implements Filter {
             boolean tIsAlive = "200".equals(object.getString("status"));
             System.out.println("stuToken存活时间为:\t" + object.getString("expire_in"));
 
-            if (stuToken == null) { response.sendRedirect(MAIN_PAGE); }
+            if (stuToken == null) { response.sendRedirect(ROOT_URL); }
             else if (!tIsAlive) {
                 request.getSession().removeAttribute("stuToken");
-                response.sendRedirect(MAIN_PAGE);
+                response.sendRedirect(ROOT_URL);
             } else { filterChain.doFilter(request, response); }
         }
     }
