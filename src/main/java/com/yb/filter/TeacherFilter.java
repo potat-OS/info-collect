@@ -30,19 +30,17 @@ public class TeacherFilter implements Filter {
         } else if (request.getSession().getAttribute(stuAttributeName) != null) {
             response.sendRedirect(ROOT_URL + "errorStuId");
         } else {
+
             YbUtil ybUtil = new YbUtil(teacherToken);
             String statusObj = ybUtil.getUtil().query();
             JSONObject object = JSONObject.parseObject(statusObj);
             boolean isAlive = "200".equals(object.getString("status"));
             System.out.println("teacherToken存活时间为:\t" + object.getString("expire_in"));
-            if (teacherToken == null) {
-                response.sendRedirect(MAIN_PAGE);
-            } else if (!isAlive) {
+
+            if (teacherToken == null) { response.sendRedirect(MAIN_PAGE); } else if (!isAlive) {
                 request.getSession().removeAttribute("teacherToken");
                 response.sendRedirect(MAIN_PAGE);
-            } else {
-                filterChain.doFilter(request, response);
-            }
+            } else { filterChain.doFilter(request, response); }
         }
     }
 }

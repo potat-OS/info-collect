@@ -67,7 +67,7 @@
             </a>
         </li>
         <li th:each="pageNo : ${#numbers.sequence(1,totalPages)}">
-            <a class="btn-link disabled" th:if="${pageNum eq pageNo}" href="javascript:void(0);">
+            <a class="btn-link disabled" th:if="${pageNum eq pageNo}">
                 <span th:text="${pageNo}"></span>
             </a>
             <a class="btn-link" th:if="${not (pageNum eq pageNo)}"

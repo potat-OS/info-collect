@@ -41,14 +41,9 @@ public class ExcelUtilTask extends TimerTask {
                         ExcelUtil.createSheet(DeptGetter.getDept(i)
                                 , TABLE_ROOT_PATH + i + ".xlsx"
                                 , studentService.queryAll(DeptGetter.getDept(i)));
-                    }
-                    System.out.println("各院系表已生成!");
-                } else {
-                    System.out.println("时机未到!");
-                }
+                    } System.out.println("各院系表已生成!");
+                } else { System.out.println("时机未到!"); }
             }
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
+        } catch (ParseException e) { e.printStackTrace(); }
     }
 }

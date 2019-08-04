@@ -28,28 +28,28 @@
         <div class="input-group">
             <span class="input-group-addon">🔒</span>
             <input name="stuId" class="form-control input-block-level" type="text" placeholder="学号"
-                   th:value="${student.stuId}" readonly required/>
+                   th:value="${student.stuId}" readonly required/><span class="input-group-addon"></span>
         </div>
         <div class="input-group">
             <span class="input-group-addon">📇</span>
             <input name="realName" class="form-control input-block-level" type="text" placeholder="姓名"
-                   th:value="${student.realName}" disabled="" required/>
+                   th:value="${student.realName}" disabled="" required/><span class="input-group-addon"></span>
         </div>
         <div class="input-group">
             <span class="input-group-addon">‍🏫</span>
             <input name="department" class="form-control input-block-level" type="text" placeholder="院系"
-                   th:value="${student.department}" disabled="" required/>
+                   th:value="${student.department}" disabled="" required/><span class="input-group-addon"></span>
         </div>
         <div class="input-group">
             <span class="input-group-addon">‍📚</span>
             <input name="major" class="form-control input-block-level" type="text" placeholder="专业"
-                   th:value="${student.major}" disabled required/>
+                   th:value="${student.major}" disabled required/><span class="input-group-addon"></span>
         </div>
         <div class="input-group">
             <span class="input-group-addon">🎓</span>
             <input name="className" class="form-control input-block-level" type="text" placeholder="班级"
                    th:value="${student.className}" oninput="value=value.replace(/[^\d]/g,'')" disabled required/>
-        </div>
+        </div><span class="input-group-addon"></span>
         <br>
         <div class="input-group">
             <span class="input-group-addon">📞</span>
@@ -60,7 +60,7 @@
         <div id="inputgroup1" class="input-group">
             <span class="input-group-addon">🏠</span>
             <input name="address" class="form-control input-block-level" type="text" placeholder="家庭住址"
-                   th:value="${student.address}" required/>
+                   th:value="${student.address}" required/><span class="input-group-addon"></span>
         </div>
         <br>
         <div id="inputgroup2" class="input-group">
@@ -111,7 +111,7 @@
     function verify3() {
         let parent2PhoneNum = document.getElementById("parent2PhoneNum").value;
         let message3 = document.getElementById("message3");
-        if (parent2PhoneNum.length !== 11 && parent2PhoneNum.length !== 0 && parent2PhoneNum != null) {
+        if (parent2PhoneNum.length !== 11 && parent2PhoneNum.length > 0) {
             message3.innerText = "❌";
         } else {
             message3.innerText = "";

@@ -21,9 +21,7 @@ public class FileDownloader {
         byte[] body = new byte[(int) file.length()];
         try (BufferedInputStream inputStream = new BufferedInputStream(new FileInputStream(file))) {
             int line;
-            if ((line = inputStream.read(body)) != -1) {
-                System.out.println("读取文件" + line);
-            }
+            if ((line = inputStream.read(body)) != -1) { System.out.println("读取文件" + line); }
         }
         String fileName = DeptGetter.getDept(fileIndex) + ".xlsx";
         HttpHeaders headers = new HttpHeaders();

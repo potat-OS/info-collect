@@ -35,7 +35,6 @@ public interface StudentService {
      */
     int getCount(String department);
 
-
     /**
      * check id exist
      *
@@ -44,7 +43,6 @@ public interface StudentService {
      */
     boolean checkId(String stuId);
 
-
     /**
      * insert student data
      *
@@ -52,7 +50,6 @@ public interface StudentService {
      * @return
      */
     void insert(Student student);
-
 
     /**
      * update student information

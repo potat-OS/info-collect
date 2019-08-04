@@ -16,8 +16,7 @@ public class ManagerFilter implements Filter {
         String managerAttribute = "managerToken";
         if (request.getSession().getAttribute(managerAttribute) != null) {
             filterChain.doFilter(request, response);
-        } else {
-            response.sendRedirect(ROOT_URL + "managerError");
         }
+        else { response.sendRedirect(ROOT_URL + "managerError"); }
     }
 }

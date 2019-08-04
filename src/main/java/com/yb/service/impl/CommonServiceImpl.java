@@ -46,9 +46,7 @@ public class CommonServiceImpl implements CommonService {
     }
 
     @Override
-    public boolean idCheck(IdModel idModel) {
-        return idModel.getStuId().length() == 12;
-    }
+    public boolean idCheck(IdModel idModel) { return idModel.getStuId().length() == 12; }
 
     @Override
     public boolean timeCheck(String identity) throws ParseException {
@@ -62,16 +60,14 @@ public class CommonServiceImpl implements CommonService {
             Date stuStartTime = dateFormat.parse(timing.getStartTime());
             Date stuEndTime = dateFormat.parse(timing.getEndTime());
             return instance.after(stuStartTime) && instance.before(stuEndTime);
-        } else {
-            return false;
-        }
+        } else { return false; }
     }
 
     @Override
     public IdModel getRealInfo(String token) {
         YbUtil ybUtil = new YbUtil(token);
-        JSONObject object = JSONObject.parseObject(ybUtil.verifyMe()).getJSONObject("info");
         IdModel idModel = new IdModel();
+        JSONObject object = JSONObject.parseObject(ybUtil.verifyMe()).getJSONObject("info");
         idModel.setYbUserId(object.getString("yb_userid"));
         idModel.setSchoolName(object.getString("yb_schoolname"));
         String departmentName = object.getString("yb_collegename");
@@ -82,18 +78,6 @@ public class CommonServiceImpl implements CommonService {
         idModel.setDepartment(departmentName);
         idModel.setStuId(object.getString("yb_studentid"));
         idModel.setRealName(object.getString("yb_realname"));
-        return idModel;
-    }
-
-    @Override
-    public IdModel getInfo(String token) {
-        User ybUser = new User(token);
-        JSONObject getBasicInfo = JSONObject.parseObject(ybUser.me()).getJSONObject("info");
-        System.out.println(getBasicInfo);
-        IdModel idModel = new IdModel();
-        idModel.setUsername(getBasicInfo.getString("yb_username"));
-        idModel.setSchoolName(getBasicInfo.getString("yb_schoolname"));
-        idModel.setYbUserId(getBasicInfo.getString("yb_userid"));
         return idModel;
     }
 }

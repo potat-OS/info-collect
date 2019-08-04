@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="6a3085f4-7508-4f54-a333-53253ba6e06e" name="potatOS" url="http://118.89.153.182">
-        <fileTransfer host="118.89.153.182" port="22" rootFolder="/home/ubuntu/Catalina/tomcat9/webapps" accessType="SFTP">
+      <webServer id="6a3085f4-7508-4f54-a333-53253ba6e06e" name="potatOS" url="https://www.potat-os.cn">
+        <fileTransfer host="www.potat-os.cn" port="22" rootFolder="/home/ubuntu/Catalina/tomcat9/webapps" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

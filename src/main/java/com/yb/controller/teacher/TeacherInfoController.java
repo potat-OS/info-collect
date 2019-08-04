@@ -55,11 +55,8 @@ public class TeacherInfoController {
                 model.addAttribute("teacherName", teacherName.substring(0, 1) + "老师,您好!");
             } else if (teacherName.length() == 4) {
                 model.addAttribute("teacherName", teacherName.substring(0, 2) + "老师,您好!");
-            } else {
-                model.addAttribute("teacherName", teacherName + "老师,您好!");
-            }
-        }
-        return "teacher/information";
+            } else { model.addAttribute("teacherName", teacherName + "老师,您好!"); }
+        } return "teacher/information";
     }
 
     @RequestMapping("/infoTable/{deptId}")

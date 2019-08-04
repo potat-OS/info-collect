@@ -36,14 +36,14 @@
         <br>
         <div class="input-group">
             <span class="input-group-addon">📚</span>
-            <input name="major" class="form-control input-block-level" type="text" placeholder="专业全称"
-                   required/>
+            <input name="major" class="form-control input-block-level" type="text" placeholder="专业全称 以录取通知书为准"
+                   required/><span class="input-group-addon"></span>
         </div>
         <br>
         <div id="inputgroup1" class="input-group">
             <span class="input-group-addon">🏠</span>
-            <input name="address" class="form-control input-block-level" type="text" placeholder="省/市/县(区)/街道/家庭住址"
-                   required/>
+            <input name="address" class="form-control input-block-level" type="text" placeholder="家庭住址 省/市/区(县)/街道/住址"
+                   required/><span class="input-group-addon"></span>
         </div>
         <br>
         <div id="inputgroup2" class="input-group">
@@ -65,7 +65,6 @@
         </div>
         <br>
         <div align="center">
-            <h4>请确认信息无误后提交哦~</h4>
             <input class="btn btn-success btn-lg btn-block" type="submit" value="提交✔"/>
         </div>
     </form>
@@ -94,7 +93,7 @@
     function verify3() {
         let parent2PhoneNum = document.getElementById("parent1PhoneNumber").value;
         let message3 = document.getElementById("message3");
-        if (parent2PhoneNum.length !== 11 && (parent2PhoneNum.length !== 0 || parent2PhoneNum != null)) {
+        if (parent2PhoneNum.length !== 11 && parent2PhoneNum.length > 0) {
             message3.innerText = "❌";
         } else {
             message3.innerText = "";

@@ -34,8 +34,7 @@ class ExcelUtil {
         int rowIndex = 0;
         for (int i = 0; i < ExcelUtil.ROW_NAME.length; i++) {
             title.createCell(i).setCellValue(ROW_NAME[i]);
-        }
-        rowIndex++;
+        } rowIndex++;
         for (Student student : students) {
             XSSFRow row = sheet.createRow(rowIndex);
             Cell cell0 = row.createCell(0);
@@ -59,15 +58,11 @@ class ExcelUtil {
             cell7.setCellValue(student.getParent1());
             cell8.setCellValue(student.getParent1PhoneNum());
             cell9.setCellValue(student.getParent2());
-            cell10.setCellValue(student.getParent2PhoneNum());
-            rowIndex++;
-        }
-        File file = new File(filePath);
+            cell10.setCellValue(student.getParent2PhoneNum()); rowIndex++;
+        } File file = new File(filePath);
         try (BufferedOutputStream outputStream = new BufferedOutputStream(new FileOutputStream(file))) {
             workbook.write(outputStream);
             System.out.println(sheetName + "表已生成");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        } catch (IOException e) { e.printStackTrace(); }
     }
 }

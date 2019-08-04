@@ -40,7 +40,9 @@ public class StudentServiceImpl implements StudentService {
     @Override
     public boolean checkId(String stuId) {
         int i = studentMapper.checkId(stuId);
-        if (i == 0) { return false; } else if (i == 1) { return true; } else { return true; }
+        if (i == 0) { return false; }
+        else if (i == 1) { return true; }
+        else { return true; }
     }
 
     @Override
