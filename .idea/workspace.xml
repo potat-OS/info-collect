@@ -3,13 +3,11 @@
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
       <artifact name="info-collect:war" />
+      <artifact name="info-collect:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec4eb2f0-c1b5-4de3-9600-5b4ee4d7543d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yb/controller/teacher/TeacherInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yb/controller/teacher/TeacherInfoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc/jdbc.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -135,8 +133,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc/jdbc.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+            <state relative-caret-position="176">
+              <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -292,71 +290,6 @@
             <path>
               <item name="info-collect" type="b2602c69:ProjectViewProjectNode" />
               <item name="info-collect" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="info-collect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="info-collect" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="info-collect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="info-collect" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="info-collect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="info-collect" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="info-collect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="info-collect" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yb" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="info-collect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="info-collect" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="info-collect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="info-collect" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="jdbc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="info-collect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="info-collect" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="info-collect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="info-collect" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="info-collect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="info-collect" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -651,7 +584,7 @@
       <workItem from="1564839319257" duration="2318000" />
       <workItem from="1564903784039" duration="6274000" />
       <workItem from="1564911678325" duration="3248000" />
-      <workItem from="1564976604710" duration="10202000" />
+      <workItem from="1564976604710" duration="10339000" />
     </task>
     <servers />
   </component>
@@ -688,7 +621,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="681934000" />
+    <option name="totallyTimeSpent" value="682071000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -713,7 +646,7 @@
       <window_info anchor="bottom" id="Debug" order="2" weight="0.3988355" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" x="23" y="295" width="1490" height="243" id="Run" order="5" sideWeight="0.49530202" visible="true" weight="0.36826783" />
+      <window_info anchor="bottom" x="23" y="295" width="1490" height="243" id="Run" order="5" sideWeight="0.49530202" weight="0.36826783" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32896653" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32896653" />
@@ -1138,8 +1071,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        <state relative-caret-position="176">
+          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
         </state>
       </provider>
     </entry>
