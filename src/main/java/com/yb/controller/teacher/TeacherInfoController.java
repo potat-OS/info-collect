@@ -42,12 +42,12 @@ public class TeacherInfoController {
         String teacherToken = (String) request.getSession().getAttribute(teacherAttributeName);
         if (managerToken != null) {
             for (int i = 0; i < EACH_STU_NUMS.length; i++) {
-                model.addAttribute("stuNum" + i, "2019届新生人数: " + studentService.getCount(getDept(i)));
+                model.addAttribute("stuNum" + i, "已填写人数: " + studentService.getCount(getDept(i)));
             }
             model.addAttribute("teacherName", "Manager");
         } else {
             for (int i = 0; i < EACH_STU_NUMS.length; i++) {
-                model.addAttribute("stuNum" + i, "2019届新生人数: " + studentService.getCount(getDept(i)));
+                model.addAttribute("stuNum" + i, "已填写人数: " + studentService.getCount(getDept(i)));
             }
             IdModel idModel = commonService.getRealInfo(teacherToken);
             String teacherName = idModel.getRealName();
