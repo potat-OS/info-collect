@@ -3,6 +3,7 @@ package com.yb.controller.student;
 import com.yb.entity.Student;
 import com.yb.model.IdModel;
 import com.yb.service.impl.CommonServiceImpl;
+import com.yb.service.impl.ManagerServiceImpl;
 import com.yb.service.impl.StudentServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -25,10 +26,14 @@ public class MainController {
     private final
     StudentServiceImpl studentService;
 
+    private final
+    ManagerServiceImpl managerService;
+
     @Autowired
-    public MainController(CommonServiceImpl commonService, StudentServiceImpl studentService) {
+    public MainController(CommonServiceImpl commonService, StudentServiceImpl studentService, ManagerServiceImpl managerService) {
         this.commonService = commonService;
         this.studentService = studentService;
+        this.managerService = managerService;
     }
 
     @RequestMapping("/welcome")
@@ -38,12 +43,15 @@ public class MainController {
             if (request.getSession().getAttribute("stuModel") == null) {
                 request.getSession().setAttribute("stuModel", realModel);
             }
+            model.addAttribute("isRightTiming", true);
             model.addAttribute("isExist", studentService.checkId(realModel.getStuId()));
             model.addAttribute("stuName", "Manager");
         } else {
             IdModel realModel = commonService.getRealInfo((String) request.getSession().getAttribute("stuToken"));
-            if (request.getSession().getAttribute("stuModel") == null)
+            if (request.getSession().getAttribute("stuModel") == null) {
                 request.getSession().setAttribute("stuModel", realModel);
+            }
+            model.addAttribute("isRightTiming", realModel.getStuId().substring(0, 4).equals(managerService.getTiming("student").getStartTime().substring(0, 4)));
             model.addAttribute("isExist", studentService.checkId(realModel.getStuId()));
             if (realModel.getRealName().length() <= 3) {
                 model.addAttribute("stuName", "🎉小" + realModel.getRealName().substring(0, 1) + "同学你好🎉");
