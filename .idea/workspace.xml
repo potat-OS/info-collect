@@ -3,52 +3,14 @@
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
       <artifact name="info-collect:war" />
-      <artifact name="info-collect:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec4eb2f0-c1b5-4de3-9600-5b4ee4d7543d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/config/YbMsg.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/info-collect/com/yb/config/YbMsg.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/controller/common/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/info-collect/com/yb/controller/common/AuthController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/controller/manager/TimeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/info-collect/com/yb/controller/manager/TimeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/controller/student/StuInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/info-collect/com/yb/controller/student/StuInfoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/controller/teacher/TeacherInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/info-collect/com/yb/controller/teacher/TeacherInfoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/filter/ManagerFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/info-collect/com/yb/filter/ManagerFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/filter/StudentFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/info-collect/com/yb/filter/StudentFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/filter/TeacherFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/info-collect/com/yb/filter/TeacherFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/service/CommonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/info-collect/com/yb/service/CommonService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/service/impl/CommonServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/info-collect/com/yb/service/impl/CommonServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/service/impl/StudentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/info-collect/com/yb/service/impl/StudentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/util/FileDownloader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/info-collect/com/yb/util/FileDownloader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/util/excel/ExcelUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/info-collect/com/yb/util/excel/ExcelUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/info-collect/com/yb/util/excel/ExcelUtilTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/info-collect/com/yb/util/excel/ExcelUtilTask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/info-collect/com/yb/tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/info-collect/com/yb/tests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yb/config/YbMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yb/config/YbMsg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yb/controller/common/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yb/controller/common/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yb/filter/StudentFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yb/filter/StudentFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yb/filter/TeacherFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yb/filter/TeacherFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/stuInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/stuInfo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/updateInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/updateInfo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/yb/tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/yb/tests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/config/YbMsg.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/config/YbMsg.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/controller/common/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/controller/common/AuthController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/controller/manager/TimeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/controller/manager/TimeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/controller/student/StuInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/controller/student/StuInfoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/controller/teacher/TeacherInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/controller/teacher/TeacherInfoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/filter/ManagerFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/filter/ManagerFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/filter/StudentFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/filter/StudentFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/filter/TeacherFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/filter/TeacherFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/service/CommonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/service/CommonService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/service/impl/CommonServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/service/impl/CommonServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/service/impl/StudentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/service/impl/StudentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/util/FileDownloader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/util/FileDownloader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/util/excel/ExcelUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/util/excel/ExcelUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/util/excel/ExcelUtilTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect/WEB-INF/classes/com/yb/util/excel/ExcelUtilTask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/student/stuInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/student/stuInfo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/student/updateInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/student/updateInfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/teacher/information.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/teacher/information.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/info-collect.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/teacher/information.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/info-collect/WEB-INF/templates/teacher/information.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -104,42 +66,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yb/controller/common/ErrorController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="968">
-              <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yb/controller/manager/TimeController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
-              <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yb/controller/student/MainController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="64" selection-start-line="64" selection-end-line="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yb/controller/student/StuInfoController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yb/controller/teacher/DownloadController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
@@ -148,47 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yb/controller/teacher/TeacherInfoController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="924">
-              <caret line="58" column="39" lean-forward="true" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yb/filter/ManagerFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yb/filter/StudentFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="38" column="66" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yb/filter/TeacherFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="39" column="70" selection-start-line="39" selection-start-column="70" selection-end-line="39" selection-end-column="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yb/config/YbMsg.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc/jdbc.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="8" column="89" selection-start-line="8" selection-start-column="89" selection-end-line="8" selection-end-column="89" />
+            <state relative-caret-position="66">
+              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -246,7 +136,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/yb/controller/student/StuInfoController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/stuSuccess.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/welcome.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/teacher/information.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/teacher/infoTable.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/yb/config/WebConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yb/config/SpringConfig.java" />
@@ -263,16 +152,17 @@
         <option value="$PROJECT_DIR$/src/main/java/com/yb/dao/DaoMark.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yb/Mark.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yb/controller/teacher/TeacherInfoController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/jdbc/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/yb/config/SpringMybatisConfig.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/yb/tests.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/updateInfo.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/stuInfo.html" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8ca6f64a-3cbc-47bd-8f57-6690efd5acc5/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/yb/controller/common/AuthController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yb/filter/StudentFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yb/filter/TeacherFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/teacher/information.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/yb/config/YbMsg.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8ca6f64a-3cbc-47bd-8f57-6690efd5acc5/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/jdbc/jdbc.properties" />
       </list>
     </option>
   </component>
@@ -338,7 +228,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -386,92 +275,15 @@
               <item name="info-collect" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yb" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="info-collect" type="b2602c69:ProjectViewProjectNode" />
               <item name="info-collect" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yb" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="info-collect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="info-collect" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yb" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="info-collect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="info-collect" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yb" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="info-collect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="info-collect" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yb" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="info-collect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="info-collect" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yb" type="462c0819:PsiDirectoryNode" />
-              <item name="filter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="info-collect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="info-collect" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="info-collect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="info-collect" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="info-collect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="info-collect" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="info-collect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="info-collect" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="jdbc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="info-collect" type="b2602c69:ProjectViewProjectNode" />
@@ -482,6 +294,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -751,7 +564,8 @@
       <workItem from="1564758720046" duration="8119000" />
       <workItem from="1564839319257" duration="2318000" />
       <workItem from="1564903784039" duration="6274000" />
-      <workItem from="1564911678325" duration="2282000" />
+      <workItem from="1564911678325" duration="3248000" />
+      <workItem from="1564976604710" duration="2295000" />
     </task>
     <servers />
   </component>
@@ -788,7 +602,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="670766000" />
+    <option name="totallyTimeSpent" value="674027000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -801,9 +615,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49682876" visible="true" weight="0.21409395" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49682876" visible="true" weight="0.21677852" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" sideWeight="0.50317127" side_tool="true" weight="0.2033557" />
       <window_info id="Designer" order="3" />
@@ -832,7 +645,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="BPMNPalette" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.22550336" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.22550336" />
       <window_info anchor="right" id="Maven" order="5" weight="0.3281879" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
     </layout>
@@ -879,26 +692,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/myPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="115" column="43" lean-forward="true" selection-start-line="115" selection-start-column="43" selection-end-line="115" selection-end-column="43" />
-          <folding>
-            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#3;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/teacher/information.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/teacher/infoTable.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -1073,13 +866,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yb/config/WebConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -1169,13 +955,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8ca6f64a-3cbc-47bd-8f57-6690efd5acc5/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-176">
-          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yb/controller/common/AuthController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1276">
@@ -1199,15 +978,77 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yb/controller/student/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
+        <state relative-caret-position="1188">
           <caret line="64" selection-start-line="64" selection-end-line="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yb/controller/student/StuInfoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
+        <state relative-caret-position="220">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yb/controller/teacher/TeacherInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="58" column="39" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yb/filter/ManagerFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yb/filter/StudentFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="38" column="66" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yb/filter/TeacherFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="39" column="70" selection-start-line="39" selection-start-column="70" selection-end-line="39" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yb/config/YbMsg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="10" column="65" lean-forward="true" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/teacher/information.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1474">
+          <caret line="67" column="45" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/student/myPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="115" column="43" lean-forward="true" selection-start-line="115" selection-start-column="43" selection-end-line="115" selection-end-column="43" />
+          <folding>
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#3;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8ca6f64a-3cbc-47bd-8f57-6690efd5acc5/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1218,38 +1059,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yb/controller/teacher/TeacherInfoController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="58" column="39" lean-forward="true" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yb/filter/ManagerFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yb/filter/StudentFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="38" column="66" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yb/filter/TeacherFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="39" column="70" selection-start-line="39" selection-start-column="70" selection-end-line="39" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yb/config/YbMsg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="8" column="89" selection-start-line="8" selection-start-column="89" selection-end-line="8" selection-end-column="89" />
+        <state relative-caret-position="66">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
         </state>
       </provider>
     </entry>
