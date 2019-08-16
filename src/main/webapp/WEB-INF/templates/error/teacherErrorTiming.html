@@ -20,10 +20,23 @@
         }
     </style>
 </head>
-<body class="container-fluid">
-<div class="teller">
-    <h2 align="left">Not now!</h2>
-    <h3 class="text-muted" th:text="${teacherStartTime}"></h3>
+<body>
+<div class="site-wrapper">
+    <div class="site-wrapper-inner">
+        <div class="cover-container">
+            <div class="masthead clearfix">
+                <div class="inner">
+                    <img class="pull-left" th:src="@{/static/img/yiban_logo.png}" height="45px" width="35px"
+                         alt="易班logo">
+                    <h3 class="masthead-brand text-muted">西石大易班发展中心</h3>
+                </div>
+            </div>
+            <div class="inner cover cover-container">
+                <h2>Not now!</h2>
+                <h3 th:text="${teacherStartTime}"></h3>
+            </div>
+        </div>
+    </div>
 </div>
 <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>

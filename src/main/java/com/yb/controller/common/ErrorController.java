@@ -26,28 +26,28 @@ public class ErrorController {
 
     @RequestMapping("/errorTeacherId")
     public String errorTeacherId(Model model) {
-        model.addAttribute("errorMessage", "只对学生开放哦~");
+        model.addAttribute("errorMessage1", "只对学生开放哦~");
         return "error/commonError";
     }
 
     @RequestMapping("/errorStuId")
     public String errorStuId(Model model) {
-        model.addAttribute("errorMessage", "只对教师开放哦~");
+        model.addAttribute("errorMessage1", "只对教师开放哦~");
         return "error/commonError";
     }
 
     @RequestMapping("/teacherErrorTiming")
     public String teacherErrorTime(Model model) {
         Timing teacherTiming = managerService.getTiming("teacher");
-        model.addAttribute("teacherStartTime", "教师端开放时间为" + teacherTiming.getStartTime());
+        model.addAttribute("teacherStartTime", "开放时间为" + teacherTiming.getStartTime());
         return "error/teacherErrorTiming";
     }
 
     @RequestMapping("/stuErrorTiming")
     public String stuErrorTime(Model model) {
         Timing stuTiming = managerService.getTiming("student");
-        model.addAttribute("stuStartTime", "学生端开放时间为" + stuTiming.getStartTime());
-        model.addAttribute("stuEndTime", "学生端关闭时间为" + stuTiming.getEndTime());
+        model.addAttribute("stuStartTime", "开始时间为" + stuTiming.getStartTime());
+        model.addAttribute("stuEndTime", "结束时间为" + stuTiming.getEndTime());
         return "error/stuErrorTiming";
     }
 }

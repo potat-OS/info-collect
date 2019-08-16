@@ -108,7 +108,7 @@ public class AuthController {
 
     @ExceptionHandler(Exception.class)
     public String exception(Exception e, Model model) {
-        model.addAttribute("errorMessage", "出错辣ε=ε=ε=┏(゜ロ゜;)┛");
+        model.addAttribute("errorMessage1", "新同学请先完成校方认证哦");
         e.printStackTrace();
         return "error/commonError";
     }

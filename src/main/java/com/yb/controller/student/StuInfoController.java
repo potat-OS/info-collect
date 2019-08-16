@@ -80,7 +80,8 @@ public class StuInfoController {
 
     @ExceptionHandler(Exception.class)
     public String exception(Exception e, Model model) {
-        model.addAttribute("errorMessage", "出错辣ε=ε=ε=┏(゜ロ゜;)┛");
+        model.addAttribute("errorMessage1", "出错啦！");
+        model.addAttribute("errorMessage2", "刷新下试试吧");
         e.printStackTrace();
         return "error/commonError";
     }

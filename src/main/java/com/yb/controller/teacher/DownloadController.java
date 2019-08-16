@@ -22,7 +22,7 @@ public class DownloadController {
 
     @ExceptionHandler(IOException.class)
     public String exception(IOException e, Model model) {
-        model.addAttribute("errorMessage", "文件读取异常");
+        model.addAttribute("errorMessage1", "读取文件出错");
         e.printStackTrace();
         return "error/commonError";
     }
