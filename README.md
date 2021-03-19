@@ -1,7 +1,7 @@
 # info-collect
 本项目用于易班新生信息收录  
-项目前后端未分离(不推荐)
-使用SSM+thymeleaf+pagehelper+bootstrap完成，其中用到Lombok插件(很好用，推荐)  
+项目前后端未分离  
+使用SSM+thymeleaf+pagehelper+bootstrap完成，其中用到Lombok插件
 分Manager, 教师, 学生三端  
 调用易班接口获取学校名称拦截非本校师生，获取stu_id判断身份(校级权限)  
 
